@@ -1,0 +1,948 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 0px 0px 0px 0px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #FFFFFF !important; border-bottom: 1px solid #FFFFFF !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+td.editor-col .block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.column .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.split.column-right {
+margin-top: 10px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: 'Libre Baskerville'; font-style: normal; font-weight: 400; src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(https://fonts.gstatic.com/s/librebaskerville/v5/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxMaC82U.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+font-family: 'Merriweather'; font-style: normal; font-weight: 400; src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-fCZMdeX3rg.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+font-family: 'Bitter'; font-style: normal; font-weight: 400; src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v13/rax8HiqOu8IVPmn7f4xpLjpSmw.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Join us for our Annual Christmas Wrapping Event &amp; Picture with Santa !</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #FAD2CD; margin: 0px; padding: 0px;" bgcolor="#FAD2CD"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #FAD2CD;"> 
+       <!--[if gte mso 9]>
+<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+<v:fill type="tile" src="https://imgssl.constantcontact.com/letters/images/backgrounds/dotgrid.png" color="#FAD2CD" ></v:fill>
+</v:background>
+<![endif]--> 
+       <table width="100%" class="bgimage" border="0" cellspacing="0" cellpadding="0" style="background: url('https://imgssl.constantcontact.com/letters/images/backgrounds/dotgrid.png') repeat top left;" background="https://imgssl.constantcontact.com/letters/images/backgrounds/dotgrid.png"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table width="630" align="center" class="main-width" border="0" cellspacing="0" cellpadding="0" style="width: 630px;"> 
+            <tbody> 
+             <tr> 
+              <td align="center" class="layout" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"> 
+                <tbody> 
+                 <tr> 
+                  <td align="center" class="layout-container-border" valign="top" style="background-color: #FFFFFF; padding: 0px;" bgcolor="#FFFFFF"> 
+                   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;" bgcolor="#FFFFFF"> 
+                    <tbody> 
+                     <tr> 
+                      <td align="center" class="layout-container" valign="top" style="background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF"> 
+                       <div> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="" class=" editor-col OneColumnMobile" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF"> 
+                            <div class="gl-contains-image"> 
+                             <table width="100%" class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="http://www.closewithlorri.com"> <img width="338" style="display: block; height: auto !important; max-width: 100% !important;" alt="" src="https://files.constantcontact.com/1d189007601/82935811-22c1-4567-903c-4555ca85140d.png" border="0" vspace="0" hspace="0"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="left" class="section-headline editor-col OneColumnMobile" valign="top" style="background-color: rgb(132, 153, 132);" bgcolor="849984"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" class="editor-text section-headline-text" valign="top" style="font-family: 'Century Gothic', Calibri, Helvetica, Arial, sans-serif; font-size: 28px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-family: Bitter,serif;">Hope you can join us! </span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table width="100%" class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="mailto:renee.daigneault@movement.com"> <img width="604" style="display: block; height: auto !important; max-width: 100% !important;" alt="" src="https://files.constantcontact.com/1d189007601/1449aff3-404e-4907-8712-6643bbb157a6.png" border="0" vspace="0" hspace="0"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-button"> 
+                             <table width="100%" class="editor-button" border="0" cellspacing="0" cellpadding="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container editor-button-container " style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; padding: 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" class="MainTextFullWidthTD" valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; padding: 0px;"> 
+                                     <table style="background-color: rgb(165, 53, 40); width: initial; moz-border-radius: 10px; border-radius: 10px; border-spacing: 0; min-width: initial; padding: 0; border: none;" border="0" cellspacing="0" cellpadding="0" bgcolor="A53528"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" class="MainTextFullWidthTD" valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a style="font-size: 20px; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold; color: #ffffff; text-decoration: none;" href="mailto:renee.daigneault@movement.com">RSVP so we are better prepared for you !</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="left" class="section-headline editor-col OneColumnMobile" valign="top" style="background-color: rgb(153, 153, 153);" bgcolor="999999"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" class="editor-text section-headline-text" valign="top" style="font-family: 'Century Gothic', Calibri, Helvetica, Arial, sans-serif; font-size: 28px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(255, 255, 255); font-family: Bitter,serif; font-size: 28px;">The Hoffman Team Loan Officers</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td align="left" class="split-layout-margin" valign="top" style="background-color: #FFFFFF; padding: 0px 15px;" bgcolor="#FFFFFF"> 
+                            <table width="100%" class="feature-split-container" border="0" cellspacing="0" cellpadding="0"> 
+                             <tbody> 
+                              <tr> 
+                               <td width="5" align="center" class="mobile-hidden layout-container" valign="top" style="height: 5px; line-height: 1px; background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF"><img width="5" height="5" style="display: block; width: 5px; height: 5px;" alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" border="0" vspace="0" hspace="0"></td> 
+                               <td width="50%" align="left" class="split split-border editor-col OneColumnMobile" valign="top" style="border-collapse: separate; border: 1px solid #ffffff;"> 
+                                <div>
+                                 <div class="column-resize-bar"> 
+                                  <span class="line"></span> 
+                                  <span class="grabber"></span> 
+                                 </div>
+                                </div> 
+                                <div class="gl-contains-image"> 
+                                 <table width="100%" class="editor-image content-image editor-image-vspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                     <div class="publish-container"> 
+                                      <img width="167" style="display: block; height: auto; max-width: 100%;" alt="" src="https://files.constantcontact.com/1d189007601/da1a73b1-02ac-49a4-9131-fd6ffd29dd70.jpg" border="0" vspace="0" hspace="0"> 
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="left" class="editor-text content-text" valign="top" style="font-family: Tahoma,Geneva,sans-serif; font-size: 14px; color: #36495F; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div> 
+                                       <div style="text-align: center;" align="center">
+                                        <br>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <br>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <span style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 16px; font-style: italic;">"I value your business and our partnership and sincerely thank you for trusting us as a financial lending partner. With every loan I strive to develop a customer relationship for life. One priority me and my team have towards achieving this is by focusing on outstanding customer service.</span>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <span style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 16px; font-style: italic;">I hope that I have exceeded your expectations thus far, and look forward to keep growing with you and your business."</span>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <br>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <br>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <br>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <span style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 14px;">Lorri Hoffman</span>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <span style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 14px;">&nbsp;D 704-609-5206 </span>
+                                       </div> 
+                                       <div style="text-align: center;" align="center"> 
+                                        <a style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 14px; text-decoration: underline; font-weight: normal; font-style: normal;" href="mailto:Lorri.Hoffman@movement.com" target="_blank">Lorri.Hoffman@movement.com</a>
+                                        <span style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 14px;"> </span>
+                                        <a style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 14px; text-decoration: underline; font-weight: normal; font-style: normal;" href="http://www.hoffmanlendingteam.com" target="_blank">www.hoffmanlendingteam.com</a> 
+                                       </div> 
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td width="5" align="center" class="mobile-hidden layout-container" valign="top" style="height: 10px; line-height: 1px; background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF"><img width="5" height="10" style="display: block; width: 5px; height: 10px;" alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" border="0" vspace="0" hspace="0"></td> 
+                               <td width="5" align="center" class="mobile-hidden layout-container" valign="top" style="height: 5px; line-height: 1px; background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF"><img width="5" height="5" style="display: block; width: 5px; height: 5px;" alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" border="0" vspace="0" hspace="0"></td> 
+                               <td width="50%" align="left" class="split split-border editor-col OneColumnMobile" valign="top" style="border-collapse: separate; border: 1px solid #ffffff;"> 
+                                <div class="gl-contains-image"> 
+                                 <table width="100%" class="editor-image content-image editor-image-vspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                     <div class="publish-container"> 
+                                      <img width="167" style="display: block; height: auto; max-width: 100%;" alt="" src="https://files.constantcontact.com/1d189007601/f141c0f2-8d06-4d38-a62b-a95b5f51aabc.jpg" border="0" vspace="0" hspace="0"> 
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="left" class="editor-text content-text" valign="top" style="font-family: Tahoma,Geneva,sans-serif; font-size: 14px; color: #36495F; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div> 
+                                       <div style="text-align: center;" align="center">
+                                        <span style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 16px; font-style: italic;">"I love being considered your trusted mortgage partner and with 25 years of experience in the real estate law and lending industries. Itâs an honor and most important to me that you trust your client to us.&nbsp;Our team is passionate about getting your buyers through the loan process with ease, applying our vast skill set and knowledge to put your client into the best loan product that will fit their needs.&nbsp;Iâm responsive, knowledgeable and Iâve got your best interest at heart. I want to help your business succeed and if youâre working, then Iâm working!"</span>
+                                       </div> 
+                                       <div style="text-align: left;" align="left">
+                                        <span style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 16px; font-style: normal; text-decoration: none;"> </span>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <br>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <span style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 14px;">Karen Barnette</span>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <span style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 14px;">D 704-231-7288</span>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <a style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 14px; text-decoration: underline; font-weight: normal; font-style: normal;" href="mailto:karen.barnette@movement.com" target="_blank">Karen.Barnette@movement.com</a>
+                                       </div> 
+                                       <div style="text-align: center;" align="center">
+                                        <a style="color: rgb(56, 56, 56); font-family: Bitter,serif; font-size: 14px; text-decoration: underline; font-weight: normal; font-style: normal;" href="http://www.hoffmanlendingteam.com" target="_blank">www.hoffmanlendingteam.com</a>
+                                       </div> 
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td width="5" align="center" class="mobile-hidden layout-container" valign="top" style="height: 10px; line-height: 1px; background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF"><img width="5" height="10" style="display: block; width: 5px; height: 10px;" alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" border="0" vspace="0" hspace="0"></td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

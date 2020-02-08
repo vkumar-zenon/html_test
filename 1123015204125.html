@@ -1,0 +1,1635 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 610px!important;
+max-width: 610px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 610px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 40px 10px 40px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 0px 0px 0px 0px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.headline2-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #719d51 !important; border-bottom: 1px solid #719d51 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+td.editor-col .block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.column .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.split.column-right {
+margin-top: 10px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.preheader-text {
+font-size: 12px !important;
+}
+.split {
+border-top: 5px solid #ffffff; border-bottom: 5px solid #ffffff; padding: 5px 0px !important;
+}
+.coupon {
+padding: 10px 20px 10px 20px !important;
+}
+.coupon td.coupon-heading-text {
+padding: 15px 10px 15px 10px !important; font-size: 28px !important;
+}
+.coupon td.coupon-text {
+padding: 10px 10px 10px 10px !important; font-size: 16px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td[class="main-width"] {
+width: 100% !important;
+}
+table[class="mobile-hidden"] {
+display: none !important;
+}
+img[class="mobile-hidden"] {
+display: none !important;
+}
+td[class="mobile-hidden"] {
+display: none !important;
+}
+td[class~="OneColumnMobile"] {
+width: 100% !important; display: block !important;
+}
+table[class~="OneColumnMobile"] {
+width: 100% !important; display: block !important;
+}
+td[class~="OneColumnMobile"] .editor-image td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+table[class~="OneColumnMobile"] .editor-image td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-logo td {
+padding: 8px 0px 9px 0px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.editor-social td.social-text {
+font-size: 16px !important;
+}
+.editor-social td.social-icons {
+padding: 5px 10px 0px 10px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.feature td.editor-image-left {
+padding: 10px 0px 15px 0px !important;
+}
+.feature td.editor-image-right {
+padding: 10px 0px 15px 0px !important;
+}
+.article td.editor-image-left {
+padding: 10px 0px 15px 0px !important;
+}
+.article td.editor-image-right {
+padding: 10px 0px 15px 0px !important;
+}
+.coupon td.coupon-subheading-text {
+padding: 10px 10px 0px 10px !important; font-size: 24px !important;
+}
+div[class="MobileFooter"] {
+font-size: 11px !important;
+}
+td[class="FooterMobile"] {
+padding: 0px 10px 0px 10px !important;
+}
+td[class="MainCenter"] {
+width: 100% !important;
+}
+table[class="MainSide"] {
+display: none !important;
+}
+img[class="MainSide"] {
+display: none !important;
+}
+td[class="MainSide"] {
+display: none !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>The Fruitful Women - December 28, 2019 Edition</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #EECEE5; margin: 0px; padding: 0px;" bgcolor="#EECEE5"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #EECEE5;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #EECEE5;" bgcolor="#EECEE5"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="610" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 610px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #719d51; padding: 0px;" bgcolor="#719d51"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #719d51;" bgcolor="#719d51"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #ffffff; padding: 0;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-spacer" width="100%" align="center" valign="top" style="padding: 0px;">
+                            <table style="width: 100%;">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding-right: 0px; padding-bottom: 11px; padding-left: 0px;" class="spacer-base">
+                                <div>
+                                 <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                </div></td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="logo editor-col OneColumnMobile" width="50%" align="center" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="http://thefruitfulwomen.weebly.com/events.html"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="197" border="0" hspace="0" vspace="0" src="https://mlsvc01-prod.s3.amazonaws.com/d1d1ce87501/b5e8fe06-efc8-4f74-806e-d0a924db06f6.jpg?ver=1448987330000"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="logo editor-col OneColumnMobile" width="50%" align="center" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text subheadline-text" align="left" valign="top" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 32px; color: #1d3230; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-style: italic; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 24px; color: rgb(202, 99, 173); font-weight: bold;">The Fruitful Women Online Magazine</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text headline2-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #1a1a1a; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(202, 99, 173);">December 28, 2019 Edition</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-spacer" width="100%" align="center" valign="top" style="padding: 0px;">
+                            <table style="width: 100%;">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding-right: 0px; padding-bottom: 3px; padding-left: 0px;" class="spacer-base">
+                                <div>
+                                 <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                </div></td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #1a1a1a; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(102, 102, 102); font-family: Arial, Verdana, Helvetica, sans-serif;">Abba, through the Light we see that there are many who are blind. They are lost and they are paralyzed in this fallen world. What is even more sad is that they do not know the way, but are trying to find their own way based on what they know. But Lord we know that what they know and what this world teaches is not truth. A new year is coming and we ask that You prepare Your servants to shine even brighter and reflect the Light of truth to them. May the lost be found and may the lame walk. Thank you Abba in Jesus name we pray, amen!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="http://www.thefruitfulwomen.org/request-prayer.html" target="_blank" style="color: #428bca; font-weight: normal; font-style: normal; text-decoration: underline;">Click here is you would like for us to pray for you!</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-spacer" width="100%" align="center" valign="top" style="padding: 0px;">
+                            <table style="width: 100%;">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding-right: 0px; padding-bottom: 14px; padding-left: 0px;" class="spacer-base">
+                                <div>
+                                 <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                </div></td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="layout-margin" style="background-color: #CA63AD; padding: 8px 20px 9px;" align="left" valign="top" bgcolor="#CA63AD"> 
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                             <tbody> 
+                              <tr> 
+                               <td class="feature-border" align="left" valign="top" style="padding: 0px;"> 
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                 <tbody> 
+                                  <tr> 
+                                   <td class="feature editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(202, 99, 173);" bgcolor="CA63AD"> 
+                                    <div class="gl-contains-image"> 
+                                     <table class="editor-image feature-image editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                         <div class="publish-container"> 
+                                          <a href="http://thefruitfulwomen.org/being-fruitful.html"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="476" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/d1d1ce87501/d4ffc827-9b34-43f8-bde7-6d84cc3c86e7.jpg"> </a> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> 
+                                    </div> 
+                                    <div class="gl-contains-text"> 
+                                     <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td class="editor-text feature-heading-text" align="left" valign="top" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px; color: #FFFFFF; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-style: italic; padding: 10px 20px;"> 
+                                         <div></div> 
+                                         <div class="text-container galileo-ap-content-editor">
+                                          <div>
+                                           <div>
+                                            <span style="font-size: 18px; font-weight: bold;">Being Fruitful</span>
+                                           </div>
+                                          </div>
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> 
+                                    </div> 
+                                    <div class="gl-contains-text"> 
+                                     <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td class="editor-text feature-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 18px; color: #FFFFFF; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                         <div></div> 
+                                         <div class="text-container galileo-ap-content-editor">
+                                          <div> 
+                                           <div> 
+                                            <span style="color: rgb(255, 255, 255); font-size: 14px;">Being content is not easy when we do not know the blessings we have or the purpose behind our situations we face. Just like a housewife who may be jealous of a woman who works outside the home, or vice versa, one overlooks her great assignment to manage her home and teach her children while the other forgets the blessing that comes from work. Join me this weekâs â&nbsp;</span>
+                                            <span style="font-style: italic; color: rgb(255, 255, 255); font-size: 14px;">Being Fruitfulâ</span>
+                                            <span style="color: rgb(255, 255, 255); font-size: 14px;">&nbsp;and understand what it means to be content.</span> 
+                                           </div> 
+                                           <div>
+                                            <br>
+                                           </div> 
+                                           <div>
+                                            <a href="http://thefruitfulwomen.org/being-fruitful.html" target="_blank" style="font-size: 14px; color: rgb(54, 97, 189); font-weight: bold; font-style: normal; text-decoration: underline;">Click to read the article</a>
+                                           </div> 
+                                          </div>
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> 
+                                    </div> </td> 
+                                  </tr> 
+                                 </tbody> 
+                                </table> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-divider" width="100%" align="center" valign="top" style="min-width: 100%; padding: 0px;">
+                            <table style="width: 100%; background-color: transparent; cursor: default;" class="galileo-ap-content-editor" bgcolor="transparent">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 15px 0px 14px;" class="divider-base divider-solid"> 
+                                <table cellpadding="0" cellspacing="0" border="0" style="height: 1px; width: 93%; min-width: 93%;" align="center"> 
+                                 <tbody> 
+                                  <tr> 
+                                   <td height="1" align="center" class="divider-height" style="height: 1px; line-height: 1px; padding-bottom: 0px; border-bottom-style: none; background-color: #719d51;" bgcolor="#719d51"> 
+                                    <div>
+                                     <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                    </div> </td> 
+                                  </tr> 
+                                 </tbody> 
+                                </table> </td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="two-column editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image two-column-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="http://www.thefruitfulwomen.org/keepers-of-the-home.html"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="274" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/d1d1ce87501/c5422076-b2ce-4e78-8951-60321eddfebd.jpg"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text two-column-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #1a1a1a; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-weight: bold; font-style: italic;">Keepers of the Home</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: black;">Last week we were discussing marriage and the challenges that can come along within the marriage relationship. This relationship is a vital part of the Body of Christ so I invite you to join us today in âKeepers of the Homeâ as we follow up about marriage from last week.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="http://thefruitfulwomen.org/keepers-of-the-home.html" target="_blank" style="font-weight: bold; color: #428bca; font-style: normal; text-decoration: underline;">Click to read the article&nbsp;</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="two-column editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image two-column-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="http://www.thefruitfulwomen.org/great-expectations.html"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="273" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/d1d1ce87501/e31cc7af-d9eb-4cfa-813d-4d5326630e1e.jpg"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text two-column-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #1a1a1a; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-weight: bold; font-style: italic;">Great Expectations</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px;">The story of Christmas is beautiful, with visitations from angles and messages sent from the throne room of God. I want us to look at Elizabeth and Zacharias, often overlooked as part of the story, but showed that nothing is impossible with God.&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <a href="http://thefruitfulwomen.org/great-expectations.html" target="_blank" style="font-weight: bold; color: #428bca; font-style: normal; text-decoration: underline;">Click to read the article</a>
+                                    <span style="font-weight: bold;">&nbsp;</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-divider" width="100%" align="center" valign="top" style="min-width: 100%; padding: 0px;">
+                            <table style="width: 100%; background-color: transparent; cursor: default;" class="galileo-ap-content-editor" bgcolor="transparent">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 6px 0px 19px;" class="divider-base divider-solid"> 
+                                <table cellpadding="0" cellspacing="0" border="0" style="height: 1px; width: 93%; min-width: 93%;" align="center"> 
+                                 <tbody> 
+                                  <tr> 
+                                   <td height="1" align="center" class="divider-height" style="height: 1px; line-height: 1px; padding-bottom: 0px; border-bottom-style: none; background-color: #719d51;" bgcolor="#719d51"> 
+                                    <div>
+                                     <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                    </div> </td> 
+                                  </tr> 
+                                 </tbody> 
+                                </table> </td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="two-column editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image two-column-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="http://www.thefruitfulwomen.org/whatever-road-ahead.html"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="269" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/d1d1ce87501/7be9b285-9594-4539-984e-284c4c9d51eb.jpg"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text two-column-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #1a1a1a; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-weight: bold; font-style: italic;">Whatever Road Ahead</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    We have all heard that God is love and that He loves each and every one of us. But how many of us have truly taken the time to think about what this truly means and how much it should affect our lives? Read this weekâs â 
+                                    <span style="font-style: italic;">Whatever Road Aheadâ</span> to get a closer look at Godâs love.&nbsp;
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="http://thefruitfulwomen.org/whatever-road-ahead.html" target="_blank" style="font-weight: bold; color: #428bca; font-style: normal; text-decoration: underline;">Click to read the article&nbsp;</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="two-column editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image two-column-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="http://www.thefruitfulwomen.org/what-a-man-says.html"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/d1d1ce87501/518d7fe6-f501-4114-901d-1da3905a5a69.jpg"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text two-column-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #1a1a1a; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold; font-style: italic;">What A Man Says</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="color: black;">Have you ever been jealous for someoneâs attention? The reality is that this is something that so many people have experienced. What does the Word have to say about this type of situation? Read this weekâs </span>
+                                    <span style="color: black; font-style: italic;">What A Man Says </span>
+                                    <span style="color: black;">as we dive further into this topic. </span>
+                                    <span style="color: black; font-style: italic;">&nbsp;</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <a href="http://thefruitfulwomen.org/what-a-man-says.html" target="_blank" style="font-weight: bold; color: #428bca; font-style: normal; text-decoration: underline;">Click to read the article</a>&nbsp;
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-divider" width="100%" align="center" valign="top" style="min-width: 100%; padding: 0px;">
+                            <table style="width: 100%; background-color: transparent; cursor: default;" class="galileo-ap-content-editor" bgcolor="transparent">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 8px 0px;" class="divider-base divider-solid"> 
+                                <table cellpadding="0" cellspacing="0" border="0" style="height: 1px; width: 93%; min-width: 93%;" align="center"> 
+                                 <tbody> 
+                                  <tr> 
+                                   <td height="1" align="center" class="divider-height" style="height: 1px; line-height: 1px; padding-bottom: 0px; border-bottom-style: none; background-color: #719d51;" bgcolor="#719d51"> 
+                                    <div>
+                                     <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                    </div> </td> 
+                                  </tr> 
+                                 </tbody> 
+                                </table> </td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-spacer" width="100%" align="center" valign="top" style="padding: 0px;">
+                            <table style="width: 100%;">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding-right: 0px; padding-bottom: 9px; padding-left: 0px;" class="spacer-base">
+                                <div>
+                                 <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                </div></td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 16px; color: #FFFFFF; text-decoration: none; font-style: italic; padding: 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 16px; color: #FFFFFF; text-decoration: none; font-style: italic; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(202, 99, 173); width: initial; moz-border-radius: 5px; border-radius: 5px; border-spacing: 0; min-width: initial; padding: 0; border: none;" bgcolor="CA63AD"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 16px; color: #FFFFFF; text-decoration: none; font-style: italic; padding: 9px 40px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="http://thefruitfulwomen.weebly.com/" style="font-weight: normal; font-style: normal; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 16px; color: #FFFFFF; text-decoration: none;">Visit The Fruitful Women</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-spacer" width="100%" align="center" valign="top" style="padding: 0px;">
+                            <table style="width: 100%;">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding-right: 0px; padding-bottom: 27px; padding-left: 0px;" class="spacer-base">
+                                <div>
+                                 <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                </div></td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="about editor-col OneColumnMobile" width="100%" align="center" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text about-text" align="left" valign="top" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14px; color: #1a1a1a; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    The Fruitful Women&nbsp;
+                                   </div> 
+                                   <div>
+                                    info@thefruitfulwomn.org
+                                   </div> 
+                                   <div>
+                                    www.thefruitfulwomen.org
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-spacer" width="100%" align="center" valign="top" style="padding: 0px;">
+                            <table style="width: 100%;">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding-right: 0px; padding-bottom: 9px; padding-left: 0px;" class="spacer-base">
+                                <div>
+                                 <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                </div></td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="social" style="background-color: #ffffff; padding: 0px;" width="100%" align="center" valign="top" bgcolor="#ffffff"> 
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="editor-social" style="width: 100%; min-width: 100%;"> 
+                             <tbody> 
+                              <tr> 
+                               <td align="center" valign="middle" style="padding-top: 0px; padding-bottom: 10px;"> 
+                                <div style="text-align: center;" class="galileo-ap-content-editor" align="center"> 
+                                 <a href="https://www.facebook.com/The-Fruitful-Women-174892975876339/" style="display: inline-block; text-decoration: none;"> <img alt="Facebook" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                 <a href="https://twitter.com/TFWGoodNews" style="display: inline-block; text-decoration: none;"> <img alt="Twitter" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                 <a href="https://www.pinterest.com/thefruitfulwomn/the-fruitful-women/" style="display: inline-block; text-decoration: none;"> <img alt="Pinterest" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/pinterest-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                </div> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-spacer" width="100%" align="center" valign="top" style="padding: 0px;">
+                            <table style="width: 100%;">
+                             <tbody>
+                              <tr>
+                               <td width="100%" align="center" valign="top" style="height: 1px; line-height: 1px; padding-right: 0px; padding-bottom: 20px; padding-left: 0px;" class="spacer-base">
+                                <div>
+                                 <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                </div></td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

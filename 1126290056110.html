@@ -1,0 +1,918 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 640px!important;
+max-width: 640px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 640px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #3298D6 !important; border-bottom: 1px solid #3298D6 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: 'Raleway'; font-style: normal; font-weight: 400; src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>YOU STRIVE TO WIN</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #3298D6; margin: 0px; padding: 0px;" bgcolor="#3298D6"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #3298D6;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #3298D6;" bgcolor="#3298D6"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="640" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 640px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #3298D6; padding: 0px;" bgcolor="#3298D6"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #3298D6;" bgcolor="#3298D6"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="spacer editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="spacer-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" style="padding-bottom: 10px; height: 1px; line-height: 1px;" width="100%" align="center" valign="top"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="logo editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table cellpadding="0" cellspacing="0" border="0" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 15px; height: 1px; line-height: 1px;"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container content-image editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="#"> <img alt="https://wincor.com/wp-content/uploads/2015/06/logo1-e1488994747453.png" class="" style="display: block; height: auto; max-width: 100%;" width="177" border="0" hspace="0" vspace="0" src="https://wincor.com/wp-content/uploads/2015/06/logo1-e1488994747453.png"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="logo editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Raleway,sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px;">(877) 885-5220</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <a href="mailto:win@wincor.com" target="_blank" style="font-size: 16px; color: #155368; font-weight: normal; font-style: normal; text-decoration: underline;">win@wincor.com</a>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px;">Los Angeles -New York</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <a href="https://wincor.com" target="_blank" style="color: #155368; font-weight: normal; font-style: normal; text-decoration: underline;">wincor.com</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="spacer editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="spacer-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" style="padding-bottom: 10px; height: 1px; line-height: 1px;" width="100%" align="center" valign="top"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table cellpadding="0" cellspacing="0" border="0" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 10px; height: 1px; line-height: 1px;"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text headline-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #4C4C4C; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    <span style="font-size: 24px; color: rgb(50, 152, 214); font-family: Raleway, sans-serif;">LITIGATION SUPPORT INVESTIGATIVE SERVICES</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table cellpadding="0" cellspacing="0" border="0" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 10px; height: 1px; line-height: 1px;"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="layout-margin" style="padding: 8px 20px 9px;" align="left" valign="top"> 
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                             <tbody> 
+                              <tr> 
+                               <td class="article-border" align="left" valign="top" style="background-color: #3661BD; padding: 1px;" bgcolor="#3661BD"> 
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                 <tbody> 
+                                  <tr> 
+                                   <td class="article editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: #FFFFFF;" bgcolor="#FFFFFF"> 
+                                    <div class="gl-contains-text"> 
+                                     <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td class="editor-text article-text" align="left" valign="top" style="font-family: Raleway,sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                         <div></div> 
+                                         <div class="text-container galileo-ap-content-editor">
+                                          <div>
+                                           <div style="text-align: center;" align="center">
+                                            <span style="font-size: 14px; color: rgb(54, 97, 189); font-weight: bold;">Since 1991, Worldwide Intelligence Network has provided exemplary&nbsp;private investigative services&nbsp;to hundreds of prominent attorneys across America and around the world by contributing superb investigative intelligence. </span>
+                                           </div>
+                                          </div>
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> 
+                                    </div> </td> 
+                                  </tr> 
+                                 </tbody> 
+                                </table> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container editor-button-container " style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 3px; border-radius: 3px; border-spacing: 0; background-color: #3298D6; min-width: initial; padding: 0; border: none;" bgcolor="#3298D6"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 14px 22px 15px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="#" style="font-size: 14px; font-weight: bold; font-family: Raleway,sans-serif; color: #FFFFFF; text-decoration: none;">CLIENT ACCOLADES</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Raleway,sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif;">âIt would take a book, rather than a letter, to do justice to your achievements and adequately describe your personal contributions as a fact analyzer, case energizer, attorney inspirer, and truth seeker.-â</span>
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif; font-weight: bold;">Martin R Pollner Loeb &amp; Loeb LLP.</span>
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif;">â</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif;">âI want to reiterate my appreciation for the outstanding detective work and litigation support that contributed to the dismissal at the trial of all charges against our client in the U.S. v Mullen et, al case. Your investigative deductions regarding the bogus nature of the Key Government records proved correct.&nbsp;</span>
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif; font-weight: bold;">John Lang, Loeb &amp; Loeb LLP</span>
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif;">.â</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif;">âNotwithstanding your last minute retention, you immediately grasped the rather complicated legal principles in issue in this first impression criminal trademark case. You appeared in court well prepared, and were the best âsecond chairâ I have ever had the privilege to work with.â</span>
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif; font-weight: bold;">&nbsp;Phillip M Prince, Attorney at Law</span>
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif;">â</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif;">âWe were impressed not only with their handling of those witnesses but also their understanding of how the information that they obtained fit in the context of the litigation. We use them on other matters and expect to continue to do so.-</span>
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif; font-weight: bold;">Carl Prindonoff General Counsel Albert B Glickman and Associates</span>
+                                    <span style="color: rgb(73, 73, 73); font-family: Raleway, sans-serif;">â</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="layout-margin" style="padding: 8px 20px 9px;" align="left" valign="top"> 
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                             <tbody> 
+                              <tr> 
+                               <td class="article-border" align="left" valign="top" style="background-color: #3661BD; padding: 1px;" bgcolor="#3661BD"> 
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                 <tbody> 
+                                  <tr> 
+                                   <td class="article editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: #FFFFFF;" bgcolor="#FFFFFF"> 
+                                    <div class="gl-contains-text"> 
+                                     <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td class="editor-text article-text" align="left" valign="top" style="font-family: Raleway,sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                         <div></div> 
+                                         <div class="text-container galileo-ap-content-editor">
+                                          <div>
+                                           <div> 
+                                            <span style="color: rgb(73, 73, 73); font-weight: bold;"> </span>
+                                            <span style="color: rgb(54, 97, 189); font-weight: bold;">What differentiates WIN from other investigators are the multi-million dollar civil cases we investigated that led to constructive settlements and </span>
+                                            <a href="https://wincor.com/blog/litigation-support-services.html" target="_blank" style="color: rgb(54, 97, 189); font-weight: bold; font-style: normal; text-decoration: underline;">dismissal of a&nbsp;Federal Bribery indictment&nbsp;</a>
+                                            <span style="color: rgb(54, 97, 189);"> </span>
+                                            <span style="color: rgb(54, 97, 189); font-weight: bold;">after </span>
+                                            <span style="color: rgb(54, 97, 189);">t</span>
+                                            <span style="color: rgb(54, 97, 189); font-weight: bold;">he&nbsp;</span>
+                                            <a href="http://articles.latimes.com/1996-11-23/local/me-1941_1_bribery-case" target="_blank" style="color: rgb(54, 97, 189); font-weight: bold; text-decoration: none; font-style: normal;">Government spent two years and two million dollars</a>
+                                            <span style="color: rgb(54, 97, 189); font-weight: bold;"> investigating our client.</span> 
+                                           </div>
+                                          </div>
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> 
+                                    </div> </td> 
+                                  </tr> 
+                                 </tbody> 
+                                </table> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container editor-button-container " style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 3px; border-radius: 3px; border-spacing: 0; background-color: #3298D6; min-width: initial; padding: 0; border: none;" bgcolor="#3298D6"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 14px 22px 15px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="#" style="font-size: 14px; font-weight: bold; font-family: Raleway,sans-serif; color: #FFFFFF; text-decoration: none;">LEGAL&nbsp; INVESTIGATIVE SERVICES OFFERED</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Raleway,sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <ul> 
+                                    <li><span style="color: rgb(73, 73, 73);">Surveillance Investigations</span></li> 
+                                    <li><span style="color: rgb(73, 73, 73);">Intellectual Property Infringement</span></li> 
+                                    <li style="color: rgb(73, 73, 73);"><span style="color: rgb(73, 73, 73);">Employment Law</span></li> 
+                                    <li style="color: rgb(54, 97, 189);"> <span style="color: rgb(54, 97, 189); font-weight: bold;">Federal </span><a href="https://wincor.com/blog/litigation-support-services.html" target="_blank" style="color: rgb(54, 97, 189); font-weight: bold; text-decoration: none; font-style: normal;">Criminal Defense (</a><a href="https://wincor.com/blog/litigation-support-services.html" target="_blank" style="color: rgb(54, 97, 189); font-weight: bold; font-style: normal; text-decoration: underline;">Read Case Synopsis</a><span style="color: rgb(54, 97, 189); font-weight: bold;">)</span> </li> 
+                                    <li><span style="color: rgb(73, 73, 73);">Complex Civil Litigation</span></li> 
+                                    <li style="color: rgb(54, 97, 189);"> <span style="color: rgb(54, 97, 189); font-weight: bold;">U.S. Post Office Identity Theft (</span><a href="https://wincor.com/learn/case-study/case-study-robbery-investigation.html" target="_blank" style="color: rgb(54, 97, 189); font-weight: bold; font-style: normal; text-decoration: underline;">Read Case Synopsis)</a> </li> 
+                                    <li><span style="color: rgb(73, 73, 73);">Liability Defense</span></li> 
+                                    <li><span style="color: rgb(73, 73, 73);">White Collar Crime</span></li> 
+                                    <li><span style="color: rgb(73, 73, 73);">Trial Preparation</span></li> 
+                                    <li><span style="color: rgb(73, 73, 73);">Family Law Matters, Infidelity</span></li> 
+                                    <li><span style="color: rgb(73, 73, 73);">Witness Locate Investigations Worldwide</span></li> 
+                                    <li style="color: rgb(73, 73, 73);"><span style="color: rgb(73, 73, 73);">Corporate Espionage</span></li> 
+                                    <li><span style="color: rgb(73, 73, 73);">Workersâ Compensation Claims</span></li> 
+                                   </ul>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="divider-container editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="divider-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 10px 0px 0px;"> 
+                                     <table style="width: 100%; min-width: 100%; height: 1px;" cellpadding="0" cellspacing="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 1px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #3298D6;" bgcolor="#3298D6"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container editor-button-container " style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 3px; border-radius: 3px; border-spacing: 0; background-color: #3298D6; min-width: initial; padding: 0; border: none;" bgcolor="#3298D6"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 14px 22px 15px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://wincor.com/testimonials/" style="font-family: Raleway,sans-serif; font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none;">More Accolades</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="feature editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text social-text" align="left" valign="top" style="font-family: Raleway,sans-serif; font-size: 14px; color: #000000; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; text-decoration: none; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    Worldwide Intelligence Network | (877) 885-5220 | 
+                                    <a href="https://wincor.com/" target="_blank" style="color: #155368; font-weight: normal; font-style: normal; text-decoration: underline;">Website</a> | 
+                                    <a href="mailto:win@wincor.com" target="_blank" style="color: #155368; font-weight: normal; font-style: normal; text-decoration: underline;">win@wincor.com</a> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 10px;">California PI Lic. 14745 California Bodyguard Lic. 15757 New York Lic 1204874</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-social-button"> 
+                             <table class="editor-social" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class=" social-container social-container" align="center" style="padding: 0px 20px 10px;"> 
+                                 <div class="galileo-ap-content-editor"> 
+                                  <a href="https://www.facebook.com/WorldwideIntelligenceNetwork" style="display: inline-block; text-decoration: none;"> <img alt="Facebook" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default-speechbubble.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                  <a href="https://twitter.com/WincorServices" style="display: inline-block; text-decoration: none;"> <img alt="Twitter" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-default-speechbubble.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                  <a href="https://www.linkedin.com/in/robert-mann-worldwide-intelligence-network-24b6727" style="display: inline-block; text-decoration: none;"> <img alt="LinkedIn" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/linkedin-visit-default-speechbubble.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

@@ -1,0 +1,979 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.preheader-text {
+font-size: 12px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #403F42 !important; border-bottom: 1px solid #403F42 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Home Maintenance Tips For Fall</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #E6E6E6; margin: 0px; padding: 0px;" bgcolor="#E6E6E6"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #E6E6E6;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #E6E6E6;" bgcolor="#E6E6E6"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="630" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 630px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #403F42; padding: 10px;" bgcolor="#403F42"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #403F42;" bgcolor="#403F42"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #ffffff; padding: 0;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="logo editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="292" border="0" hspace="0" vspace="0" src="http://files.constantcontact.com/6dffe8a2701/4c8ee4f9-70bb-4fea-b312-aa9a9cb39ddf.png"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="divider-container editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="divider-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 20px 0px 10px;"> 
+                                     <table style="width: 94%; min-width: 94%; height: 1px;" cellpadding="0" cellspacing="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 5px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #403F42;" bgcolor="#403F42"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="two-column editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="276" border="0" hspace="0" vspace="0" src="http://files.constantcontact.com/6dffe8a2701/b8637ff4-b462-4f2e-aee0-72fc128272df.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text two-column-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 18px; color: rgb(0, 0, 0); font-family: Arial Black, Gadget, sans-serif;">Schedule your projects </span>
+                                    <span style="font-size: 18px; color: rgb(0, 0, 0); font-family: Arial Black, Gadget, sans-serif; font-style: italic;">NOW</span>
+                                    <span style="font-size: 18px; color: rgb(0, 0, 0); font-family: Arial Black, Gadget, sans-serif;"> to take advantage of our fall special!</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">Why Choose&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">Handyman Matters?</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold;">We're Fast</span>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0);">&nbsp;- One phone call to get your job scheduled, and we show up on time!&nbsp;</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold;">We're Convenient&nbsp;</span>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0);">-&nbsp;We can handle any other repairs while we are in your home.&nbsp;</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold;">We're Safe</span>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0);">&nbsp;- Background checked employees; we are bonded &amp; insured.</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold;">We're Cost Effective</span>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0);">&nbsp;- You have the option of purchasing your own materials, saving you money</span>
+                                    <span style="font-size: 11px; color: rgb(0, 0, 0);">.&nbsp;</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 13px; color: rgb(0, 0, 0); font-weight: bold;">Your House. Our Help.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 13px; color: rgb(0, 0, 0); font-weight: bold;">Schedule your projects&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 13px; color: rgb(0, 0, 0); font-weight: bold;">online or call&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 13px; color: rgb(0, 0, 0); font-weight: bold;">Handyman Matters today!</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="two-column editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text two-column-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 24px; font-weight: bold;">Fall is upon us...</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 13px; color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif;">With fall just beginning, the cooler weather and winter months will be here before we know it. For most, fall is the time of year to enjoy relief from the heat, watch the changing leaves and prepare for the holiday season ahead. It is important to perform regular home maintenance to ensure that your home is at its best to prevent potentially costly damage and is operating as efficiently as possible. </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 13px; color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 13px; color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif;">Below are fall preventative home maintenance tips that every homeowner should follow.</span>
+                                    <span style="color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif;">&nbsp;</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <ol> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Check for drafts in windows and doors.</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Remove screens and install storm windows</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Seal gaps where critters could enter.</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Test smoke detectors and CO batteries if necessary.</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Change Indoor Air Filters.</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Locate all outdoor water valve and shut-off to prevent pipes freezing.</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Inspect exterior trim, gutters and downspouts.</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Change indoor air filters.</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Clean and adjust ceiling fans (so that air circulates upward).</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Check railings on decks and porches for support.</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0); text-align: left;"><span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Tighten handrails and grab</span></li> 
+                                   </ol> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif;">If this looks like your list simply call us today, 770-635-7571, or submit a service request online at </span>
+                                    <a href="https://www.handymanmatters.com/offices/acworth/" target="_blank" style="font-size: 14px; color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">https://www.handymanmatters.com/offices/acworth/</a> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif;">Hope to hear from you&nbsp;soon!</span>
+                                    <span style="font-size: 14px; color: rgb(153, 153, 153); font-family: Arial, Verdana, Helvetica, sans-serif;"> </span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px 10px 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="137" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/6dffe8a2701/84e259a4-84b7-4b5e-8226-70543ca2ac98.gif"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="feature editor-col OneColumnMobile" width="50%" align="left" valign="top" style="background-color: #E6E6E6;" bgcolor="#E6E6E6"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="205" border="0" hspace="0" vspace="0" src="http://files.constantcontact.com/6dffe8a2701/6fce5796-abcf-4117-814e-62b8b1ced050.png"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="feature editor-col OneColumnMobile" width="50%" align="left" valign="top" style="background-color: #E6E6E6;" bgcolor="#E6E6E6"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text feature-heading-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 16px; color: #09A3BA; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    <span style="font-size: 18px; color: black; font-weight: bold;">WE STAND BEHIND OUR WORK WITH A GUARANTEE</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text feature-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(54, 73, 95);">Quality craftsmanship, superior service and pride in&nbsp;our work is what drives Handyman Matters. Our guarantee is if there is ever an issue or problem, weâll return and make sure itâs done to your satisfaction in a workman-like manner.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(54, 73, 95);">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.handymanmatters.com/offices/acworth/" target="_blank" style="font-size: 14px; color: rgb(113, 112, 112); font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold; font-style: normal; text-decoration: underline;">Click here to learn more</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="cpn-margin" align="left" valign="top" style="background-color: #ffffff; padding: 10px 20px;" bgcolor="#ffffff"> 
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: separate; border: 3px dashed #403f42;"> 
+                             <tbody> 
+                              <tr> 
+                               <td class="cpn editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                                <div>
+                                 <div class="column-resize-bar"> 
+                                  <span class="line"></span> 
+                                  <span class="grabber"></span> 
+                                 </div>
+                                </div> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text cpn-heading-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 48px; color: #403F42; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 10px 10px 20px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div> 
+                                       <div>
+                                        <span style="font-size: 28px;">FALL</span>
+                                       </div> 
+                                       <div>
+                                        <span style="font-size: 28px;">HOME</span>
+                                       </div> 
+                                       <div>
+                                        <span style="font-size: 28px;">MAINTENANCE</span>
+                                       </div> 
+                                       <div>
+                                        <span style="font-size: 28px;">SPECIAL</span>
+                                       </div> 
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td class="cpn editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                                <div class="gl-contains-spacer"> 
+                                 <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-container" align="center" valign="top"> 
+                                     <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td class="spacer-base" style="padding-bottom: 10px; height: 1px; line-height: 1px;" width="100%" align="center" valign="top"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text cpn-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div> 
+                                       <div> 
+                                        <span style="font-size: 36px; font-weight: bold;">Half Day Special $320</span>
+                                        <span style="font-size: 36px;"> </span>
+                                        <span style="font-size: 24px;">($90 savings)</span> 
+                                       </div> 
+                                       <div style="text-align: left;" align="left">
+                                        <br>
+                                       </div> 
+                                       <div style="text-align: left;" align="left">
+                                        <span style="font-style: italic;">Cannot be combined with any other offers. Void where prohibited, restrictions may apply. Contact our office for further details.</span>
+                                       </div> 
+                                       <div style="text-align: left;" align="left">
+                                        <span style="font-style: italic;">770.635.7571</span>
+                                       </div> 
+                                       <div style="text-align: left;" align="left">
+                                        <br>
+                                       </div> 
+                                       <div>
+                                        <span style="font-style: italic; font-weight: bold;">**Offer expires November 16, 2019**</span>
+                                       </div> 
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="headline editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text headline-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #09A3BA; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="color: rgb(91, 183, 231);">Get your to do list done today!</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 36px; color: rgb(91, 183, 231);">770.635.7571</span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(91, 183, 231);">HandymanMatters.com</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="spacer editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="spacer-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" style="padding-bottom: 20px; height: 1px; line-height: 1px;" width="100%" align="center" valign="top"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="about editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: #403F42;" bgcolor="#403F42"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text about-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #FFFFFF; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px; color: rgb(255, 255, 255);">*Services listed may not be available at all locations due to local licensing.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px; color: rgb(255, 255, 255);">Visit our website for a complete list of available services.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px; color: rgb(255, 255, 255);">Â©2018 Handyman Matters. All rights reserved.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; color: rgb(255, 255, 255); font-family: Calibri, Helvetica, Arial, sans-serif;">Locally owned and independently operated.&nbsp;</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="social editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: #403F42;" bgcolor="#403F42"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text social-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; text-decoration: none; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    STAY CONNECTED
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-social-button"> 
+                             <table class="editor-social" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="social-container social-container" align="center" style="padding: 0px 20px 10px;"> 
+                                 <div class="galileo-ap-content-editor"> 
+                                  <a href="#" style="display: inline-block; text-decoration: none;"> <img alt="Facebook" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                  <a href="#" style="display: inline-block; text-decoration: none;"> <img alt="Twitter" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                  <a href="#" style="display: inline-block; text-decoration: none;"> <img alt="Instagram" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/instagram-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

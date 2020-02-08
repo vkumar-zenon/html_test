@@ -1,0 +1,809 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 628px!important;
+max-width: 628px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 628px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 0px 0px 0px 0px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 28px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #5708ea !important; border-bottom: 1px solid #5708ea !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>VR and 3D Printing at Sparta Library!</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #2E222E; margin: 0px; padding: 0px;" bgcolor="#2E222E"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #2E222E;"> 
+       <!--[if gte mso 9]>
+<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+<v:fill type="tile" src="https://imgssl.constantcontact.com/letters/images/PT12845/OuterBG.png" color="#2E222E" ></v:fill>
+</v:background>
+<![endif]--> 
+       <table class="bgimage" width="100%" cellspacing="0" cellpadding="0" border="0" style="background: url('https://imgssl.constantcontact.com/letters/images/PT12845/OuterBG.png') repeat top left;" background="https://imgssl.constantcontact.com/letters/images/PT12845/OuterBG.png"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="628" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 628px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" valign="top" align="center" style="padding: 15px 5px;"> 
+               <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" valign="top" align="center" style="background-color: #5708ea; padding: 0px;" bgcolor="#5708ea"> 
+                   <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #5708ea;" bgcolor="#5708ea"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" valign="top" align="center" style="background-color: #000000; padding: 0;" bgcolor="#000000"> 
+                       <div class=""> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="center" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://imgssl.constantcontact.com/letters/images/PT12845/HeaderTop-v2.png" width="618" vspace="0" hspace="0" border="0"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="divider-container" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 0px 0px 10px;" width="100%" valign="top" align="center"> 
+                                     <table style="width: 65%; min-width: 65%; height: 1px;" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="background-color: rgb(128, 118, 145); border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px;" height="1" align="center" bgcolor="807691"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text center-text subheadline-text" valign="top" align="left" style="font-family: Verdana, Geneva, sans-serif; font-size: 36px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    <span style="font-size: 26px;">Don't miss these Virtual Reality and 3D printer training sessions!</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="divider-container" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 10px 0px 0px;" width="100%" valign="top" align="center"> 
+                                     <table style="width: 65%; min-width: 65%; height: 1px;" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="background-color: rgb(128, 118, 145); border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px;" height="1" align="center" bgcolor="807691"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="center" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://imgssl.constantcontact.com/letters/images/PT12845/HeaderBottom-v2.png" width="618" vspace="0" hspace="0" border="0"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellspacing="0" cellpadding="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container editor-button-container " style="font-family: Verdana, Geneva, sans-serif; font-size: 18px; display: block; color: #FFFFFF; text-decoration: none; padding: 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="MainTextFullWidthTD" valign="top" align="center" style="font-family: Verdana, Geneva, sans-serif; font-size: 18px; display: block; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table cellspacing="0" cellpadding="0" border="0" style="width: initial; moz-border-radius: 0px; border-radius: 0px; border-spacing: 0; background-color: #5708ea; min-width: initial; padding: 0; border: none;" bgcolor="#5708ea"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td class="MainTextFullWidthTD" valign="top" align="center" style="font-family: Verdana, Geneva, sans-serif; font-size: 18px; display: block; color: #FFFFFF; text-decoration: none; padding: 14px 20px 13px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="http://spartalibrary.evanced.info/signup/calendar" style="font-family: Verdana, Geneva, sans-serif; font-size: 18px; display: block; color: #FFFFFF; text-decoration: none;">Click here to register!</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" style="padding-bottom: 15px; height: 1px; line-height: 1px;" width="100%" valign="top" align="center"> 
+                                     <div>
+                                      <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="feature-margin" valign="top" align="left" style="background-color: #000000; padding: 0px 20px;" bgcolor="#000000"> 
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                             <tbody> 
+                              <tr> 
+                               <td class="feature editor-col OneColumnMobile" width="50%" valign="top" align="left" style="background-color: #552397;" bgcolor="#552397"> 
+                                <div>
+                                 <div class="column-resize-bar"> 
+                                  <span class="line"></span> 
+                                  <span class="grabber"></span> 
+                                 </div>
+                                </div> 
+                                <div class="gl-contains-image"> 
+                                 <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td valign="top" align="left" style="padding: 10px 10px 10px 20px;"> 
+                                     <div class="publish-container"> 
+                                      <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://files.constantcontact.com/d09e01b8001/5714b30c-038e-414d-bb14-a06c617d763e.png" width="259" vspace="0" hspace="0" border="0"> 
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td class="feature editor-col OneColumnMobile" width="50%" valign="top" align="left" style="background-color: #552397;" bgcolor="#552397"> 
+                                <div class="gl-contains-text"> 
+                                 <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text feature-heading-text" valign="top" align="left" style="font-family: Verdana, Geneva, sans-serif; font-size: 18px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px 10px 10px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div>
+                                       <div>
+                                        Virtual Reality Sessions
+                                       </div>
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-text"> 
+                                 <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text feature-text" valign="top" align="left" style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div> 
+                                       <div> 
+                                        <span style="font-size: 14px;">Hands on usage of a computer with Virtual Reality headset, sensors and controllers. Experience computer software like never before. This session will be unsupervised so please have two or more people attend so that the user does not walk into walls! </span>
+                                        <span style="font-size: 14px; font-style: italic;">For ages 10 and up. Registration required. </span> 
+                                       </div> 
+                                       <div>
+                                        <br>
+                                       </div> 
+                                       <ul> 
+                                        <li style="font-size: 14px;"><span style="font-size: 14px;">Thursday, December 26 at 6pm</span></li> 
+                                        <li style="font-size: 14px;"><span style="font-size: 14px;">Friday, December 27 at 12:30pm or 2:30pm</span></li> 
+                                        <li style="font-size: 14px;"><span style="font-size: 14px;">Saturday, December 28 at 10am and 12:30pm </span></li> 
+                                       </ul> 
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="spacer editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="spacer-container" valign="top" align="center"> 
+                                 <table width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" style="padding-bottom: 20px; height: 1px; line-height: 1px;" width="100%" valign="top" align="center"> 
+                                     <div>
+                                      <img alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="feature-margin" valign="top" align="left" style="background-color: #000000; padding: 0px 20px;" bgcolor="#000000"> 
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                             <tbody> 
+                              <tr> 
+                               <td class="feature editor-col OneColumnMobile" width="50%" valign="top" align="left" style="background-color: #552397;" bgcolor="#552397"> 
+                                <div>
+                                 <div class="column-resize-bar"> 
+                                  <span class="line"></span> 
+                                  <span class="grabber"></span> 
+                                 </div>
+                                </div> 
+                                <div class="gl-contains-image"> 
+                                 <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td valign="top" align="left" style="padding: 10px 10px 10px 20px;"> 
+                                     <div class="publish-container"> 
+                                      <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://files.constantcontact.com/d09e01b8001/47605d16-5c5b-4fc2-af43-c431a423f157.jpg" width="205" vspace="0" hspace="0" border="0"> 
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td class="feature editor-col OneColumnMobile" width="50%" valign="top" align="left" style="background-color: #552397;" bgcolor="#552397"> 
+                                <div class="gl-contains-text"> 
+                                 <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text feature-heading-text" valign="top" align="left" style="font-family: Verdana, Geneva, sans-serif; font-size: 18px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px 10px 10px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div>
+                                       <div>
+                                        3D Printer Training
+                                       </div>
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-text"> 
+                                 <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text feature-text" valign="top" align="left" style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div> 
+                                       <div>
+                                        Learn how to use our 3D printer! 
+                                        <span style="font-style: italic;">For ages 10 and up. Registration required. </span> 
+                                       </div> 
+                                       <div>
+                                        <br>
+                                       </div> 
+                                       <ul> 
+                                        <li>Friday, December 27 at 1pm</li> 
+                                        <li>Saturday, December 28 at 11am</li> 
+                                       </ul> 
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="social editor-col OneColumnMobile" width="100%" valign="top" align="left" style="background-color: #000000;" bgcolor="#000000"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" style="padding-bottom: 10px; height: 1px; line-height: 1px;" width="100%" valign="top" align="center"> 
+                                     <div>
+                                      <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 9px 0;" width="100%" valign="top" align="center"> 
+                                     <table cellspacing="0" cellpadding="0" border="0" align="center" style="height: 1px; width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #5708ea;" height="1" align="center" bgcolor="#5708ea"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text social-text" valign="top" align="left" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; text-decoration: none; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    - CONNECT WITH US -
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-social-button"> 
+                             <table class="editor-social" width="100%" cellspacing="0" cellpadding="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class=" social-container social-container" align="center" style="padding: 0px 20px 10px;"> 
+                                 <div class="galileo-ap-content-editor"> 
+                                  <a href="https://www.facebook.com/SpartaLibraryYouthServices/?ref=aymt_homepage_panel&amp;eid=ARAAtd2O5OxRoT_CYt8Elukvj9Q6kI2V9u4QNu7hVkJPC2q_uyYXk_lF_u152NncJQucNFSS6vN3NYzn" style="display: inline-block; text-decoration: none;"> <img alt="Facebook" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;" width="32" border="0"> â </a> 
+                                  <a href="https://www.instagram.com/spl_youthservices/" style="display: inline-block; text-decoration: none;"> <img alt="Instagram" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/instagram-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;" width="32" border="0"> â </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="center" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://imgssl.constantcontact.com/letters/images/PT12845/FooterAccent-v2.png" width="618" vspace="0" hspace="0" border="0"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

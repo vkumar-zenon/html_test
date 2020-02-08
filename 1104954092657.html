@@ -1,0 +1,854 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #000000 !important; border-bottom: 1px solid #000000 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Retiring the Month with Mike - December Edition</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #F5F5F5; margin: 0px; padding: 0px;" bgcolor="#F5F5F5"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #F5F5F5;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #F5F5F5;" bgcolor="#F5F5F5"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="612" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 612px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #000000; padding: 1px;" bgcolor="#000000"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #000000;" bgcolor="#000000"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #ffffff; padding: 0;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="editor-logo editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="342" border="0" hspace="0" vspace="0" src="http://files.constantcontact.com/17c65644101/f7f69135-98fb-4c76-abeb-df1f61c42908.png"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Times New Roman, Times, serif; font-size: 16px; color: #333333; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-style: italic;">Retiring the Month with Mike - December Edition</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Times New Roman, Times, serif; font-size: 16px; color: #333333; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: windowtext; font-weight: bold; font-family: Times New Roman, Times, serif;">Health Savings Accounts: FAQs</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 16px; font-style: italic;">Presented by Michael A. Mendillo Jr</span>
+                                    <span style="font-size: 16px; font-family: Georgia, Times New Roman, Times, serif;">, </span>
+                                    <span style="font-size: 16px; font-family: Times New Roman, Times, serif; font-style: italic;">CFPÂ®</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Changes in the health care marketplace, rising medical costs, and the tax advantages that health care savings accounts (HSAs) offer make them an attractive planning tool for many individuals covered by high-deductible health plans (HDHPs).</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">What Is an HSA?</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">An HSA is a tax-favored account used to pay for qualified medical expenses in conjunction with an HDHP. Unlike with flexible spending accounts (FSAs), which are designed to cover current out-of-pocket medical costs, the money in HSAs never expires and can be used to pay for health care expenses now and in retirement. HSAs may be offered through your employer or purchased directly if you are eligible. They can be established at a bank, insurance company, or IRS-recognized third-party administrator.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">Please note:</span>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;"> You cannot participate in a general health FSA while also contributing to an HSA.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Generally, contributions to an HSA are tax deductible. Their earnings accumulate tax deferred, and withdrawals are tax free if used to pay for qualified expenses. If, before you turn 65, you withdraw funds from an HSA that are </span>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif; font-style: italic;">not </span>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">used for qualified medical expenses, the withdrawal will be subject to a 20 percent penalty, in addition to income tax. After age 65, withdrawals not used for qualified medical expenses are no longer subject to the 20 percent penalty.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">Who Is Eligible?</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">To establish an HSA, you must be covered by an eligible HDHP. For 2020, this is defined as a plan for which the family annual deductible minimum is at least $2,800 ($1,400 for an individual), and the annual out-of-pocket costs are limited to $13,800 for family coverage ($6,900 for an individual). Your health care benefit provider can confirm whether your plan is considered an HDHP that is eligible for an HSA.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">You are generally </span>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif; font-style: italic;">not </span>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">eligible to contribute to an HSA if: </span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">ï»¿</span>
+                                   </div> 
+                                   <ul> 
+                                    <li style="font-size: 11px;"><span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;You are enrolled in Medicare</span></li> 
+                                    <li style="font-size: 11px;"><span style="font-size: 11px; font-family: Times New Roman, Times, serif;">You are claimed as a dependent by another taxpayer</span></li> 
+                                    <li style="font-size: 11px;"><span style="font-size: 11px; font-family: Times New Roman, Times, serif;">You are covered by someone elseâs nonconsumer-directed health plan</span></li> 
+                                    <li style="font-size: 11px;"> <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">You are </span><a href="#" target="_blank" style="font-size: 11px; font-family: Times New Roman, Times, serif; color: #0078c1; font-weight: normal; font-style: normal; text-decoration: underline;">covered by a general health FSA or a Health Reimbursement Arrangement (HRA</a><span style="font-size: 11px; font-family: Times New Roman, Times, serif;">) that pays or reimburses qualified medical expenses </span> </li> 
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">What Are the HSA Contribution Limits?</span>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;"> </span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">In 2020, the HSA contribution limits are $7,100 for a family account and $3,550 for an individual account. If you are 55 or older, you may make an additional catch-up contribution of $1,000 per tax year. You can contribute to an HSA for the current tax year any time prior to the tax filing date of April 15. </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Contributions to an HSA may be made by you, another individual, or your employer. Employer contributions made on your behalf through a cafeteria plan are generally not income taxable to you. If you contribute directly to an HSA, the contributions are considered âabove-the-lineâ deductions, which means you can claim them without itemizing deductions on your tax return. Your tax advisor can provide more information on the tax treatment and deductibility of HSA contributions.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">What Medical Expenses Are Covered?</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">You can make tax-free withdrawals from an HSA for qualified medical expenses for you, your spouse, or other dependents. Eligible expenses include lab fees, prescription drugs, and dental and vision care, as well as out-of-pocket health insurance deductible costs. </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">You may also use distributions to pay for certain insurance coverage, including:</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <ul> 
+                                    <li style="font-size: 11px;"><span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Long-term care insurance (subject to specific limits and guidelines)</span></li> 
+                                    <li style="font-size: 11px;"><span style="font-size: 11px; font-family: Times New Roman, Times, serif;">COBRA health care continuation coverage</span></li> 
+                                    <li style="font-size: 11px;"><span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Health care coverage while receiving unemployment compensation under federal or state law</span></li> 
+                                    <li style="font-size: 11px;"><span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Medicare and other health care coverage if you are 65 or older (other than premiums for a Medicare supplemental policy, such as a Medigap policy)</span></li> 
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Qualified medical expenses are detailed in IRS Publication 502. </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">Can Both Spouses Contribute to an HSA?</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Both spouses can contribute to an HSA if they are covered separately under eligible HDHPs.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">May I Take a Distribution from an Existing IRA and Contribute It to an HSA?</span>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;"> </span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">You are permitted to take a qualified HSA funding distribution from your traditional IRA or Roth IRA into an HSA once in a lifetime. This must be a trustee-to-trustee transfer. The amount is limited to your maximum HSA contribution for the year minus any contributions you have made for the year. (Distributions are not allowed for SEP IRAs or SIMPLE IRAs.) A benefit of doing this is that there are no required minimum distributions beginning at age 70Â½ from an HSA. Plus, withdrawals can be taken income tax free when used for qualified medical expenses.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-weight: bold; font-family: Times New Roman, Times, serif;">What Other Planning Considerations Should I Be Aware Of? </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Because there are no restrictions on when you need to distribute HSA funds, you may wish to pay out-of-pocket health care costs from your current income and allow the HSA to continue to grow tax deferred, reserving those funds to cover medical care in retirement.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">HSAs offer several other advantages, including portability, which permits you to take the HSA with you should you leave your current employer. You can also name a beneficiary to inherit the HSA in the event of your death. Itâs important to note that your spouse can step into your role upon your death and the account will remain an HSA. If you name a nonspouse beneficiary, however, the account will no longer be considered an HSA, and the inherited amount will be treated as taxable income.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; font-family: Times New Roman, Times, serif;">Additional information on HSAs is available in IRS Publication 969.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 10px; font-style: italic; font-family: Times New Roman, Times, serif;">This material has been provided for general informational purposes only and does not constitute either tax or legal advice. Although we go to great lengths to make sure our information is accurate and useful, we recommend you consult a tax preparer, professional tax advisor, or lawyer.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 10px; font-style: italic;">Michael A. Mendillo Jr. is a financial advisor located at Lobo &amp; Pascale Wealth Management, LLC at 1062 Barnes Road, Suite 201, Wallingford, CT 06492. He offers securities and advisory services as an Investment Adviser Representative of Commonwealth Financial Network</span>
+                                    <sup style="font-size: 10px; font-style: italic; line-height: 0; mso-text-raise: 30%;">Â®</sup>
+                                    <span style="font-size: 10px; font-style: italic;">, Member FINRA/SIPC, a Registered Investment Adviser. He can be reached at 203.269.3700 or at&nbsp;</span>
+                                    <a href="mailto:mike@lobopascale.com" target="_blank" style="font-size: 10px; font-style: italic; color: #0078c1; font-weight: normal; text-decoration: underline;">mike@lobopascale.com</a>
+                                    <span style="font-size: 10px; font-style: italic;">&nbsp;.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Times New Roman, Times, serif; font-size: 16px; color: #333333; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0);">Sincerely,</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="signature editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text signature-text" align="left" valign="top" style="font-family: Times New Roman, Times, serif; font-size: 16px; color: #333333; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: justify;" align="justify"> 
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">Michael A. Mendillo Jr, </span>
+                                    <span style="font-size: 16px; font-weight: bold; font-family: Times New Roman, Times, serif;">CFPÂ®</span> 
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0);">Wealth Advisor</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">Lobo &amp; Pascale Wealth Management, LLC</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0);">1062 Barnes Road, Suite 201</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0);">Wallingford, CT 06492</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 10px; color: rgb(0, 0, 0);">Securities and advisory services offered through Commonwealth Financial NetworkÂ®, member FINRA/SIPC, a Registered Investment Adviser.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 10px; color: rgb(0, 0, 0);">&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 10px; color: rgb(0, 0, 0);">Please do not leave instructions to buy or sell securities as they cannot be executed via email.If this is a timely matter please call our trade desk directly at 1-800-237-0081.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 10px; color: rgb(0, 0, 0);">&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 10px; color: rgb(0, 0, 0);">This e-mail, including attachments, is intended for the exclusive use of the addressee and may contain proprietary, confidential, or privileged information.&nbsp;If you are not the intended recipient, any dissemination, use, distribution, or copying is strictly prohibited.&nbsp;If you have received this e-mail in error, please notify me via return e-mail, permanently delete the original message, and destroy all copies. The information contained herein is based upon sources believed to be true and accurate, but no guarantee is made to the completeness and accuracy of this information.&nbsp;Please consult statements provided by individual custodians or product sponsors for complete information. Past performance in not indicative of future results.</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

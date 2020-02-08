@@ -1,0 +1,1415 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #1B6630 !important; border-bottom: 1px solid #1B6630 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Reminder: International Forest Industries Magazine December 2019/January 2020 Digital Version</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #FFFFFF; margin: 0px; padding: 0px;" bgcolor="#FFFFFF"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #FFFFFF;"> 
+       <table class="bgimage" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #FFFFFF;" bgcolor="#FFFFFF"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="612" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 612px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" valign="top" align="center" style="padding: 15px 5px;"> 
+               <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" valign="top" align="center" style="background-color: #1B6630; padding: 1px;" bgcolor="#1B6630"> 
+                   <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #1B6630;" bgcolor="#1B6630"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" valign="top" align="center" style="background-color: #ffffff; padding: 0px;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" style="background-color: rgb(209, 230, 209);" width="100%" valign="top" align="" bgcolor="D1E6D1"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <a href="http://campaign.r20.constantcontact.com/render?ca=02fa0afa-f089-4abf-a124-8fd944ac124b&amp;preview=true&amp;m=1118922411986&amp;id=preview" style="text-align: center;">Having trouble viewing this webpage? Click Here!</a>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 9px; color: rgb(0, 0, 0); font-family: Arial, Verdana, Helvetica, sans-serif;">This e-mail is being sent to you as you have subscribed to International Forest Industries magazine, or in the past have shown an interest in International Forest Industries.</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-social-button"> 
+                             <table class="editor-social" width="100%" cellspacing="0" cellpadding="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class=" social-container" align="center" style="padding: 0px 20px 10px;"> 
+                                 <div class="galileo-ap-content-editor" style=""> 
+                                  <a href="https://www.facebook.com/ifimag/" style="display: inline-block; text-decoration: none;"> <img alt="Facebook" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default.png" style="display: inline-block; margin: 0; padding: 0;" width="32" border="0"> â </a> 
+                                  <a href="https://twitter.com/ifi_news" style="display: inline-block; text-decoration: none;"> <img alt="Twitter" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-default.png" style="display: inline-block; margin: 0; padding: 0;" width="32" border="0"> â </a> 
+                                  <a href="https://www.linkedin.com/company/international-forest-industries/" style="display: inline-block; text-decoration: none;"> <img alt="LinkedIn" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/linkedin-visit-default.png" style="display: inline-block; margin: 0; padding: 0;" width="32" border="0"> â </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 9px 0;" width="100%" valign="top" align="center"> 
+                                     <table cellspacing="0" cellpadding="0" border="0" align="center" style="height: 1px; width: 93%; min-width: 93%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #1B6630;" height="1" align="center" bgcolor="#1B6630"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="editor-logo editor-col OneColumnMobile" style="background-color: rgb(255, 255, 255);" width="100%" valign="top" align="left" bgcolor="FFFFFF"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <a href="http://www.internationalforestindustries.com" target="_blank" style="font-size: 16px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">LOGGING â¢ SAWMILLING â¢ EWPS â¢ BIOMASS</a>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 9px 0px;" width="100%" valign="top" align="center"> 
+                                     <table style="width: 93%; min-width: 93%; height: 1px;" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="padding-bottom: 0px; border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #1B6630;" height="1" align="center" bgcolor="#1B6630"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="http://www.internationalforestindustries.com" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none;">WEBSITE </a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif;"> | </span>
+                                    <a href="https://internationalforestindustries.com/download-ifi-2018/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none;"> </a>
+                                    <a href="https://internationalforestindustries.com/download-ifi-2019/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none;">DOWNLOAD IFI</a>
+                                    <a href="https://internationalforestindustries.com/download-ifi-2018/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none;">&nbsp;</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif;"> |&nbsp;</span>
+                                    <a href="https://internationalforestindustries.com/get-ifi-free/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none;"> GET IFI FREE&nbsp;</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif;"> | </span>
+                                    <a href="https://internationalforestindustries.com/contact/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none;"> CONTACT US</a> 
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="headline editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text headline-text" valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 24px; color: #DE4E3A; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 16px; color: rgb(63, 63, 63); font-family: Verdana, Geneva, sans-serif;">Go to our website</span>
+                                    <span style="font-size: 16px; font-family: Verdana, Geneva, sans-serif;"> </span>
+                                    <a href="http://www.internationalforestindustries.com" target="_blank" style="font-size: 16px; font-family: Verdana, Geneva, sans-serif; color: blue; text-decoration: underline; font-weight: normal; font-style: normal;">www.internationalforestindustries.com</a>
+                                    <span style="font-size: 16px; font-family: Verdana, Geneva, sans-serif;"> </span>
+                                    <span style="font-size: 16px; font-family: Verdana, Geneva, sans-serif; color: rgb(63, 63, 63);">to</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(63, 63, 63); font-family: Verdana, Geneva, sans-serif;">read the December 2019/January 2020 edition of IFI magazine</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="three-column editor-col OneColumnMobile" width="50%" valign="top" align="left"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="center" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://issuu.com/forestindustry/docs/3731_ifi_december_january_2020_digital?fr=sNzMzMzIzNDQ"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://files.constantcontact.com/2df09f48401/269b5181-b138-4d2b-9839-6cb05abc79db.jpg" width="145" vspace="0" hspace="0" border="0"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="three-column editor-col OneColumnMobile" width="50%" valign="top" align="left"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="center" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://www.deere.com/en/forestry/?cid=VURL_forestry"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://files.constantcontact.com/2df09f48401/c22a257b-e3ef-43a7-ae0f-c5bd03156118.jpg" width="145" vspace="0" hspace="0" border="0"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 16px; font-family: Verdana, Geneva, sans-serif;">or click</span>
+                                    <a href="https://issuu.com/forestindustry/docs/3731_ifi_october_november_2019_digital?fr=sZmFkNTIzNDQ" target="_blank" style="font-size: 16px; font-family: Verdana, Geneva, sans-serif; color: #0000FF; font-weight: normal; font-style: normal; text-decoration: none;"> </a>
+                                    <a href="https://issuu.com/forestindustry/docs/3731_ifi_december_january_2020_digital?fr=sNzMzMzIzNDQ" target="_blank" style="font-size: 16px; font-family: Verdana, Geneva, sans-serif; color: #0000FF; font-weight: normal; font-style: normal; text-decoration: none;">HERE</a>
+                                    <a href="https://issuu.com/forestindustry/docs/3731_ifi_october_november_2019_digital?fr=sZmFkNTIzNDQ" target="_blank" style="font-size: 16px; font-family: Verdana, Geneva, sans-serif; color: #0000FF; font-weight: normal; font-style: normal; text-decoration: none;"> </a>
+                                    <span style="font-size: 16px; font-family: Verdana, Geneva, sans-serif;">to view</span> 
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" style="background-color: rgb(107, 107, 107);" width="100%" valign="top" align="" bgcolor="6B6B6B"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(255, 255, 255); font-weight: bold; background-color: rgb(107, 107, 107); font-family: Verdana, Geneva, sans-serif;">IFI December 2019/January 2020</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" style="background-color: rgb(153, 204, 153);" width="100%" valign="top" align="" bgcolor="99CC99"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 12px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">LOGGING&nbsp;</span>
+                                    <span style="font-size: 12px; font-family: Verdana, Geneva, sans-serif;">â¢ </span>
+                                    <span style="font-size: 12px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">BIOMASS</span> 
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" valign="top" align=""> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Felling Heads: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">Heavyweights John Deere, Tigercat, Quadco &amp; Gilbert are pushing forward with innovations across their broad range of heads.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Biomass:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> The need for technology capable of turning former waste materials into valuable renewable fuels continues to warrant investment.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Steep Slope Logging: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">Leading players continue to work on solutions for challenging Terrains</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Control Systems - JOHN DEERE:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> John Deereâs TimberMatic Maps and TimberManager technology are building connectivity &amp; efficiency of operations</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">Engines â PONSSE:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> Ponsse launched its new Stage V emission engines on EU markets.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">Operation Focus â TIGERCAT:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> BTB travelled to Coleman Falls, Virginia, east of the beautiful Blue Ridge Mountains, to chat with Mr. Donny Reaves and learn more about his logging business, and why he operates all three of his treelength machines himself.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">Operation Focus â PONSSE:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> Forest machine operator Synne Henriksen and Ponsse in a challenging environment.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">INNOVATION â FAE: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">New FAE BL1/EX -The compact mulcher that packs a punch</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" style="background-color: rgb(153, 204, 153);" width="100%" valign="top" align="" bgcolor="99CC99"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">LUMBER PROCESSING</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" valign="top" align=""> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 10px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">SAWLINES</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">USNR:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> The application of optimization technology helped CMTP Branxholm Sawmill realize the benefits that automation could bring to its end-dog carriage line.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">LINCK:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> The VPM 350 is a more compact version of the popular VPM 450 profiler.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 10px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">WOOD DRYING</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">HILDEBRAND BRUNNER:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> Wireless weighing technology - the latest innovation from respected US outfit.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">WESTMILL:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> Impressed Current Cathodic Protection for Lumber Kilns.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" style="background-color: rgb(107, 107, 107);" width="100%" valign="top" align="" bgcolor="6B6B6B"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(255, 255, 255); background-color: rgb(102, 102, 102); font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Coming up in the February/March 2020 edition of IFI</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" style="background-color: rgb(153, 204, 153);" width="100%" valign="top" align="" bgcolor="99CC99"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 12px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">LOGGING&nbsp;</span>
+                                    <span style="font-size: 12px; font-family: Verdana, Geneva, sans-serif;">â¢ </span>
+                                    <span style="font-size: 12px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">BIOMASS</span> 
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" valign="top" align=""> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Harvesters: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">Harvesters are constantly upgraded to improve speed, efficiency, comfort and safety. We look at the specific modifications and breakthroughs that suppliers are working on to improve the logging business.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Lifting &amp; Loading: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">Moving logs around the woodyard and onto the sawline requires a combination of forklift vehicles and crane-grapple combinations to efficient delivery. Equally in the forest there is an art to successfully loading logs onto a truck or indeed into a chipper. Weâre talking forklifts, cranes and grapples.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Access to the Timber Stand: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">The machines that make making forest roads easy. A primary focus is afforded to dozers, while taking in all other technologies that contribute to this crucial process.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Truck Chippers: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">The HM 14-800 KL typifies the essence of this new IFI feature. Heizomat offers a special designed powerful and professional wood chipper, set up on a 450/510/530 HP Mercedes Benz AROCS 3351/3353 AK Euro 6 with 6x6 wheel drive. The result is a high volume robust truck chipper ready to take on a variety of chipping tasks. Manufacturers - Send us your contributions for the Feb March issue.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Operation Focus:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> John Deere</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Operation Focus:</span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;"> Ponsse</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Operation Focus: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">Tigercat</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" style="background-color: rgb(153, 204, 153);" width="100%" valign="top" align="" bgcolor="99CC99"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;">LUMBER PROCESSING</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" valign="top" align=""> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">SAWLINES: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">The complete sawline sits at the heart of the sawmill and provides a home for a multitude of technologies that combine to make sure that heart beats consistently and rhythmically. IFI speaks to companies delivering complete sawlines into businesses across the world to see who is drumming up the most business and what the market is demanding.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Planers: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">Planers are a key component of modern sawlines and have evolved in terms of speed, accuracy and efficiency to help sawyers increase the productivity of their operations. In our first focused feature on this vital equipment sub-sector, weâll look at which companies are developing operation-transformining improvements to their offerings.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Sawing Technology: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">Knives, blades and sawing machines â the hardware at the foundations of the sawmilling sector. The review will include saw maintenance.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Edgers: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">The edger is a key component of the sawline, which relies heavily on its efficient and effective performance. IFI reviews the latest innovations in edgers that allow sawlines to become increasingly rapid.</span> 
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 9px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">Trimmers: </span>
+                                    <span style="font-size: 9px; font-family: Verdana, Geneva, sans-serif;">We look at Trimmer systems capable of servicing the needs of Sawmills, Planing Mills, &amp; Concentration lines at speeds of 180+ lpm.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellspacing="0" cellpadding="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="MainTextFullWidthTD" valign="top" align="center" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table style="background-color: rgb(153, 204, 153); width: initial; moz-border-radius: 5px; border-radius: 5px; border-spacing: 0; min-width: initial; padding: 0; border: none;" cellspacing="0" cellpadding="0" border="0" bgcolor="99CC99"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td class="MainTextFullWidthTD" valign="top" align="center" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://internationalforestindustries.com/get-ifi-free/" style="color: rgb(0, 0, 0); font-size: 12px; font-family: Verdana, Geneva, sans-serif; font-weight: normal; text-decoration: none;">Get IFI free - sign up here</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="center" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://internationalforestindustries.com/"> <img alt="IFI Logo" class="" style="display: block; height: auto !important; max-width: 100% !important;" src="http://files.constantcontact.com/2df09f48401/394e93ef-ebc8-4b9b-b1e5-eed3f741652d.jpg" width="185" vspace="0" hspace="0" border="0"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px; color: rgb(50, 50, 50); font-weight: bold; font-family: Verdana, Geneva, sans-serif;">International Forest Industries</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <a href="http://www.internationalforestindustries.com" target="_blank" style="font-size: 12px; font-weight: bold; font-family: Verdana, Geneva, sans-serif; color: #0000FF; font-style: normal; text-decoration: none;">www.internationalforestindustries.com</a>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px; font-family: Verdana, Geneva, sans-serif;">Tel: +44 1442 877 583</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" style="background-color: rgb(0, 0, 0);" width="100%" valign="top" align="" bgcolor="000000"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Verdana,Geneva,sans-serif; font-size: 10px; color: #323232; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 11px; color: rgb(255, 255, 255); font-family: Arial, Verdana, Helvetica, sans-serif;">Â©</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-family: Arial, Verdana, Helvetica, sans-serif;"> </span>
+                                    <span style="font-size: 11px; color: rgb(255, 255, 255); font-family: Arial, Verdana, Helvetica, sans-serif; background-color: rgb(0, 0, 0);">Copyright 2018 Team Publishing Ltd. All rights reserved.</span> 
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

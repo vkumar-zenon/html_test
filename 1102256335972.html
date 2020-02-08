@@ -1,0 +1,1331 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.preheader-text {
+font-size: 12px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #FFFFFF !important; border-bottom: 1px solid #FFFFFF !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>December 2019 Newsletter</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #DBAE53; margin: 0px; padding: 0px;" bgcolor="#DBAE53"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #DBAE53;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #DBAE53;" bgcolor="#DBAE53"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="630" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 630px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #FFFFFF; padding: 10px;" bgcolor="#FFFFFF"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;" bgcolor="#FFFFFF"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="editor-logo editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://omnivorebooks.myshopify.com/"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="600" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/46ce893a001/852ff3c2-03c8-4835-bb33-6369823a5f78.gif"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(245, 41, 10); font-weight: bold; font-family: Verdana, Geneva, sans-serif;"><a href="http://campaign.r20.constantcontact.com/render?ca=4b0b3e1c-0472-4744-a889-5f05d26bfc91&amp;preview=true&amp;m=1102256335972&amp;id=preview" style="font-size: 16px; color: rgb(245, 41, 10); font-weight: bold; font-family: Verdana, Geneva, sans-serif;">VIEW AS A WEBPAGE</a></span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="40%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="226" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/46ce893a001/c588a15c-7080-4174-bdca-697e7dc8962b.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);"> Fuchsia Dunlop</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 2px 0px 9px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 10%; min-width: 10%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="background-color: rgb(77, 31, 0); padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="4D1F00"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="222" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/46ce893a001/338ea88e-28cc-4204-8b95-f6bba1316c93.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-family: Verdana, Geneva, sans-serif;">Me with Alison Roman</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 2px 0px 9px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 10%; min-width: 10%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="background-color: rgb(77, 31, 0); padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="4D1F00"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="230" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/46ce893a001/c9227fb8-fc98-4a92-928e-9b42abd6aef0.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-family: Verdana, Geneva, sans-serif;">Apollonia Poilane and Emily Timberlake with the Omnivore Books crew</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 2px 0px 9px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 10%; min-width: 10%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="background-color: rgb(77, 31, 0); padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="4D1F00"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="205" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/46ce893a001/839fb9a7-098c-42e9-9f2c-fcbfe1a356b7.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-family: Verdana, Geneva, sans-serif;">Sean Brock and Corey Lee</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 2px 0px 9px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 10%; min-width: 10%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="background-color: rgb(77, 31, 0); padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="4D1F00"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="60%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">I can't believe it's that time of year again, and neither can you. It rolls slowly toward us until it's a massive snowball ready to run us over - or maybe that's just how I feel. I'm thrilled to be presenting our last couple of author events in December, and then getting ready to beat last year's speed-gift-wrapping record of 32 seconds.&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">A terrific local journalist named&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-weight: bold;">Madeleine Wells </span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">interviewed me for an article she wrote for S.F. Gate about&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-weight: bold;">mid-century food pamphlets</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">, and how disgusting the holiday foods they presented were. It is a laugh-out-loud funny article, so I hope you'll take a few moments to read it </span>
+                                    <a href="https://www.sfgate.com/food/article/Vintage-Thanksgiving-recipes-14847810.php" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); text-decoration: none; font-weight: bold; font-style: normal;">here</a>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">The past month was&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-weight: bold;">packed with author events</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">, from Sean Brock and Fuchsia Dunlop, to Najmieh Batlangij, Alison Roman, Apollonia Poilane, and many more renowned authors and chefs. We learned about Appalachian foodways, Szechuan peppers, regional Iranian cooking, and famous European bread bakers. We sampled Thai green curry, chard and goat cheese tarts, Baiju (a Chinese liquor with an acquired taste), and local cheeses. We peaked with our respective Thanksgiving dinners, then slept it all off. If you missed all of this, not to worry;&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-weight: bold;">signed cookbooks make wonderful presents</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">! I always make sure to order more than I need so I can have lots of signed books on hand to sell through the holidays, and you can find and order them all&nbsp;</span>
+                                    <a href="https://omnivorebooks.myshopify.com/collections/new-signed-books" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); text-decoration: none; font-weight: bold; font-style: normal;">here</a>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">!</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">Aside from out two December author talks with the editors of the new&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-style: italic; font-weight: bold;">Joy of Cooking</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">&nbsp;(Dec. 5) and&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-weight: bold;">Toni Tipton-Martin</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">&nbsp;(Dec. 12),</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-style: italic;">&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-style: italic; font-weight: bold;">Bravetart</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-weight: bold;">&nbsp;author Stella Parks</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">&nbsp;will stop by at 11:00 a.m. to sign her popular baking tome on Dec. 2, and&nbsp;</span>
+                                    <a href="https://www.loyalestudio.com/" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); text-decoration: none; font-weight: bold; font-style: normal;">Loyale Studio</a>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">&nbsp;will put on a pop-up of their&nbsp;ethical kitchen essentials (like aprons) outside the shop on Sunday, Dec. 8. That day, we'll also be selling signed cookbooks off-site at&nbsp;</span>
+                                    <a href="https://www.facebook.com/events/the-progress/holiday-market-brunch-pop-up-124/162117960921177/" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); text-decoration: none; font-weight: bold; font-style: normal;">The Progress Holiday Market</a>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">&nbsp;from 11:00-2:30 p.m.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">Of course, I always love</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51); font-weight: bold;">&nbsp;vintage books on food</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">, and have recently</span>
+                                    <span style="font-size: 11px; color: rgb(245, 41, 10); font-weight: bold;">&nbsp;</span>
+                                    <a href="https://omnivorebooks.myshopify.com/collections/vintage-books" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); font-weight: bold; text-decoration: none; font-style: normal;">added a large number of them</a>
+                                    <span style="font-size: 11px; color: rgb(245, 41, 10); font-weight: bold;">&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">to my website. There are books on canning from WWII, coffee from Colombia, farming in British East Africa, bananas from the Philippines, and just about everything in-between. They are a fascinating window into our global food history, and researching them to write descriptions is what keeps my engine humming.&nbsp;</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">Thank you all for a wonderful year so far, and please come in and let us find you the perfect gift for someone special (or just an office pool - we love choosing something for them, too).&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; color: rgb(51, 51, 51);">Sincerely,</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px 10px 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="155" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/46ce893a001/8188976b-51a7-4e37-9bf1-ed6645219728.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">Celia&nbsp;Sack</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">Omnivore Books on Food</span>
+                                   </div> 
+                                   <div>
+                                    <a href="https://twitter.com/omnivorebooks" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); font-weight: bold; font-style: normal; text-decoration: underline;">Follow us on Twitter</a>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.instagram.com/omnivorebooks/" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); font-weight: bold; font-style: normal; text-decoration: underline;">Follow us on Instagram</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 94%; min-width: 94%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="background-color: rgb(77, 31, 0); padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="4D1F00"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 24px; color: rgb(77, 31, 0); font-weight: bold;">Upcoming&nbsp;Events&nbsp;at&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 24px; color: rgb(77, 31, 0); font-weight: bold;">ï»¿Omnivore&nbsp;Books</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 94%; min-width: 94%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="background-color: rgb(77, 31, 0); padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="4D1F00"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table cellpadding="0" cellspacing="0" border="0" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 30px; height: 1px; line-height: 1px;"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="article editor-col OneColumnMobile" width="35%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://omnivorebooks.myshopify.com/collections/events/products/free-author-book-signing-mon-dec-2-stella-parks-bravetart-iconic-american-desserts-11-00-a-m"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="210" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/46ce893a001/3bfbca2e-61d2-433e-b9d0-918d2d0b9006.jpg"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="article editor-col OneColumnMobile" width="65%" align="left" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-text" align="left" valign="top" style="line-height: 1.2; font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(77, 31, 0); font-weight: bold;">AUTHOR BOOK SIGNING Mon. Dec. 2 â¢ Stella Parks â¢ BraveTart: Iconic American Desserts â¢ 11:00 A.M. FREE </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">**Stella will be signing books in the shop (just in time for the holidays!)**</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">From One-Bowl Devilâs Food Layer Cake to a flawless Cherry Pie thatâs crisp even on the very bottom,&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-style: italic;">BraveTart</span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">&nbsp;is a celebration of classic American desserts.&nbsp;Yet&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-style: italic;">BraveTart</span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">&nbsp;is much more than a cookbook, as Stella Parks delves into the surprising stories of how our favorite desserts came to be, from chocolate chip cookies that predate the Tollhouse Inn to the prohibition-era origins of ice cream sodas and floats.&nbsp;</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-weight: bold;">CAN'T BE THERE? </span>
+                                    <a href="https://omnivorebooks.myshopify.com/collections/events/products/free-author-book-signing-mon-dec-2-stella-parks-bravetart-iconic-american-desserts-11-00-a-m" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); font-weight: bold; text-decoration: none; font-style: normal;">PRE-ORDER A SIGNED BOOK.</a> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table cellpadding="0" cellspacing="0" border="0" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 30px; height: 1px; line-height: 1px;"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="article editor-col OneColumnMobile" width="35%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://omnivorebooks.myshopify.com/collections/events/products/free-author-event-thurs-dec-5-john-becker-megan-scott-joy-of-cooking-2019-edition-fully-revised-and-updated-6-30-p-m"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="210" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/46ce893a001/fd614cb9-2138-4f06-b406-dd0044cbff3a.jpg"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="article editor-col OneColumnMobile" width="65%" align="left" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-text" align="left" valign="top" style="line-height: 1.2; font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(77, 31, 0); font-weight: bold;">Thurs. Dec. 5 â¢ John Becker &amp; Megan Scott â¢ Joy of Cooking: 2019 Edition Fully Revised and Updated â¢ 6:30 P.M. FREE.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">John (great-grandson of Irma Rombauer) and Megan developed more than six hundred new recipes for this edition, tested and tweaked thousands of classic recipes, and updated every section of every chapter to reflect the latest ingredients and techniques available to todayâs home cooks. Their strategy for revising this edition was the same one Irma and Marion employed: Vet, research, and improve </span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-style: italic;">Joyâs</span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);"> coverage of legacy recipes while introducing new dishes, modern cooking techniques, and comprehensive information on ingredients now available at farmersâ markets and grocery stores.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-weight: bold;">CAN'T BE THERE? </span>
+                                    <a href="https://omnivorebooks.myshopify.com/collections/events/products/free-author-event-thurs-dec-5-john-becker-megan-scott-joy-of-cooking-2019-edition-fully-revised-and-updated-6-30-p-m" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); font-weight: bold; text-decoration: none; font-style: normal;">PRE-ORDER A SIGNED BOOK.</a> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table cellpadding="0" cellspacing="0" border="0" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 30px; height: 1px; line-height: 1px;"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="article editor-col OneColumnMobile" width="35%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://omnivorebooks.myshopify.com/collections/events/products/free-author-event-thurs-dec-12-toni-tipton-martin-jubilee-recipes-from-two-centuries-of-african-american-cooking-a-cookbook-6-30-p-m"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="210" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/46ce893a001/d3c2fb2f-bfd9-49b2-9d16-c20db8235e73.jpg"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="article editor-col OneColumnMobile" width="65%" align="left" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-text" align="left" valign="top" style="line-height: 1.2; font-family: Verdana,Geneva,sans-serif; font-size: 9px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(77, 31, 0); font-weight: bold;">Thurs. Dec. 12 â¢ Toni Tipton-Martin â¢Jubilee: Recipes from Two Centuries of African-American Cooking: A Cookbook â¢ 6:30 P.M. FREE.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">Toni Tipton-Martin, the first African-American food editor of a daily American newspaper, is the author of the James Beard Award-winning&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-style: italic;">The Jemima Code</span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">,&nbsp;a history of African-American cooking found in--and between--the lines of three centuries' worth of African-American cookbooks. Adapted from historical texts and rare African-American cookbooks, the 125 recipes of&nbsp;</span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-style: italic;">Jubilee</span>
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0);">&nbsp;paint a rich, varied picture of the true history of African-American cooking: a cuisine far beyond soul food.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 11px; color: rgb(77, 31, 0); font-weight: bold;">CAN'T BE THERE? </span>
+                                    <a href="https://omnivorebooks.myshopify.com/collections/events/products/free-author-event-thurs-dec-12-toni-tipton-martin-jubilee-recipes-from-two-centuries-of-african-american-cooking-a-cookbook-6-30-p-m" target="_blank" style="font-size: 11px; color: rgb(245, 41, 10); font-weight: bold; text-decoration: none; font-style: normal;">PRE-ORDER A SIGNED BOOK.</a> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table cellpadding="0" cellspacing="0" border="0" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 30px; height: 1px; line-height: 1px;"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table cellpadding="0" cellspacing="0" border="0" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 30px; height: 1px; line-height: 1px;"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(110, 44, 0);" bgcolor="6E2C00"> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(110, 44, 0); width: initial; border-spacing: 0; min-width: initial; padding: 0; border: none;" bgcolor="6E2C00"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="#" style="color: rgb(255, 235, 196); font-size: 11px; font-family: Verdana, Geneva, sans-serif; text-decoration: none;">Omnivore Books on Food / 3885A Cesar Chavez Street / San Francisco, CA 94131&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 415-282-4712 / Hours: Mon-Sat 11am - 6pm, Sun 12pm-5pm</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

@@ -1,0 +1,698 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #869198 !important; border-bottom: 1px solid #869198 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Attn: Personal Invite :: Georgia Whirl Productions Presents the Inaugural "Miss Black America Atlanta Pageant" 12/19/19</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #e6e6e6; margin: 0px; padding: 0px;" bgcolor="#e6e6e6"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #e6e6e6;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #e6e6e6;" bgcolor="#e6e6e6"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="612" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 612px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #869198; padding: 1px;" bgcolor="#869198"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #869198;" bgcolor="#869198"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #ffffff; padding: 0px;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="319" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/40472b83501/7c761dea-99b3-4e7f-b208-b2a2915fbe9c.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);">The Inaugural Miss Black America Atlanta Pageant</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    Itâs beginning to look a lot like Christmas!&nbsp;
+                                    <span style="font-style: italic;">Georgia Whirl Productions LLC</span> cordially invites you to 
+                                    <span style="font-style: italic;">The Inaugural Miss Black America Atlanta Pageant</span> hosted by 
+                                    <span style="font-style: italic;">11 Aliveâs âThe Late Show" Host,</span> 
+                                    <span style="font-style: italic;">&nbsp;Aisha Howard. </span>The show will take place in the luxurious ballroom at the 
+                                    <span style="font-weight: bold;">Cobb Energy Performing Arts Center on December 19, 2019 </span>and will be full of surprises for the whole family.&nbsp;With a pre- show performance featuring
+                                    <span style="font-weight: bold;"> </span>
+                                    <span style="font-weight: bold; font-style: italic;">âThe Real Black Santaâ,</span> 
+                                    <span style="font-weight: bold; font-style: italic;">Orchestra Noir</span>; viral sensation
+                                    <span style="font-weight: bold; font-style: italic;"> Secrett</span> performing 
+                                    <span style="font-weight: bold; font-style: italic;">"Melanin,"</span> 
+                                    <span style="font-weight: bold; font-style: italic;">Theresa Tha Songbird</span>, and many many more. This will be an event to remember all the way through the holiday season and into the new year.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    &nbsp;Come laugh, dance, and celebrate black music, history, culture, and beauty with 
+                                    <span style="font-style: italic;">Miss Black America Atlanta</span>. Our competition and show start promptly at
+                                    <span style="font-style: italic;"> </span>
+                                    <span style="font-weight: bold; font-style: italic;">8:00PM</span>
+                                    <span style="font-weight: bold;"> </span>with 
+                                    <span style="font-weight: bold;">dinner starting at 7:00PM! </span>A delicious
+                                    <span style="font-weight: bold; font-style: italic;"> three course buffet</span> meal is available with all 
+                                    <span style="font-weight: bold;">VIP tickets. </span> Get there early to visit with
+                                    <span style="font-style: italic;"> âThe Real Black Santa,â</span>
+                                    <span style="font-weight: bold;"> </span>and take a picture to hang on the tree. This is a night for all to remember. Join us and support the notion that 
+                                    <span style="font-weight: bold;">#BeautyIsBlack!&nbsp;</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="color: rgb(34, 34, 34);">2019 has been a </span>
+                                    <span style="color: rgb(34, 34, 34); font-style: italic;">momentous year</span>
+                                    <span style="color: rgb(34, 34, 34);"> for the crowning and acknowledgment of </span>
+                                    <span style="color: rgb(34, 34, 34); font-style: italic;">black beauty.</span>
+                                    <span style="color: rgb(34, 34, 34);"> For the first time in history, black women have been crowned as </span>
+                                    <span style="color: rgb(34, 34, 34); font-style: italic;">Miss USA, Miss Teen USA, Miss America, </span>
+                                    <span style="color: rgb(34, 34, 34);">and </span>
+                                    <span style="color: rgb(34, 34, 34); font-style: italic;">Miss Universe</span>
+                                    <span style="color: rgb(34, 34, 34);">!&nbsp;This years' show will be centered around the platform </span>
+                                    <span style="color: rgb(34, 34, 34); font-style: italic;">"Beauty is Black."</span>
+                                    <span style="color: rgb(34, 34, 34);">&nbsp;Join us as we celebrate blackness in its many shades, as it should be celebrated--</span>
+                                    <span style="color: rgb(34, 34, 34); font-style: italic;">unapologetically</span>
+                                    <span style="color: rgb(34, 34, 34);">. We encourage guests to stop by our photo booth, post on social media, and use the hashtag</span>
+                                    <span style="color: rgb(34, 34, 34); font-weight: bold;"> #BeautyIsBlack</span>
+                                    <span style="color: rgb(34, 34, 34);"> throughout the night with </span>
+                                    <span style="color: rgb(34, 34, 34); font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 13px;">photos by </span>
+                                    <span style="color: rgb(34, 34, 34); font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 13px; font-style: italic;">"Studio Prime Time."</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);">When: Thursday, December 19, 2019</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);">Where: Cobb Energy Performing Arts Center 2800 Cobb Galleria Pkwy, Atlanta, GA 30339</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);">Schedule of Event:</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);">Red Carpet Reception: 6:30pm</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);">Dinner Begins: 7:00pm</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);">Show: 8:00pm</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34); font-weight: bold;">About Miss Black America Atlanta</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="color: rgb(34, 34, 34);">The purpose of The Miss Black America Atlanta Pageant is to support, educate, and uplift its delegates through workshops, community service projects, educational courses in: etiquette, business, self care, physical and mental health awareness, and personal development. These endeavors culminate in a pageant production each year that </span>
+                                    <span style="color: rgb(34, 34, 34); font-style: italic;">celebrates </span>
+                                    <span style="color: rgb(34, 34, 34);">the </span>
+                                    <span style="color: rgb(34, 34, 34); font-style: italic;">art, culture, and history of African American culture</span>
+                                    <span style="color: rgb(34, 34, 34);">. The shining moment of this affair is the choosing, by way of areas of competition, of one delegate who will advance to the national Miss Black America Pageant representing the state of Georgia.The Miss Black America Atlanta Pageant is presented by Georgia Whirl Productions, a proud member of SOMBA (the sisterhood of Miss Black America) which produces the nationally televised Miss Black America Pageant as a premier fundraiser for the American Institute of Positivity, a 501c3 organization.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 16px; color: rgb(34, 34, 34); font-weight: bold;">To purchase tickets click </span>
+                                    <a href="https://www.eventbrite.com/e/2019-miss-black-america-atlanta-pageant-tickets-85841224413" target="_blank" style="font-size: 16px; color: rgb(34, 34, 34); font-weight: bold; font-style: normal; text-decoration: underline;">HERE</a>
+                                    <span style="font-size: 16px; color: rgb(34, 34, 34); font-weight: bold;">.</span>
+                                    <span style="color: rgb(34, 34, 34); font-weight: bold;"> </span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="color: rgb(34, 34, 34);">You may also get more pageant information and cast your vote for our peopleâs choice award by clicking </span>
+                                    <a href="https://www.georgiawhirlproductions.com/" target="_blank" style="color: rgb(34, 34, 34); text-decoration: underline; font-weight: bold; font-style: normal;">here</a>
+                                    <span style="color: rgb(34, 34, 34);">.</span>
+                                    <span style="color: rgb(34, 34, 34); font-weight: bold;"> </span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);"> </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="color: rgb(34, 34, 34);">For more information go to</span>
+                                    <a href="http://www.missblackamericaatl.com/" target="_blank" style="color: rgb(34, 34, 34); text-decoration: none; font-weight: normal; font-style: normal;"> www.missblackamericaatl.com</a>
+                                    <span style="color: rgb(34, 34, 34);"> </span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34); font-weight: bold;">Sponsorships still available!</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="color: rgb(34, 34, 34);">For vendor table information please visit email: </span>
+                                    <a href="mailto:Creativeteam@georgiagirlproductions.com" target="_blank" style="color: rgb(34, 34, 34); font-weight: normal; font-style: normal; text-decoration: underline;">Creativeteam@georgiagirlproductions.com</a>
+                                    <span style="color: rgb(34, 34, 34);"> </span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://www.instagram.com/explore/tags/beautyisblack/" target="_blank" style="color: rgb(34, 34, 34); text-decoration: none; font-weight: normal; font-style: normal;">#BeautyIsBlack</a>
+                                    <span style="color: rgb(34, 34, 34);">&nbsp;&nbsp;</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);">@MissBlackAmericaATL on IG</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(34, 34, 34);">@GeorgiaWhirlProd on FB</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="editor-logo editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="460" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/40472b83501/4a373329-2bdc-4d83-821a-64f5302ccafb.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <a href="https://www.eventbrite.com/e/2019-miss-black-america-atlanta-pageant-tickets-85841224413" target="_blank" style="font-size: 26px; color: rgb(34, 34, 34); font-weight: bold; font-style: normal; text-decoration: underline;">BUY TICKETS HERE </a>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

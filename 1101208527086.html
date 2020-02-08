@@ -1,0 +1,2232 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 0px 0px 0px 0px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #f3f3ee !important; border-bottom: 1px solid #f3f3ee !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Training for all Alaska 911 Superheroes - Please check this out</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #595c5a; margin: 0px; padding: 0px;" bgcolor="#595c5a"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader">Grant funded free 9-1-1 Training in January</span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #595c5a;"> 
+       <!--[if gte mso 9]>
+<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+<v:fill type="tile" src="https://imgssl.constantcontact.com/letters/images/PT13344/OuterBG_BS155065379.png" color="#595c5a" ></v:fill>
+</v:background>
+<![endif]--> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background: url('https://imgssl.constantcontact.com/letters/images/PT13344/OuterBG_BS155065379.png') repeat top left;" background="https://imgssl.constantcontact.com/letters/images/PT13344/OuterBG_BS155065379.png"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="630" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 630px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #f3f3ee; padding: 0px;" bgcolor="#f3f3ee"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #f3f3ee;" bgcolor="#f3f3ee"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #032955; padding: 0;" bgcolor="#032955"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; font-weight: bold;">Come One- Come All</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; font-weight: bold;">Free 911 &amp; Dispatcher Training</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; font-weight: bold;">Coming to Fairbanks, Alaska in January!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    SORRY- we sent this out a few minutes ago with the wrong title so we wanted to make sure you got the right info!
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    GREAT NEWS
+                                   </div> 
+                                   <div>
+                                    AST Fairbanks has secured funding for FIVE DAYS of FREE Training. Come for 1,2 or 3 days of training. It's your choice. These classes will fill up quickly. It's first come, first served so save your spaces soon!
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(245, 239, 85); font-family: Tahoma, Geneva, sans-serif;">January 13, 2020 - Fairbanks, Alaska</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://pstc911.com/customer-service" target="_blank" style="font-size: 20px; color: rgb(245, 239, 85); font-family: Tahoma, Geneva, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">Customer Service the 911 Way</a>
+                                    <span style="font-size: 20px; color: rgb(245, 239, 85); font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">Hosted by the Alaska State Troopers</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">FREE To Alaska PSAPS</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">You must register to save a space.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <a href="https://www.emailmeform.com/builder/form/pJeCTRFMosfjOqm0" target="_blank" style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Tahoma, Geneva, sans-serif; font-style: normal; text-decoration: none;">Register Online</a>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">or call&nbsp;us at&nbsp;</span>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif; font-weight: bold;">1-800-348-8911</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">January 14, 2020 - Fairbanks, Alaska</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://pstc911.com/domestic-family-violence" target="_blank" style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">Domestic &amp; Family Violence</a>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">Hosted by the Alaska State Troopers</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">FREE To Alaska PSAPS</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">You must register to save a space.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://www.emailmeform.com/builder/form/pJeCTRFMosfjOqm0" target="_blank" style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Tahoma, Geneva, sans-serif; font-style: normal; text-decoration: none;">Register Online</a>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">or call&nbsp;us</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">January 15, 2020 - Fairbanks, Alaska</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://pstc911.com/building-liability-shield" target="_blank" style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">Building Your 911 Liability Shield</a>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">Hosted by the Alaska State Troopers</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">FREE To Alaska PSAPS</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">You must register to save a space.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://www.emailmeform.com/builder/form/pJeCTRFMosfjOqm0" target="_blank" style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Tahoma, Geneva, sans-serif; font-style: normal; text-decoration: none;">Register Online</a>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">or call&nbsp;us.</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">January 16, 2020 - Fairbanks, Alaska</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://pstc911.com/customer-service" target="_blank" style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">Customer Service the 911 Way</a>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">Hosted by the Alaska State Troopers</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">FREE To Alaska PSAPS</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">You must register to save a space.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://www.emailmeform.com/builder/form/pJeCTRFMosfjOqm0" target="_blank" style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Tahoma, Geneva, sans-serif; font-style: normal; text-decoration: none;">Register Online</a>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">or call&nbsp;us.</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">January 17, 2020 - Fairbanks, Alaska</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://pstc911.com/domestic-family-violence" target="_blank" style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">Domestic &amp; Family Violence</a>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">Hosted by the Alaska State Troopers</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">FREE To Alaska PSAPS</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">You must register to save a space.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="https://www.emailmeform.com/builder/form/pJeCTRFMosfjOqm0" target="_blank" style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Tahoma, Geneva, sans-serif; font-style: normal; text-decoration: none;">Register Online</a>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span>
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-family: Tahoma, Geneva, sans-serif;">or call&nbsp;us</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(245, 239, 85);" bgcolor="F5EF55"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 18px;">Hello Friends!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px;">Guess what, we have now done 5 years of Two Minute Training FREE Training videos. They are all archived on You Tune and you can watch the past videos HERE - YouTube tells us that we have had over 1 million views in 5 years. That is amazing! See below for this week's video. Thanks for watching.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; text-decoration: underline; font-weight: bold;">It's time to think about hosting a PSTC class in 2020. </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px;">We travel anywhere that wants quality, affordable training. You will be SO happy that you chose PSTC to present training in your region. We build skill sets and memory markers that students will use immediately. All of our classes count towards your IAED or other certification or in-service requirements. </span>
+                                   </div> 
+                                   <div> 
+                                    <a href="mailto:kevin@pstc911.com" target="_blank" style="font-size: 18px; text-decoration: underline; font-weight: bold; color: #ffffff; font-style: normal;">E-mail us </a>
+                                    <span style="font-size: 18px;">and we will answer any questions that you have and help you every step of the way to offer our amazing training in your region. You can also call us anytime at 650-591-7911. </span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px;">We hope you and your team have a VERY MERRY CHRISTMAS and we look forward to serving you in 2020!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px;">The team at PSTC - 911 CARES</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(245, 239, 85);" bgcolor="F5EF55"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #f3f3ee;" bgcolor="#f3f3ee"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 18px;">This is our last TWO MINUTE TRAINING for 2019. (We won't post next week since it is Christmas)</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px;">We will be back Wednesday, January 8th! </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 18px;">We are going to be taping some videos soon. Is there a topic that you would like to see? E-mail us and we will do the research and make your idea come true. </span>
+                                    <a href="mailto:kevin@pstc911.com" target="_blank" style="font-size: 18px; text-decoration: underline; color: #ffffff; font-weight: bold; font-style: normal;">E-mail us</a>
+                                    <span style="font-size: 18px; text-decoration: underline;"> </span>
+                                    <span style="font-size: 18px;">with you idea!</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div class="gl-contains-video"> 
+                             <table class="editor-image editor-video editor-image editor-video  editor-image-vspace-on" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="video-container" style="cursor: move;"> 
+                                  <div> 
+                                   <a> <img src="https://web-extract.constantcontact.com/v1/thumbnail?url=https://i.ytimg.com/vi/lk8BcWtNchI/hqdefault.jpg" alt="December 18, 19 2MT - Handling Outside Assist Calls" width="275" style="display: block; height: auto !important; max-width: 100% !important;"> </a> 
+                                  </div> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #f3f3ee;" bgcolor="#f3f3ee"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="253" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/cd6d37d4-f8e9-496d-9a49-1e2c0733b2e4.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    Does your agency have someone that shows up to work and suddenly your city turns into an episode of CSI or Chicago Fire?
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    When this person (or maybe this person is YOU) walks through the door, someone says "Oh great, here come the Sh%$ Magnet"
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    Well, we got many requests to make a button or pin to "recognize" the official magnet employee(s) in your dispatch center.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    NOTE: We know that some people won't appreciate the strong language used on this button. We will soon carry a toned down version "official poop magnet". Watch for that version in January! The button shown to the left is available 
+                                    <a href="https://www.shop.911cares.com/OFFICIAL-SHIT-MAGNET-MINI-BUTTON-BUTTON-OFFICIAL-SMALL.htm?categoryId=-1" target="_blank" style="color: #ffffff; font-weight: bold; font-style: normal; text-decoration: none;">NOW HERE</a> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="feature editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: #d3091c;" bgcolor="#d3091c"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="divider-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 0px 0px 5px;"> 
+                                     <table style="width: 100%; min-width: 100%; height: 1px;" cellpadding="0" cellspacing="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 5px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #f3f3ee;" bgcolor="#f3f3ee"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 24px; font-weight: bold; font-style: italic;">Christmas is ONE WEEK AWAY!</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; font-family: Tahoma, Geneva, sans-serif; font-weight: bold;">Have you procrastinated?</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; font-family: Tahoma, Geneva, sans-serif; font-weight: bold;">Have no fear - 911 CARES is here!</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    Order today if you can. We ship right away. We ship from California so west coast people have more time. MidWest hurry up!
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px; font-style: italic;">GIFT CARDS are a great option if you don't know someone's size or gift preference. We can do gift cards in ANY denomination!</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 24px; font-family: Tahoma, Geneva, sans-serif;">______________________________</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 24px; color: rgb(242, 235, 43); font-weight: bold;">CHRISTMAS IS ONE WEEK FROM TODAY!!</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 24px; color: rgb(242, 235, 43); font-weight: bold;">PLUS EVERY ORDER GETS SOME FREE SICKERS AND BUTTONS IN EVERY ORDER OVER $25!</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px; font-family: Tahoma, Geneva, sans-serif;">We also have our 2020 Wall Calendars IN STOCK - See below!</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="320" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/9a81eccb-44c4-4aae-a27a-ddfa04c5e400.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; font-family: Tahoma, Geneva, sans-serif; font-weight: bold;">GIFT CARDS ARE A GREAT OPTION FOR LAST MINUTE GIFTS</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 22px;">You can buy a 911 CARES Gift Card and it will ship out right away. Plus, gift cards include free shipping. You will have the card quickly and your co-worker, friend or family member will be able to select their own gift. Call us if you need assistance </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 22px;">650-591-7911</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 22px;">This is a GREAT gift! </span>
+                                    <a href="https://www.shop.911cares.com/GIFT-CARDS_c50.htm" target="_blank" style="font-size: 22px; text-decoration: underline; color: #ffffff; font-weight: bold; font-style: normal;">SEE ALL OPTIONS HERE</a> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="spacer-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" style="padding-bottom: 10px; height: 1px; line-height: 1px;" width="100%" align="center" valign="top"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="feature editor-col OneColumnMobile" width="40%" align="left" valign="top" style="background-color: #d3091c;" bgcolor="#d3091c"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="219" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/d5cf4141-98fc-40e2-b9b6-c42ba140a1b2.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="233" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/581063ca-bfac-4c65-ad52-f69b3328e106.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="235" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/5b962a77-7bdb-45f9-995c-24d7e3e605b8.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 0px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="216" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/84414789-47fe-4d81-bccd-4c9ba4eac287.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="feature editor-col OneColumnMobile" width="60%" align="left" valign="top" style="background-color: #d3091c;" bgcolor="#d3091c"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <a href="https://www.shop.911cares.com/ALL-PRODUCTS_c43.htm" target="_blank" style="font-size: 20px; text-decoration: underline; color: #ffffff; font-weight: bold; font-style: normal;">GO WINDOW SHOPPING HERE</a>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px;">We have gifts that start at just $1</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px;">Do your shopping today or tomorrow to ensure pre-Christmas delivery. </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px;">We ship from California and we offer normal postal, UPS ground or UPS 2 &amp; 3 day options. </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 18px;">If you need assistance, e-mail </span>
+                                    <a href="mailto:ask@pstc911.com" target="_blank" style="font-size: 18px; color: #ffffff; font-weight: bold; font-style: normal; text-decoration: none;">ask@pstc911.com</a>
+                                    <span style="font-size: 18px;"> or call us at 650-591-7911</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 20px; color: rgb(242, 235, 43); font-family: Tahoma, Geneva, sans-serif; font-style: italic; font-weight: bold;">We accept all major credit cards, Pay Pal and if you would like to use a purchase order, call us at 650-591-7911 or follow the instructions on our </span>
+                                    <a href="https://www.shop.911cares.com" target="_blank" style="font-size: 20px; color: rgb(242, 235, 43); font-family: Tahoma, Geneva, sans-serif; font-style: italic; font-weight: bold; text-decoration: none;">shopping site. </a> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    You and your 9-1-1 team deserves a special Christmas gift to acknowledge their hard work, dedication and friendship.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    It's the season of giving. Don't forget the new trainees, trainers, supervisors, managers, tech team, 911 board or anyone else within the 911 dispatch team.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px;"> </span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #d3091c; text-decoration: none; padding: 10px 20px;"> 
+                                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="MainTextFullWidthTD" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #d3091c; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 0px; border-radius: 0px; border-spacing: 0; background-color: #f3f3ee; min-width: initial; padding: 0; border: none;" bgcolor="#f3f3ee"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td class="MainTextFullWidthTD" align="center" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #d3091c; text-decoration: none; padding: 12px 18px 13px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://www.shop.911cares.com/FEATURED-ITEMS_c42.htm" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #d3091c; text-decoration: none;">READ MORE</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="feature editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: #d3091c;" bgcolor="#d3091c"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="spacer-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" style="padding-bottom: 30px; height: 1px; line-height: 1px;" width="100%" align="center" valign="top"> 
+                                     <div>
+                                      <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="620" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/PT13344/AccentDividerV2_BS155065379.png"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/5a680818-d291-4726-9bd4-d0169d66b980.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">CHRISTMAS ORNAMENTS</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">We have exclusive </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">911 CARES Ornaments, check them out!</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">We have 6 to choose from. </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <a href="https://www.shop.911cares.com/FEATURED-ITEMS_c42.htm" target="_blank" style="font-size: 18px; font-weight: bold; color: #ffffff; font-style: normal; text-decoration: none;">See all ornaments in our featured item area</a> 
+                                    <a href="https://www.shop.911cares.com/FEATURED-ITEMS_c42.htm" target="_blank" style="font-size: 18px; text-decoration: underline; font-weight: bold; color: #ffffff; font-style: normal;">HERE</a> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/a5675ba4-79ef-4224-8dd9-845e299aa48f.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">ALL NEW HEADSET BAGS </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">IN STOCK NOW</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    We order about 5,000 headset bags at a time and they sell out within a couple of months.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    We offer our headset bags in TWO sizes in most cases and a variety of colors depending on the design.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.shop.911cares.com/WORK-CONSOLE-GEAR_c25.htm" target="_blank" style="text-decoration: underline; color: #ffffff; font-weight: bold; font-style: normal;">Check out all of our CONSOLE GEAR HERE</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/90dbfd09-81f5-4061-b75f-32195e3c0485.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">GOLD LINE ITEMS</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    Gold is the color of glue and it is the color that is assigned to 911 Professionals. We are the glue that keep it all together.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    We offer more gold line items than anyone!
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.shop.911cares.com/911-STRONG-WeAre911-and-GOLD-LIne-Products_c60.htm" target="_blank" style="color: #ffffff; font-weight: bold; font-style: normal; text-decoration: none;">SEE ALL GOLD LINE ITEMS HERE</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="189" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/b6ea907f-fc87-4de0-b1ad-a0a3e3539929.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">2020 Wall CALENDAR</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">IN STOCK!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    We produce a big wall calendar every year. The 2020 calendar is amazing.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    It includes all national holidays, full moons and significant national 911 conferences or events.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    EVERY dispatch center needs at least one of these.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.shop.911cares.com/911-STRONG-WeAre911-and-GOLD-LIne-Products_c60.htm" target="_blank" style="font-size: 16px; font-weight: bold; color: #ffffff; font-style: normal; text-decoration: none;">BUY OUR CALENDAR HERE</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="269" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/66395f64-c110-4965-86cb-e008386d6b4a.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">CONSOLE GEAR</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">Lanyards, badge or ID retractors, stickers and lots of cool "console gear"</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">Now is the time to stock up!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.shop.911cares.com/WORK-CONSOLE-GEAR_c25.htm" target="_blank" style="font-size: 18px; text-decoration: underline; font-weight: bold; color: #ffffff; font-style: normal;">SHOP HERE</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/03cca912-9cdf-4276-a4dc-a34aafb40a4e.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-weight: bold;">We have a load of tech items and safety tools. Perfect for gifts! </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    See them all
+                                    <a href="https://www.shop.911cares.com/TECH-GADGETS-SAFETY-ITEMS-OTHER-STUFF_c14.htm" target="_blank" style="font-size: 28px; text-decoration: underline; color: #ffffff; font-weight: bold; font-style: normal;"> HERE</a> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/e8e7f005-310b-4909-aca4-b680bfb86c81.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 26px; font-family: Tahoma, Geneva, sans-serif;">Baby, it's cold outside! </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    Check out our fantastic hoodies and jackets.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.shop.911cares.com/CLOTHING_c7.htm" target="_blank" style="font-size: 36px; text-decoration: underline; color: #ffffff; font-weight: bold; font-style: normal;">SHOP HERE</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/a8539499-ec91-4f97-a3cf-1328fec74d8f.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    We have our very own Christmas Cards along with other fantastic greeting cards. Check them all out
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    We even have a Voice of Hope Card
+                                   </div> 
+                                   <div>
+                                    (see below)
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.shop.911cares.com/ALL-PRODUCTS_c43.htm" target="_blank" style="font-size: 26px; text-decoration: underline; color: #ffffff; font-weight: bold; font-style: normal;">SHOP ALL PRODUCTS</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="275" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/3d127e21-82dc-46ab-889c-44c09d6a68ce.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/8e233740-2ae1-4b52-95bf-14ee8d4064d5.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 22px; font-weight: bold;">UNIFORM PINS</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 22px;">We offer amazing pins at great prices. </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 22px;">Great on your uniform, backpack, lanyard or anywhere to show 911 pride!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 22px;">See them all </span>
+                                    <a href="https://www.shop.911cares.com/PINS-JEWELRY-WATCHES_c19.htm" target="_blank" style="font-size: 22px; text-decoration: underline; color: #ffffff; font-weight: bold; font-style: normal;">here</a> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="popper pals" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="157" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/2b7cfac9-5c7e-44c9-9e9f-97678ccf923d.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    We have fun stuff for kids and adults including this cool SANTA POPPER. Safe and fun for all ages. Great for home or in the dispatch center!
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.shop.911cares.com/KID-FRIENDLY-GOODIES_c5.htm" target="_blank" style="font-size: 20px; font-weight: bold; color: #ffffff; font-style: normal; text-decoration: none;">SEE FUN STUFF HERE</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="252" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/5b962a77-7bdb-45f9-995c-24d7e3e605b8.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 22px; font-weight: bold;">911 BUTTONS</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    We had customer suggestions that we offer 911 related buttons. We listened, here they are. We will add new ones often so you can collect them all.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    JUST ADDED -
+                                   </div> 
+                                   <div>
+                                    OFFICIAL SHI* MAGNET BUTTON!
+                                   </div> 
+                                   <div>
+                                    (not very PC but very funny!)
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(245, 239, 85); font-weight: bold;">So far we have</span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(245, 239, 85); font-weight: bold;">I AM NOT JUST A DISPATCHER</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(245, 239, 85); font-weight: bold;">I SURVIVED TRAINING</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(245, 239, 85); font-weight: bold;">LIVES ARE AT RISK - BRING ME COFFEE</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(245, 239, 85); font-weight: bold;">MY WORK NUMBER IS 911</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(242, 235, 43);">CALM VOICE IN THE DARK</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(242, 235, 43);">Be Nice - Santa is Watching!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    More are coming soon!
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.shop.911cares.com/FEATURED-ITEMS_c42.htm" target="_blank" style="font-size: 20px; text-decoration: underline; font-weight: bold; color: #ffffff; font-style: normal;">BUY THEM HERE</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/8cfcce40-d5a6-468d-a508-5ac002bbf733.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 18px; font-family: Tahoma, Geneva, sans-serif;">We have a number of cinch sacks and duffle bags. </span>
+                                    <a href="https://www.shop.911cares.com/BAGS-DUFFELS-BACKPACKS_c6.htm" target="_blank" style="font-size: 18px; font-family: Tahoma, Geneva, sans-serif; text-decoration: underline; font-style: italic; color: #ffffff; font-weight: bold;">Check them out HERE</a> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-family: Tahoma, Geneva, sans-serif;">We accept all major credit cards</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-family: Tahoma, Geneva, sans-serif;">We accept purchase orders</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-family: Tahoma, Geneva, sans-serif;">We are available to help you Monday-Friday from 7am-4pm California time. Call us at 650-591-7911 if you would like personal service!</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="267" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/321ef0ec-e163-4585-98e8-d77f975b1943.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    JUTS IN TIME For the bowl games, concerts or outdoor and stadium events.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    This tote is HALF PRICE and it meets all NFL and stadium rules for a clear bag. Great for sporting events or as a daily tote for work!
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.shop.911cares.com/BAGS-DUFFELS-BACKPACKS_c6.htm" target="_blank" style="font-size: 24px; text-decoration: underline; font-style: italic; color: #ffffff; font-weight: bold;">SEE ALL BAGS HERE</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="270" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/564a95a0-aed7-4bb6-9ec7-d17f8e7c23b6.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-family: Tahoma, Geneva, sans-serif;">We accept all major credit cards</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-family: Tahoma, Geneva, sans-serif;">We accept purchase orders</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-family: Tahoma, Geneva, sans-serif;">We are available to help you Monday-Friday from 7am-4pm California time. Call us at 650-591-7911 if you would like personal service!</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="yellow-lanyard" class="" style="display: block; height: auto; max-width: 100%;" width="165" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/3bf10fe5-8db9-4909-bce4-66566971c34d.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    SEE ALL LANYARDS and 
+                                    <a href="https://www.shop.911cares.com/WORK-CONSOLE-GEAR_c25.htm" target="_blank" style="color: #ffffff; font-weight: bold; font-style: normal; text-decoration: none;">CONSOLE </a>
+                                    <a href="https://www.shop.911cares.com/WORK-CONSOLE-GEAR_c25.htm" target="_blank" style="text-decoration: underline; color: #ffffff; font-weight: bold; font-style: normal;">GEAR HERE</a> 
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #f3f3ee;" bgcolor="#f3f3ee"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="260" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/ee0a4256001/defbe658-73d1-4036-bc7b-8005f17f691a.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 28px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">TWO 911 CARES</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 28px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">ACTIVATIONS</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 28px; font-weight: bold; font-family: Verdana, Geneva, sans-serif;">See below</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #ffffff; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    911 CARES - Please check out these to Go Fund Me pages and see how you can help. 911 CARES is all about Dispatchers Helping Dispatchers. Please make a donation to one or both of these pages. We need to support our own. 911 CARES will also make a donation.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    IDEA - Pass the hat in your dispatch center and make an agency donation!
+                                   </div> 
+                                   <div>
+                                    Thanks so much!
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-style: italic; font-weight: bold;">This 911 CARES Activation is heartbreaking. Both MOM &amp; DAD are Dispatchers. Their beloved son Coltin died unexpectedly at the young age of 13 Months just three days ago. We were asked to help spread the word and help this very special family. </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; font-style: italic; font-weight: bold;">The fund will pay for the burial costs and medical co-payments. Our goal is to make sure this family can grieve without a financial burden. PLEASE donate quickly on this one. The memorial and burial are this weekend. </span>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.gofundme.com/f/1u2q18bbk0?utm_source=customer&amp;utm_medium=copy_link&amp;utm_campaign=p_cp%20share-sheet&amp;fbclid=IwAR1onR1agA6SS1Ppf2MdOUbh1M7ruxr8LjZXfTBOrWv83uXiiXAVLHva_BY" target="_blank" style="color: #ffffff; font-weight: bold; font-style: normal; text-decoration: none;">https://www.gofundme.com/f/1u2q18bbk0?utm_source=customer&amp;utm_medium=copy_link&amp;utm_campaign=p_cp%20share-sheet&amp;fbclid=IwAR1onR1agA6SS1Ppf2MdOUbh1M7ruxr8LjZXfTBOrWv83uXiiXAVLHva_BY</a>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; color: rgb(242, 235, 43); font-family: Tahoma, Geneva, sans-serif;">Please help this Dispatcher for the MN State Patrol.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; color: rgb(242, 235, 43); font-family: Tahoma, Geneva, sans-serif;">911 CARES will also make a donation to help. See the gofund me page below.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.gofundme.com/f/the-stroke-adventure-funding-chris-medical-bills?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=p_cp%20share-sheet&amp;fbclid=IwAR3mrk6SYlSW5PoiF775n-kHI_Cnk_9vxJ2-Cv0Jq6GO51EJTw6xcYI5xd0" target="_blank" style="font-size: 18px; color: rgb(242, 235, 43); text-decoration: underline; font-family: Tahoma, Geneva, sans-serif; font-weight: bold; font-style: normal;">https://www.gofundme.com/f/the-stroke-adventure-funding-chris-medical-bills?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=p_cp+share-sheet</a>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="divider-container editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="divider-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 25px 0px 0px;"> 
+                                     <table style="width: 100%; min-width: 100%; height: 1px;" cellpadding="0" cellspacing="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 5px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #f3f3ee;" bgcolor="#f3f3ee"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="620" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/PT13344/WinterVillage_BS70897270.png"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text about-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #5a5a5a; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div> 
+                                    <span style="font-weight: bold;">911 CARES 800-348-8911 | </span>
+                                    <a href="https://www.shop.911cares.com/FEATURED-ITEMS_c42.htm" target="_blank" style="color: #ffffff; font-weight: bold; font-style: normal; text-decoration: none;">[WEBSITE]</a> 
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF"> 
+                            <div class="gl-contains-social-button"> 
+                             <table class="editor-social" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class=" social-container social-container" align="right" style="padding: 0px 20px 10px;"> 
+                                 <div class="galileo-ap-content-editor"> 
+                                  <a href="https://www.facebook.com/PSTC911cares" style="display: inline-block; text-decoration: none;"> <img alt="Facebook" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                  <a href="https://twitter.com/PSTC_911" style="display: inline-block; text-decoration: none;"> <img alt="Twitter" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                  <a href="http://www.linkedin.com/in/" style="display: inline-block; text-decoration: none;"> <img alt="LinkedIn" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/linkedin-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

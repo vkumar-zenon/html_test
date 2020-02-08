@@ -1,0 +1,947 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.preheader-text {
+font-size: 12px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #869198 !important; border-bottom: 1px solid #869198 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Thank you for Visiting us at PackExpo in Las Vegas</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #e6e6e6; margin: 0px; padding: 0px;" bgcolor="#e6e6e6"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader">10% Coupon Inside</span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #e6e6e6;"> 
+       <table class="bgimage" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #e6e6e6;" bgcolor="#e6e6e6"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="630" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 630px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" valign="top" align="center" style="padding: 15px 5px;"> 
+               <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" valign="top" align="center" style="background-color: #869198; padding: 10px;" bgcolor="#869198"> 
+                   <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #869198;" bgcolor="#869198"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" valign="top" align="center" style="background-color: #ffffff; padding: 0;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="editor-logo editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="center" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://files.constantcontact.com/0d2bfe2d001/016d7a2b-994c-497f-ae3f-9fbb4009e337.png" width="552" vspace="0" hspace="0" border="0"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 9px 0px;" width="100%" valign="top" align="center"> 
+                                     <table style="width: 97%; min-width: 97%; height: 1px;" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="background-color: rgb(34, 102, 163); padding-bottom: 2px; border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px;" height="1" align="center" bgcolor="2266A3"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 14px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">Thank you for visiting General Magnaplate at PackExpo in Las Vegas</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif;">﻿</span>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">General Magnaplate's coatings reduce production downtime and minimize replacement costs by solving wear, corrosion, and release problems on metal parts. </span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">We would like to offer you a 10% discount to be applied to your invoice for parts received at </span>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold;">General Magnaplate's Arlington, Texas</span>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;"> </span>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold;">facility only</span>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;"> for processing on or before December 31, 2019. This discount is for one-time use by the company addressed in this email on coating service charges only, and does not apply to tax, freight, expediting or stripping costs.</span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">Within a few weeks, we will be following up with you to determine how General Magnaplate could be of assistance in solving any processing problems you are experiencing in your plant.&nbsp;We appreciate the opportunity to be of service to you, and look forward to working with you on future projects.</span>
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">Please </span>
+                                    <span style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif; font-style: italic; font-weight: bold;">print</span>
+                                    <span style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold;"> </span>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">this email, which must accompany your parts or purchase order to receive the discount.</span> 
+                                   </div> 
+                                   <div style="text-align: right;" align="right">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: right;" align="right">
+                                    <span style="font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold; font-style: italic;">Nemanja Marinkovic&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <span style="font-family: Arial, Verdana, Helvetica, sans-serif;">&nbsp;&nbsp;</span>
+                                    <span style="font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold; font-style: italic;">*This offer expires December 31, 2019*</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 9px 0px;" width="100%" valign="top" align="center"> 
+                                     <table style="width: 94%; min-width: 94%; height: 1px;" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="padding-bottom: 0px; border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #869198;" height="1" align="center" bgcolor="#869198"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="content editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text content-text" valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div>
+                                  <table class="editor-image OneColumnMobile" style="mso-table-rspace: 5.75pt;" cellspacing="0" cellpadding="0" border="0" align="right"> 
+                                   <tbody> 
+                                    <tr> 
+                                     <td class="mobile-hidden" style="height: 1px; line-height: 1px; padding: 0px;" width="15" valign="top" height="1" align="center"> <img alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" width="15" vspace="0" hspace="0" height="1" border="0" style="display: block; height: auto; max-width: 100%;"> </td> 
+                                     <td class="image-cell " style="padding: 0px;" valign="top" align="center"> 
+                                      <div class="publish-container"> 
+                                       <a href="https://www.magnaplate.com/pdfs/white-papers/GM_WP_Packaging.pdf" style="color: #48a199; font-weight: normal; font-style: normal; text-decoration: underline;"> <img alt="Packaging White Paper" class="" style="display: block; height: auto !important; max-width: 100% !important;" src="https://files.constantcontact.com/0d2bfe2d001/f4027e50-2f18-4992-a226-bf91c53ea248.png" width="148" vspace="0" hspace="0" border="0"> </a> 
+                                      </div> </td> 
+                                    </tr> 
+                                    <tr> 
+                                     <td class="mobile-hidden" style="height: 1px; line-height: 1px; padding: 0px;" width="5" valign="top" height="5" align="center"> <img alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: auto; max-width: 100%;"> </td> 
+                                     <td class="mobile-hidden" style="height: 5px; line-height: 1px; padding: 0px;" valign="top" height="5" align="center"> <img alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" width="1" vspace="0" hspace="0" height="5" border="0" style="display: block; height: auto; max-width: 100%;"> </td> 
+                                    </tr> 
+                                   </tbody> 
+                                  </table>
+                                 </div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(107, 107, 107); font-weight: bold;">﻿Engineered Coatings Boost Throughput, Solve Problems in Packaging Applications</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    Keeping packaging equipment up and running is top priority for engineers and plant personnel. Faced with ever-increasing productivity benchmarks based on fast and efficient operation, packaging engineers must continually fight against issues such as sticking, premature wear, abrasion and corrosion. To eliminate these challenges, nano-engineered coatings are being used to protect machine components and solve performance problems in food, pharmaceutical and consumer goods packaging..
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.magnaplate.com/pdfs/white-papers/GM_WP_Packaging.pdf" target="_blank" style="font-size: 14px; color: rgb(34, 102, 163); font-weight: bold; font-style: normal; text-decoration: underline;">Download the White Paper...</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 9px 0px;" width="100%" valign="top" align="center"> 
+                                     <table style="width: 94%; min-width: 94%; height: 1px;" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="padding-bottom: 0px; border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #869198;" height="1" align="center" bgcolor="#869198"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="sidebar sidebar-left editor-col OneColumnMobile" width="35%" valign="top" align="left" style="background-color: #D0ECF2 !important;" bgcolor="#D0ECF2"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text feature-text" valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px; color: rgb(34, 102, 163); font-weight: bold;">Quick Links</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.magnaplate.com/pdfs/white-papers/GM_WP_Packaging.pdf" target="_blank" style="color: rgb(34, 102, 163); font-weight: bold; font-style: normal; text-decoration: underline;">Download our White Paper</a>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.magnaplate.com/resources/blog/459-video-engineered-coatings-for-packaging-applications" target="_blank" style="color: rgb(34, 102, 163); font-weight: bold; font-style: normal; text-decoration: underline;">View the Video</a>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.magnaplate.com/contact/u-s-sales-locator" target="_blank" style="color: rgb(34, 102, 163); font-weight: bold; font-style: normal; text-decoration: underline;">Contact our Sales Team</a>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.magnaplate.com/contact/request-for-quote" target="_blank" style="color: rgb(34, 102, 163); font-weight: bold; font-style: normal; text-decoration: underline;">Request a Quote</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="sidebar sidebar-left editor-col OneColumnMobile" width="65%" valign="top" align="left" style="background-color: #ffffff;" bgcolor="#ffffff"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="center" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://www.magnaplate.com/resources/blog/459-video-engineered-coatings-for-packaging-applications"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://files.constantcontact.com/0d2bfe2d001/fbcfd727-c4fd-4397-9287-1896bdc8c384.jpg" width="305" vspace="0" hspace="0" border="0"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-text" valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <a href="https://www.magnaplate.com/resources/blog/459-video-engineered-coatings-for-packaging-applications" target="_blank" style="font-size: 12px; color: rgb(34, 102, 163); font-weight: bold; font-style: normal; text-decoration: underline;">Video: Engineered Coatings Solve Packaging Problems</a>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="divider-container" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 9px 0px;" width="100%" valign="top" align="center"> 
+                                     <table style="width: 94%; min-width: 94%; height: 1px;" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="padding-bottom: 0px; border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #869198;" height="1" align="center" bgcolor="#869198"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="article editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-heading-text" valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 16px; color: #717a80; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    <a href="https://www.magnaplate.com/resources/case-studies/165-space-age-surface-enhancement-coatings-fight-environmental-attacks-on-oil-gas-equipment?highlight=WyJvaWwiLCJnYXMiLCJvaWwgZ2FzIl0=" target="_blank" style="font-size: 16px; color: rgb(107, 107, 107); text-decoration: none; font-weight: bold; font-style: normal;">Engineered Smart Coatings For The Packaging Industry</a>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-text" valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    Packaging machines often have to run sticky materials at high line speeds, which can pose friction, wear and release problems. Here’s a look at how our ‘smart’ engineered coatings can address all three problems. Reduce Friction - When packaging machine components come in close contact with each other or the packaging materials themselves, the resulting friction can lead to slow line speeds and premature equipment wear. .
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.magnaplate.com/resources/blog/346-engineered-smart-coatings-for-the-packaging-industry?highlight=WyJwYWNrYWdpbmciXQ==" target="_blank" style="font-size: 14px; color: rgb(34, 102, 163); font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; font-style: normal; text-decoration: underline;">Learn More...</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="spacer editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-spacer"> 
+                             <table class="editor-spacer" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="spacer-container" valign="top" align="center"> 
+                                 <table width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="spacer-base" style="padding-bottom: 20px; height: 1px; line-height: 1px;" width="100%" valign="top" align="center"> 
+                                     <div>
+                                      <img alt="" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="section-headline editor-col OneColumnMobile" width="100%" valign="top" align="left" style="background-color: #717a80;" bgcolor="#717a80"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text section-headline-text" valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    <span style="font-size: 18px;">10% Off Coupon</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="feature editor-col OneColumnMobile" width="40%" valign="top" align="left" style="background-color: #D0ECF2;" bgcolor="#D0ECF2"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="left" style="padding: 10px 10px 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://files.constantcontact.com/0d2bfe2d001/9a96e9da-ff52-4ec6-b1e2-428aab081384.jpg" width="185" vspace="0" hspace="0" border="0"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="feature editor-col OneColumnMobile" width="60%" valign="top" align="left" style="background-color: #D0ECF2;" bgcolor="#D0ECF2"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text feature-text" valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 14px; font-weight: bold;">Thank you for visiting us at PackExpo</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(75, 75, 75);">We would like to offer a 10% discount, to be applied to your invoice for parts received at </span>
+                                    <span style="color: rgb(75, 75, 75); font-weight: bold;">General Magnaplate's Arlington, Texas facility only</span>
+                                    <span style="color: rgb(75, 75, 75);"> for processing. Please print this original coupon and include with your parts or purchase order to receive the discount. The discount is for one-time use and applies to coating service charges only, and does not apply to tax, freight, expediting or stripping costs. This offer expires December 31, 2019.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-social-button"> 
+                             <table class="editor-social" width="100%" cellspacing="0" cellpadding="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class=" social-container social-container" align="center" style="padding: 0px 20px 10px;"> 
+                                 <div class="galileo-ap-content-editor"> 
+                                  <a href="https://www.facebook.com/generalmagnaplate.coatings" style="display: inline-block; text-decoration: none;"> <img alt="Facebook" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;" width="32" border="0"> ‌ </a> 
+                                  <a href="https://twitter.com/magnaplate" style="display: inline-block; text-decoration: none;"> <img alt="Twitter" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;" width="32" border="0"> ‌ </a> 
+                                  <a href="https://www.linkedin.com/company/general-magnaplate-corporation" style="display: inline-block; text-decoration: none;"> <img alt="LinkedIn" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/linkedin-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;" width="32" border="0"> ‌ </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

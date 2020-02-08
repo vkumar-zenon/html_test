@@ -1,0 +1,858 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 604px!important;
+max-width: 604px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 604px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #36A3FA !important; border-bottom: 1px solid #36A3FA !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: 'Lato'; font-style: normal; font-weight: 400; src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>ðYou foster loveð</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #FFFFFF; margin: 0px; padding: 0px;" bgcolor="#FFFFFF"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader">New research shows the impact of Family Tree's work in the community.</span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #FFFFFF;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;" bgcolor="#FFFFFF"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="604" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 604px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #36A3FA; padding: 7px;" bgcolor="#36A3FA"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #36A3FA;" bgcolor="#36A3FA"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #ffffff; padding: 0;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(54, 163, 250);" bgcolor="36A3FA"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" valign="top" style="padding: 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://www.familytreeclinic.org/"> <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="193" border="0" hspace="0" vspace="0" src="https://www.familytreeclinic.org/wp/wp-content/themes/ftc/images/logo-a.png"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="feature quick-links-multi multicolumn-layout-padding-multi multicolumn-layout-padding" style="padding-left: 15px; padding-right: 15px; background-color: #36A3FA;" width="100%" align="left" valign="top" bgcolor="#36A3FA"> 
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                             <tbody> 
+                              <tr> 
+                               <td class="feature quick-links editor-col-multi OneColumnMobile" width="20%" align="left" valign="top" style="background-color: #36A3FA;" bgcolor="#36A3FA"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text center-text quick-links-text feature-text" align="left" valign="top" style="font-family: Helvetica,Arial,sans-serif; font-size: 16px; color: #272534; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div>
+                                       <div> 
+                                        <a href="http://www.familytreeclinic.org/" target="_blank" style="font-size: 16px; color: rgb(255, 255, 255); text-decoration: none; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;">WEBSITE</a>
+                                        <span style="font-size: 16px; color: rgb(83, 245, 217); font-family: Helvetica, Arial, sans-serif;">&nbsp;</span> 
+                                       </div>
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td class="feature quick-links editor-col-multi OneColumnMobile" width="20%" align="left" valign="top" style="background-color: #36A3FA;" bgcolor="#36A3FA"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text center-text quick-links-text feature-text" align="left" valign="top" style="font-family: Helvetica,Arial,sans-serif; font-size: 16px; color: #272534; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div>
+                                       <div>
+                                        <a href="http://www.familytreeclinic.org/about/" target="_blank" style="font-size: 16px; color: rgb(255, 255, 255); text-decoration: none; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;">ABOUT</a>
+                                       </div>
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td class="feature quick-links editor-col-multi OneColumnMobile" width="20%" align="left" valign="top" style="background-color: #36A3FA;" bgcolor="#36A3FA"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text center-text quick-links-text feature-text" align="left" valign="top" style="font-family: Helvetica,Arial,sans-serif; font-size: 16px; color: #272534; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div>
+                                       <div>
+                                        <a href="http://www.familytreeclinic.org/services/" target="_blank" style="font-size: 16px; color: rgb(255, 255, 255); text-decoration: none; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;">SERVICES</a>
+                                       </div>
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td class="feature quick-links editor-col-multi OneColumnMobile" width="20%" align="left" valign="top" style="background-color: #36A3FA;" bgcolor="#36A3FA"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text center-text quick-links-text feature-text" align="left" valign="top" style="font-family: Helvetica,Arial,sans-serif; font-size: 16px; color: #272534; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div> 
+                                       <div>
+                                        <a href="http://www.familytreeclinic.org/events/" target="_blank" style="font-size: 16px; color: rgb(255, 255, 255); text-decoration: none; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;">EVENTS</a>
+                                       </div> 
+                                       <div> 
+                                        <span style="font-size: 16px; color: rgb(255, 255, 255); text-decoration: none; font-family: Helvetica, Arial, sans-serif;">ï»¿</span>
+                                        <span style="font-size: 19px; color: rgb(83, 245, 217); font-family: Helvetica, Arial, sans-serif;">&nbsp;&nbsp;</span> 
+                                       </div> 
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td class="feature quick-links editor-col-multi OneColumnMobile" width="20%" align="left" valign="top" style="background-color: #36A3FA;" bgcolor="#36A3FA"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="editor-text center-text quick-links-text feature-text" align="left" valign="top" style="font-family: Helvetica,Arial,sans-serif; font-size: 16px; color: #272534; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      <div> 
+                                       <div>
+                                        <a href="https://donatenow.networkforgood.org/familytreeclinic" target="_blank" style="font-size: 16px; color: rgb(255, 255, 255); text-decoration: none; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;">DONATE</a>
+                                       </div> 
+                                       <div> 
+                                        <span style="font-size: 16px; color: rgb(255, 255, 255); text-decoration: none; font-family: Helvetica, Arial, sans-serif;">ï»¿</span>
+                                        <span style="font-size: 19px; color: rgb(83, 245, 217); font-family: Helvetica, Arial, sans-serif;">&nbsp;</span> 
+                                       </div> 
+                                      </div>
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 94%; min-width: 94%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #36A3FA;" bgcolor="#36A3FA"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text section-headline-text" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div> 
+                                    <span style="color: rgb(0, 0, 0);">YOU HELP PEOPLE FOSTER SELF LOVE</span>s
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 94%; min-width: 94%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #36A3FA;" bgcolor="#36A3FA"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://www.familytreeclinic.org/wp/wp-content/uploads/2019/11/FallNewsletter2019-DigitalLayout.pdf"> <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="522" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/7e3edc5d001/0dc9d034-2a55-4612-8c71-c8c831124222.png"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Helvetica,Arial,sans-serif; font-size: 16px; color: #272534; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 16px; font-family: Lato, sans-serif;"><span class="greeting-tag">Greetings!</span></span>
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <span style="font-size: 16px; font-family: Lato, sans-serif;">Last year Hamline Public Health students and their professor Susi Keefe, used </span>
+                                    <span style="font-size: 16px; color: rgb(41, 43, 44); font-family: Lato, sans-serif;">community-engaged PhotoVoice research methods to talk to patients about their experiences at Family Tree.</span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <span style="font-weight: bold;">The research featuring the experiences of Family Tree patients was published in </span>
+                                    <a href="https://www.liebertpub.com/doi/10.1089/heq.2019.0082?utm_source=sfmc&amp;utm_medium=email&amp;utm_campaign=HEQ+Briefings+Dec19+2019&amp;d=12%2F19%2F2019&amp;mcid=816913610&amp;fbclid=IwAR2uHRScjaZ8pi_6G-YR12YKlGqeGsK1A4rQCgVmW4sJqaedgNhzBCNEgs0&amp;" target="_blank" style="font-size: 16px; color: rgb(41, 43, 44); font-family: Lato, sans-serif; font-weight: bold; font-style: normal; text-decoration: underline;">Health Equity</a>
+                                    <span style="font-size: 16px; color: rgb(41, 43, 44); font-family: Lato, sans-serif; font-weight: bold;">, a "peer-reviewed open access journal that meets the urgent need for authoritative information about health disparities and health equity among vulnerable populations." </span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <a href="https://www.liebertpub.com/doi/10.1089/heq.2019.0082?utm_source=sfmc&amp;utm_medium=email&amp;utm_campaign=HEQ+Briefings+Dec19+2019&amp;d=12%2F19%2F2019&amp;mcid=816913610&amp;fbclid=IwAR2uHRScjaZ8pi_6G-YR12YKlGqeGsK1A4rQCgVmW4sJqaedgNhzBCNEgs0&amp;" target="_blank" style="font-size: 16px; font-family: Lato, sans-serif; color: #36A3FA; font-weight: bold; font-style: normal; text-decoration: underline;">The results </a>
+                                    <span style="font-size: 16px; font-family: Lato, sans-serif;">were clear, "w</span>
+                                    <span style="color: rgb(29, 33, 41); font-size: 16px; font-family: Lato, sans-serif;">hen health equity is a central priority and evident in clinic culture, practices, and policies, patients articulate positive experiences despite real structural and systemic barriers outside the clinic."</span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 24px; color: rgb(117, 90, 155); font-family: Helvetica, Arial, sans-serif; font-style: italic; font-weight: bold;">"FTC makes me feel happy to be trans, which isn't how I feel most places. I trust the staff to see me, respect me, and be informed about sexual and reproductive health care issues that affect me. I love my gender when I visit Family Tree."</span>
+                                   </div> 
+                                   <div style="text-align: right;" align="right">
+                                    <span style="font-size: 19px; color: rgb(117, 90, 155); font-family: Helvetica, Arial, sans-serif;">- Eli, Family Tree Clinic patient</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Lato, sans-serif;">Everything we do is only possible due to your support. Thank you for standing with us throughout 2019. </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(0, 0, 0); font-family: Lato, sans-serif;">If you've been meaning to donate but haven't, there's still time to make your tax-deductible, year-end contribution. As you know, we will put your donation to excellent use. </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold; font-family: Lato, sans-serif;">Donate today and you can help folks like the patient above get the care and support they need on their journey to healthy new beginnings in 2020. </span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-family: Lato, sans-serif;">What a wonderful way to close out 2019.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-family: Lato, sans-serif;">Happy Holidays from the Family Tree staff, board, and volunteers. And thank you again for your support!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-family: Lato, sans-serif;">In health,</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-family: Lato, sans-serif;">Alissa Light</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-family: Lato, sans-serif;">Executive Director</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(42, 42, 42); font-family: Lato, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(42, 42, 42); font-family: Lato, sans-serif;">P.S. Don't forget donations can be made in honor of the people in your life. I will personally send acknowledgement letters to folks with a message of your choice.&nbsp;</span>
+                                    <a href="https://donatenow.networkforgood.org/familytreeclinic" target="_blank" style="color: rgb(42, 42, 42); font-family: Lato, sans-serif; font-weight: bold; font-style: normal; text-decoration: underline;">Simply donate here</a>
+                                    <span style="color: rgb(42, 42, 42); font-family: Lato, sans-serif;">. Thank you again for everything you do.</span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://donatenow.networkforgood.org/familytreeclinic"> <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="240" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/7e3edc5d001/82f530e8-7544-4c8b-a5ad-bdaae12ee70c.jpg"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="about editor-col OneColumnMobile" width="50%" align="left" valign="top" style="background-color: rgb(54, 163, 250);" bgcolor="36A3FA"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text about-text" align="left" valign="top" style="font-family: Helvetica,Arial,sans-serif; font-size: 14px; color: #272534; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(255, 255, 255); font-weight: bold; font-family: Helvetica, Arial, sans-serif;">Family Tree Clinic</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px; color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif;">1619 Dayton Ave. #205,&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px; color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif;">Saint Paul, MN 55104</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 18px; color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif;">651-645-0478</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="about editor-col OneColumnMobile" width="50%" align="left" valign="top" style="background-color: rgb(54, 163, 250);" bgcolor="36A3FA"> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-weight: bold; color: #6B6976; text-decoration: none; padding: 10px 20px 10px 10px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-weight: bold; color: #6B6976; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(255, 255, 255); width: initial; moz-border-radius: 0px; border-radius: 0px; border-spacing: 0; min-width: initial; padding: 0; border: none;" bgcolor="FFFFFF"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-weight: bold; color: #6B6976; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://www.familytreeclinic.org/contact/" style="color: rgb(0, 0, 0); font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-decoration: none;">Contact Us</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-social-button"> 
+                             <table class="editor-social" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class=" social-container social-container" align="center" style="padding: 0px 20px 10px 10px;"> 
+                                 <div class="galileo-ap-content-editor"> 
+                                  <a href="https://www.facebook.com/familytreeclinic" style="display: inline-block; text-decoration: none;"> <img alt="Facebook" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-twotoned-square.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                  <a href="https://twitter.com/FTClinic" style="display: inline-block; text-decoration: none;"> <img alt="Twitter" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-twotoned-square.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                  <a href="https://www.instagram.com/familytreeclinic/" style="display: inline-block; text-decoration: none;"> <img alt="Instagram" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/instagram-visit-twotoned-square.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                  <a href="https://www.youtube.com/user/familytreeclinicmn" style="display: inline-block; text-decoration: none;"> <img alt="YouTube" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/youtube-visit-twotoned-square.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

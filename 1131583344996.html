@@ -1,0 +1,628 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #869198 !important; border-bottom: 1px solid #869198 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Reminder: Aprill 2020 Convention Announcement</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #e6e6e6; margin: 0px; padding: 0px;" bgcolor="#e6e6e6"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader">Pleaase mark your calendar now!</span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #e6e6e6;"> 
+       <table width="100%" class="bgimage" border="0" cellspacing="0" cellpadding="0" style="background-color: #e6e6e6;" bgcolor="#e6e6e6"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table width="612" align="center" class="main-width" border="0" cellspacing="0" cellpadding="0" style="width: 612px;"> 
+            <tbody> 
+             <tr> 
+              <td align="center" class="layout" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"> 
+                <tbody> 
+                 <tr> 
+                  <td align="center" class="layout-container-border" valign="top" style="background-color: #869198; padding: 1px;" bgcolor="#869198"> 
+                   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #869198;" bgcolor="#869198"> 
+                    <tbody> 
+                     <tr> 
+                      <td align="center" class="layout-container" valign="top" style="background-color: #ffffff; padding: 0px;" bgcolor="#ffffff"> 
+                       <div> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table width="100%" class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img width="275" style="display: block; height: auto !important; max-width: 100% !important;" alt="" src="https://files.constantcontact.com/4619f977701/d7c6c3b7-be58-405d-ab0a-a36b1677d90b.jpg" border="0" vspace="0" hspace="0"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" class="editor-text editor-text " valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="color: rgb(191, 63, 47); font-size: 22px; font-style: italic;">2020 DFW</span>
+                                    <span style="font-size: 22px;"> </span>
+                                    <span style="color: rgb(94, 129, 202); font-size: 22px; font-style: italic;">CONVENTION</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(94, 129, 202); font-size: 22px;">âCOME EXPERIENCE THE NEW AMERICAN AIRLINES</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="color: rgb(94, 129, 202); font-size: 22px;">ROBERT L. CRANDALL CAMPUSâ</span>
+                                    <span style="color: rgb(94, 129, 202);"> </span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px;">APRIL 23 - 26 2020</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px;">All Planned Activities are Subject to Minor Changes in Time and / or Date.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">Dear Three Diamond Society Members,</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">As we approach the upcoming holidays and plan time with our family and friends, I am providing you with an update on the 2020 DFW Convention.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">Several weeks ago, members of the Executive Board, John Tippets, Bob Taylor, Jock Bethune and I had the privilege of meeting with Patrick OâKeeffe, American Airlines Sr. VP People, to seek his coaching and help on two key items: 1) How can American Airlines assist the Three Diamond Society in itâs efforts of reaching out to both active employees and employees retiring with 30 years plus of service as potential members? and 2) When is American Airlines planning for the dedication of the new Robert L. Crandall Campus and how can we overlap in planning our 2020 DFW Convention?</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table width="100%" class="editor-image logo-container editor-image-vspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img width="449" style="display: block; height: auto; max-width: 100%;" alt="" src="https://files.constantcontact.com/4619f977701/7acafec7-ad14-4d5f-9d58-526e6ae1f4cb.png" border="0" vspace="0" hspace="0"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" class="editor-text editor-text " valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">Left to Right: Jock Bethune â Secretary /Treasurer, John Tippets â Immediate Past President,</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">Patrick OâKeeffe â American Airlines Senior Vice President â People, Bob Taylor â Vice President, Charles Ashcraft â President â Skyview 8 Lobby Robert L. Crandall Campus âDecember 4 2019</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" class="editor-text editor-text " valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">As expected, item 1 was not an easy resolve with new privacy concerns, however Patrick did a take away as an action / follow up item. Item 2 was resolved, as Saturday April 25th 2020 is the date to be announced soon for the dedication of the new Robert l. Crandall Campus. To overlap with the dedication, the Executive Board is now working on pulling together 2 days of planned activities for our 2020 DFW Convention.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(191, 63, 47); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">Days One and Four - April 23rd</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;"> </span>
+                                    <span style="color: rgb(191, 63, 47); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">(Thursday)</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;"> </span>
+                                    <span style="color: rgb(191, 63, 47); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">and April 26th (Sunday)</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(255, 255, 255); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">______</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">ï· Planned Arriving and Departing Days for Travel</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(191, 63, 47); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">Day Two â April 24th (Friday)</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;"> - AA Campus PLANNED Activities</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(255, 255, 255); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">______</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">ï· Tour New Federal Credit Union / Business Meeting</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(255, 255, 255); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">______</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">ï· Tour CR Smith Museum and Dinner</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(191, 63, 47); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">Day Three - April 25th (Saturday)</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;"> - AA Campus PLANNED Activities</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(255, 255, 255); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">______</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">ï· Tour Skyview 8 / Dedication - Robert (Bob) L. Crandall Campus</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(255, 255, 255); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">______</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">(1 of 8 Buildings on Campus)</span>
+                                    <span style="color: rgb(117, 90, 155); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;"> </span>
+                                    <a style="color: rgb(117, 90, 155); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold; font-style: normal; text-decoration: underline;" href="https://youtu.be/MioytSF8WtY" target="_blank">https://youtu.be/MioytSF8WtY</a> 
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(255, 255, 255); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">______</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">ï· Tour IOC â Robert W. (Bob) Baker Integrated Operations </span>
+                                    <span style="color: rgb(255, 255, 255); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">________</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">Center</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(255, 255, 255); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">______</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">ï· OPEN Baseball Game â New Globe Life Field â Arlington Texas</span> 
+                                   </div> 
+                                   <div> 
+                                    <span style="color: rgb(255, 255, 255); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">_______</span>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: bold;">Texas Rangers vs. Seattle Mariners (Game 7:05pm)</span> 
+                                   </div> 
+                                   <div>
+                                    <a style="color: rgb(94, 129, 202); font-family: Times New Roman,Times,serif; font-size: 16px; font-weight: normal; font-style: normal; text-decoration: underline;" href="https://www.ballparksofbaseball.com/wp-content/uploads/2016/06/globelife17954.jpg" target="_blank">https://www.ballparksofbaseball.com/wp-content/uploads/2016/06/globelife17954.jpg</a>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">Please mark your calendar for the above dates. By the end of January 2020, we will have the list of planned activities confirmed, along with a convention hotel and registration package. The registration package will be sent both via email (Constant Contact) and hard copies via USPS.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">As we move forward, please watch your email â check your spam folder, check the AA website and donât toss any USPS mail from Jock!!!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">We are excited about this opportunity to overlap with the American Airlines dedication of the Robert L. Crandall Campus and to reacquaint our members with the New American Airlines.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">In closing, the Three Diamond Society Executive Board thanks you for your on-going support and dedication to the organization. We wish you the joys of the holiday season and the very best of health, prosperity, happiness, and success for the new year.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">Merry Christmas and Happy New Year!!!</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-family: Times New Roman,Times,serif; font-size: 14px;">Charles</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

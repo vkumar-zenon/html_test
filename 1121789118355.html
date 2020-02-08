@@ -1,0 +1,766 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #FFFFFF !important; border-bottom: 1px solid #FFFFFF !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>USCG Speaker Announced for the Republic of the Marshall Islands Outreach Group Meeting in Singapore</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #FFFFFF; margin: 0px; padding: 0px;" bgcolor="#FFFFFF"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #FFFFFF;"> 
+       <table class="bgimage" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #FFFFFF;" bgcolor="#FFFFFF"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="612" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 612px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" valign="top" align="center" style="padding: 15px 5px;"> 
+               <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" valign="top" align="center" style="background-color: #FFFFFF; padding: 1px;" bgcolor="#FFFFFF"> 
+                   <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #FFFFFF;" bgcolor="#FFFFFF"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" valign="top" align="center" style="background-color: #ffffff; padding: 0px;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="editor-logo editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td valign="top" align="center" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" src="https://files.constantcontact.com/39787df2501/61bf173b-3edd-488c-a84d-976bed1a0034.png" width="600" vspace="0" hspace="0" border="0"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #36495F; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold;">The Marshall Islands Registry </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold;">Exclusively Invites You to Join the </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold;">Republic of the Marshall Islands Outreach </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold;">Group Meeting in Singapore </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold;">14 November 2019</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold;">12:30 - 17:00</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-style: italic; font-family: Calibri, Helvetica, Arial, sans-serif;">cocktail reception to follow</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold;">The Capitol Kempinski Hotel Singapore</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(1, 2, 2); font-style: italic; font-family: Calibri, Helvetica, Arial, sans-serif;">15 Stamford Road, Singapore 178906</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 9px 0px;" width="100%" valign="top" align="center"> 
+                                     <table style="width: 93%; min-width: 93%; height: 1px;" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="background-color: rgb(153, 153, 153); padding-bottom: 0px; border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px;" height="1" align="center" bgcolor="999999"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #36495F; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); text-decoration: underline; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold;">Updated List of Speakers</span>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold;">:</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(26, 140, 217); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal;">Commander Steven D. Stowers</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(26, 140, 217); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: italic;">Executive Officer, Activities Far East (FEACT) </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(26, 140, 217); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: italic;">United States Coast Guard (USCG)</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Brian Poskaitis</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-style: italic;">Senior Vice President, Fleet Operations </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-style: italic;">International Registries, Inc. (IRI) Baltimore</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Nick Makar</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-style: italic;">Senior Vice President, Maritime Administration / Regulatory Affairs </span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-style: italic;">IRI New York (Downtown)</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); text-decoration: underline; font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Topics Include</span>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">:</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">USCG Port State Control (PSC) Activities</span>
+                                   </div> 
+                                   <ul> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0);"><span style="font-size: 12px; color: rgb(0, 0, 0); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif;">FEACT 101</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0);"><span style="font-size: 12px; color: rgb(0, 0, 0); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif;">USCG's perspective on the 2020 Global Sulphur Fuel Cap</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0);"><span style="font-size: 12px; color: rgb(0, 0, 0); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif;">Ballast Water Management compliance</span></li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0);"><span style="font-size: 12px; color: rgb(0, 0, 0); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif;">2018 PSC trends in the United States</span></li> 
+                                   </ul> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">PSC Update</span>
+                                   </div> 
+                                   <ul> 
+                                    <li style="font-size: 12px; color: rgb(1, 2, 2);"><span style="font-size: 12px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif;">Worldwide PSC with a focus on achievements with the USCG's Qualship 21 program and present relationship in Australia&nbsp;</span></li> 
+                                    <li style="font-size: 12px; color: rgb(1, 2, 2);"><span style="font-size: 12px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif;">Recent developments in PSC announced by both the Paris and Tokyo Memorandums of Understanding</span></li> 
+                                    <li style="font-size: 12px; color: rgb(1, 2, 2);"><span style="font-size: 12px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif;">The importance of Safety Management Systems, crew performance, the delegation of authority to Recognized Organizations, and the importance of oversight</span></li> 
+                                   </ul> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); text-decoration: none; font-style: normal; font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Enforcement of the 2020 Global Sulphur Fuel Cap</span>
+                                   </div> 
+                                   <ul> 
+                                    <li style="font-size: 12px;"> <span style="font-size: 12px; color: rgb(0, 0, 0); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif;">Basic obli</span><span style="font-size: 12px; color: rgb(1, 2, 2); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif;">gations under the </span><span style="font-size: 12px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif;">International Convention for the Prevention of Pollution from Ships (</span><span style="font-size: 12px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif; text-decoration: none;">MARPOL) Annex VI as applicable to flag and port States</span> </li> 
+                                    <li style="font-size: 12px; color: rgb(1, 2, 2);"> <span style="font-size: 12px; color: rgb(1, 2, 2); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif;">Incorporation of recent outcomes from the </span><span style="font-size: 12px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif;">Marine Environment Protection Committee </span><span style="font-size: 12px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif; text-decoration: none;">and Maritime Safety Committee into our own national policies towards consistent implementation of the standard</span> </li> 
+                                    <li style="font-size: 12px; color: rgb(0, 0, 0);"> <span style="font-size: 12px; color: rgb(0, 0, 0); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif;">Question and answer session and </span><span style="font-size: 12px; color: rgb(0, 0, 0); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal;">hypothetical scenarios such as fuel oil non-availability, off-specification fuel delivery, and scrubber malfunction</span> </li> 
+                                   </ul> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 14px; color: rgb(1, 2, 2); font-family: Calibri, Helvetica, Arial, sans-serif;">rsvp to:</span>
+                                    <span style="font-size: 14px; color: rgb(26, 140, 217); font-family: Calibri, Helvetica, Arial, sans-serif;"> </span>
+                                    <a href="mailto:singapore@register-iri.com?cc=mlam@Register-IRI.com&amp;subject=Singapore%20Outreach%20Group%20Meeting%20RSVP" target="_blank" style="font-size: 14px; color: rgb(26, 140, 217); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">singapore@register-iri.com</a> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" valign="top" align="center"> 
+                                 <table style="cursor: default; min-width: 100%;" class="galileo-ap-content-editor" width="100%"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" style="padding: 9px 0px;" width="100%" valign="top" align="center"> 
+                                     <table style="width: 93%; min-width: 93%; height: 1px;" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td style="background-color: rgb(153, 153, 153); padding-bottom: 0px; border-bottom-width: medium; border-bottom-style: none; height: 1px; line-height: 1px;" height="1" align="center" bgcolor="999999"> 
+                                         <div>
+                                          <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" width="5" vspace="0" hspace="0" height="1" border="0" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" valign="top" align=""> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #36495F; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center"> 
+                                    <a href="http://www.register-iri.com/" target="_blank" style="font-size: 12px; color: rgb(26, 140, 217); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal;">www.register-iri.com</a>
+                                    <span style="font-size: 12px; color: rgb(26, 140, 217); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif;"> | </span>
+                                    <a href="http://blog.register-iri.com/" target="_blank" style="font-size: 12px; color: rgb(26, 140, 217); text-decoration: none; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal;">blog.register-iri.com</a> 
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

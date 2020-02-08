@@ -1,0 +1,516 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #869198 !important; border-bottom: 1px solid #869198 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Reminder: User Experience on Your Web Site</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #e6e6e6; margin: 0px; padding: 0px;" bgcolor="#e6e6e6"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader">Where all your marketing efforts pay off</span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #e6e6e6;"> 
+       <table class="bgimage" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #e6e6e6;" bgcolor="#e6e6e6"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="612" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 612px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" valign="top" align="center" style="padding: 15px 5px;"> 
+               <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" valign="top" align="center" style="background-color: #869198; padding: 1px;" bgcolor="#869198"> 
+                   <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #869198;" bgcolor="#869198"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" valign="top" align="center" style="background-color: #ffffff; padding: 0px;" bgcolor="#ffffff"> 
+                       <div class="">
+                        <table class="galileo-ap-layout-editor" width="100%" cellspacing="0" cellpadding="0" border="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="editor-logo editor-col OneColumnMobile" width="100%" valign="top" align="left"> 
+                            <div class="gl-contains-text"> 
+                             <table style="min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " valign="top" align="left" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    If youâve missed my previous two emails on The Customer Journey and Content Marketing, please request a resend.&nbsp;Because a discussion of web site User Experience completes the set of three crucial topics that should be top of mind for marketing your practice in 2020.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div> 
+                                    <span style="font-weight: bold;">The Customer Journey</span> is a unique, personal path to gather information that each prospective new patient takes to your practice.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div> 
+                                    <span style="font-weight: bold;">Content Marketing</span> is a minimal-resistance way of launching a high number of customer journeys for your practice.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    So, when you engage a growing number of interested prospective patients who will be weaving their own way through your online information (and others while they are shopping and comparing), keeping their interest is vital to conversion.&nbsp;We generally refer to this engagement as 
+                                    <span style="font-weight: bold;">User Experience or UX</span>.&nbsp;&nbsp;If your web site UX is good, people stay longer, learn more and build trust faster.&nbsp;If your UX is bad, visitors bounce off the site, donât gather much information and generally donât get the value you are trying to build with them.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    You could say a bad User Experience undermines all your marketing work because it undermines Customer Journeys.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="mailto:donald@dogstarmedia.com" target="_blank" style="color: #48a199; font-weight: normal; font-style: normal; text-decoration: underline;">Want your web site evaluated for User Experience? Just ask.</a>
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    Google Analytics makes it easy to evaluate User Experience with some basic metrics.&nbsp;&nbsp;Generally, the UX metrics are: Bounce Rate, Average Time on Site and Average Number of Pages visited.&nbsp;Using these three metrics, you can ballpark your web site User Experience.&nbsp;A Bounce is when someone comes to your site, stays for one page and âbouncesâ off.&nbsp;&nbsp;A large number of bounces obviously affects the other two statistics, which also indicate that a user is getting what he/she wants or expects from your site.&nbsp;Average Time on Site is self-explanatory, as is the Average Number of Pages Visited.&nbsp;&nbsp;Understanding all of this, you can see the possible outcomes:
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    â¢ High bounce rate leads to low time on site and number of pages visited.
+                                   </div> 
+                                   <div>
+                                    â¢ More pages visited leads to longer time on site.
+                                   </div> 
+                                   <div>
+                                    â¢&nbsp;Basically, better user experience means users are clicking around and spending time on your site.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    There are more sophisticated measuring tools you can use to refine your user experience. &nbsp;With the metric tools available today, there are many ways an expert can analyze a web site and determine ways to improve conversion rates and performance.&nbsp;This is a custom solution because all web sites are different, but in all cases, it can be done.&nbsp;So, in a scenario where a practice owner wants a web site to be more productive, the practice owner must become more objective about their web site design and content.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    We all have opinions on what looks good and how content should be presented on a web site.&nbsp;You may like purple, and another client may like orange.&nbsp;&nbsp;You like videos just to play.&nbsp;Others like click-to-play videos.&nbsp;There are so many different subjective style choices when building a site.&nbsp;When a new site is finished, no matter who art directs it, that site is a best guess at presentation.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    Some practice owners stop right there.&nbsp;They go with what they bought, not realizing that they only took the first step in refining the site for conversion.
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <a href="mailto:donald@dogstarmedia.com" target="_blank" style="color: #48a199; font-weight: normal; font-style: normal; text-decoration: underline;">If you are ready to get serious about your web site, contact us here.</a>
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    In reality, the public using the site tells us what works and what doesnât work with each visit.&nbsp;These user statistics are accounted for in different ways for use in varying forms of analysis.&nbsp;By drilling down deeper into Google Analytics, an expert sees all the data needed to know if a site can be improved.&nbsp;Outside of Google Analytics, there is heat mapping technology, conversion analysis, traffic analysis, tracking phone numbers, and more to evaluate UX.&nbsp;&nbsp;Users tell use every day what works and what doesn't. It's up to the practice owner to seek out and act on that data.&nbsp;&nbsp;
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    We tell our clients they should consider their web sites to be living things that need attention, food, and water each day.&nbsp;Letting a web site sit for months or years without analysis or improvement means you are not listening to user feedback.&nbsp;To hold fast to your subjective design ideas in the fact of user data that could improve the site is a choice to ignore the public feedback. That's the same public you hope calls you for new business.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    We know it is hard being objective about your web site.&nbsp;&nbsp;However, it is a business tool, and it can be refined and improved on a weekly or monthly basis to stay sharp.&nbsp;&nbsp;Making this decision to develop your site continually and become flexible on how it appeals to the public is frequently the most significant step a practice owner can make to empower a web site to greater productivity.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    So, there are the three interconnected topics you should focus on in 2020.&nbsp;For many of our clients, a focus on creating Customer Journeys, using Content Marketing to nurture Customer Journeys and offering an excellent User Experience is all the marketing they need.&nbsp;This simple focus sends all the right messages to the Internet and builds on themselves to give you a huge, engaging footprint on the web.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    I encourage you to choose this philosophy for marketing your practice in 2020. &nbsp;&nbsp;Best of luck marketing your practice in the coming new year.
+                                   </div> 
+                                   <div>
+                                    &nbsp;
+                                   </div> 
+                                   <div>
+                                    Donald Griswold
+                                   </div> 
+                                   <div>
+                                    President, Dog Star Media
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table>
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

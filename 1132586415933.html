@@ -1,0 +1,794 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #850D21 !important; border-bottom: 1px solid #850D21 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Reminder: Easton Urban District - East Block (Apts) - BP 2 thru 6 - Addendum 3</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #e6e6e6; margin: 0px; padding: 0px;" bgcolor="#e6e6e6"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #e6e6e6;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #e6e6e6;" bgcolor="#e6e6e6"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="612" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 612px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #850D21; padding: 1px;" bgcolor="#850D21"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #850D21;" bgcolor="#850D21"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #ffffff; padding: 0px;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="editor-logo editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="405" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/d373963b701/b9f1de1d-e005-4a84-ab09-9e16a3bcea39.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(133, 13, 33);" bgcolor="850D21"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text headline-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #000000; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; color: rgb(255, 255, 255);">Bid Package 2, 3, 4, 5 &amp; 6 - Addendum 3</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(255, 255, 255); font-style: italic;">Easton Urban District - East Block</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(255, 255, 255); font-style: italic;">Apartments</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; color: rgb(255, 255, 255); background-color: rgb(133, 13, 33); font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold; font-style: italic;">Columbus, Ohio 43219</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; color: rgb(255, 255, 255); background-color: rgb(133, 13, 33); font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold; font-style: italic;">Daimler Project No. 1432</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 93%; min-width: 93%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #850D21;" bgcolor="#850D21"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">Please click on link below to download Addendum #3 for the Easton Urban District - East Block project.&nbsp;Please review addendum and incorporate any changes that affect your proposal. Bid dates are as listed below.</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="font-size: 12px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">ï»¿</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="font-size: 12px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif;">BID INSTRUCTIONS:</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    All proposals must be submitted electronically on the Proposal Forms provided for 
+                                    <span style="font-weight: bold;">each bid package</span>, including any clarifications/qualifications and emailed to the project manager listed below. Bid packages are due on the following dates:
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify"> 
+                                    <span style="font-weight: bold;">Bid Package #2 Garage MEP, Elevator</span>&nbsp;due on&nbsp;
+                                    <span style="font-weight: bold;">December 16, 2019&nbsp;</span>no later than 1:00 pm (Eastern Standard Time).
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify"> 
+                                    <span style="font-weight: bold;">Bid Package #3 Apartments/Townhomes Structural/Exterior</span>&nbsp;due on&nbsp;
+                                    <span style="font-weight: bold;">December 31, 2019&nbsp;</span>no later than 11:00 am (Eastern Standard Time).
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify"> 
+                                    <span style="font-weight: bold;">Bid Package #4 Apartments/Townhomes Interiors</span> due on 
+                                    <span style="font-weight: bold;">January 10, 2020 </span>no later than 1:00 pm (Eastern Standard Time).
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify"> 
+                                    <span style="font-weight: bold;">Bid Package #5 Amenity Space</span> due on 
+                                    <span style="font-weight: bold;">January 13, 2020 </span>no later than 1:00 pm (Eastern Standard Time).
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify"> 
+                                    <span style="font-weight: bold;">Bid Package #6 Amenity Deck</span> due on 
+                                    <span style="font-weight: bold;">January 17, 2020 </span>no later than 1:00 pm (Eastern Standard Time).
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px;">The Daimler Group, Inc.</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px;">Attention: Chris Cerar</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 12px;">614-488-4424</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 12px;">Email: </span>
+                                    <a href="mailto:chrisc@daimlergroup.com" target="_blank" style="color: #48a199; font-weight: normal; font-style: normal; text-decoration: underline;">chrisc@daimlergroup.com</a> 
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: black;">All questions regarding project scope, or information on the plans and specifications must be submitted in writing to Chris Cerar.</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">Sincerely,</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">Sarah Harris</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">The Daimler Group, Inc.</span>
+                                   </div> 
+                                   <div>
+                                    <a href="mailto:kimbers@daimlergroup.com" target="_blank" style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif; color: #48a199; font-weight: normal; font-style: normal; text-decoration: underline;">sarahh@daimlergroup.com</a>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">614-488-4424</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; font-family: Arial, Verdana, Helvetica, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    To insure bid coverage,
+                                    <span style="font-weight: bold;"> Please click Yes or No </span>below to indicate your intent to provide a proposal.
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    Be advised that if you click unsubscribe you will be removed from the Master Bidders List and will no longer be eligible to receive future emails.
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="40%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-action"> 
+                             <table class="action-block" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="galileo-ap-content-editor"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="block-margin" width="100%" align="left" valign="top" style="padding-left: 20px; padding-right: 10px;"> 
+                                     <table class="poll-question" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td class="editor-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 0px;"> 
+                                         <div>
+                                          <span data-entity-ref="POLL.ca-1556888583352.question_1_text">Do You Intend to Provide a Proposal</span>
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> 
+                                     <table width="100%" border="0" cellpadding="0" cellspacing="0"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="left" valign="top"> 
+                                         <table class="poll-answer" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; display: block;"> 
+                                          <tbody> 
+                                           <tr> 
+                                            <td class="editor-text" align="left" valign="middle" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 0px;"> 
+                                             <div>
+                                              <span data-entity-ref="POLL.ca-1556888583352.question_1_choice_1_text">Yes</span>
+                                             </div> </td> 
+                                           </tr> 
+                                          </tbody> 
+                                         </table> 
+                                         <table class="poll-button" align="right" border="0" cellpadding="0" cellspacing="0" style="moz-border-radius: 5px; border-radius: 5px; border-spacing: 0; background-color: #850D21; width: 100%; border: none;" bgcolor="#850D21"> 
+                                          <tbody> 
+                                           <tr> 
+                                            <td align="center" valign="top" style="padding: 10px;"> 
+                                             <div style="font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none;">
+                                              <a href="https://campaignlp.constantcontact.com/forms/response?id=Lo0NrvGaY9mGj88VtV2RocCIZJ7NvWjEAK4D3dOpmsDl5ejuk0FGjQhl15tlwyZuSqFYTqDziZAKrKtrR9YjesMqVApSW_tFq0R4mtA93cWGcs2rQInhd4U_hwa51ss6EGYwJLW5Z3aD61RyF4j9bamvzgCGZw36jKX0rysuOBLMAfE9heuUN7ZLzhkDE6kauzWk_BooTyXFYMefTsr-aw&amp;encVer=1&amp;c=$%7BContact.encryptedContactId%7D&amp;ch=$%7BContact.encryptedChannelId%7D" style="display: block; font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none;">Select</a>
+                                             </div> </td> 
+                                           </tr> 
+                                          </tbody> 
+                                         </table> </td> 
+                                       </tr> 
+                                       <tr> 
+                                        <td class="divider-base divider-dashed" width="100%" align="center" valign="top" style="padding-top: 9px; padding-bottom: 9px;"> 
+                                         <table style="width: 100%; height: 1px; min-width: 93%; border-collapse: separate;" cellpadding="0" cellspacing="0" border="0"> 
+                                          <tbody> 
+                                           <tr> 
+                                            <td height="1" align="center" style="height: 1px; line-height: 1px; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #b0b6bb;"> 
+                                             <div>
+                                              <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                             </div> </td> 
+                                           </tr> 
+                                          </tbody> 
+                                         </table> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> 
+                                     <table width="100%" border="0" cellpadding="0" cellspacing="0"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="left" valign="top"> 
+                                         <table class="poll-answer" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; display: block;"> 
+                                          <tbody> 
+                                           <tr> 
+                                            <td class="editor-text" align="left" valign="middle" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 0px;"> 
+                                             <div>
+                                              <span data-entity-ref="POLL.ca-1556888583352.question_1_choice_2_text">No</span>
+                                             </div> </td> 
+                                           </tr> 
+                                          </tbody> 
+                                         </table> 
+                                         <table class="poll-button" align="right" border="0" cellpadding="0" cellspacing="0" style="moz-border-radius: 5px; border-radius: 5px; border-spacing: 0; background-color: #850D21; width: 100%; border: none;" bgcolor="#850D21"> 
+                                          <tbody> 
+                                           <tr> 
+                                            <td align="center" valign="top" style="padding: 10px;"> 
+                                             <div style="font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none;">
+                                              <a href="https://campaignlp.constantcontact.com/forms/response?id=Lo0NrvGaY9mGj88VtV2RocCIZJ7NvWjEAK4D3dOpmsDl5ejuk0FGjQhl15tlwyZuSqFYTqDziZAKrKtrR9YjesMqVApSW_tFq0R4mtA93cWGcs2rQInhd4U_hwa51ss6EGYwJLW5Z3aD61RyF4j9bamvzgCGZw36jKX0rysuOBLMAfE9heuUN7ZLzhkDE6kauzWk_BooTyXXN6S9LkQxSg&amp;encVer=1&amp;c=$%7BContact.encryptedContactId%7D&amp;ch=$%7BContact.encryptedChannelId%7D" style="display: block; font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none;">Select</a>
+                                             </div> </td> 
+                                           </tr> 
+                                          </tbody> 
+                                         </table> </td> 
+                                       </tr> 
+                                       <tr> 
+                                        <td class="divider-base divider-dashed" width="100%" align="center" valign="top" style="padding-top: 9px; padding-bottom: 9px;"> 
+                                         <table style="width: 100%; height: 1px; min-width: 93%; border-collapse: separate;" cellpadding="0" cellspacing="0" border="0"> 
+                                          <tbody> 
+                                           <tr> 
+                                            <td height="1" align="center" style="height: 1px; line-height: 1px; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #b0b6bb;"> 
+                                             <div>
+                                              <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                             </div> </td> 
+                                           </tr> 
+                                          </tbody> 
+                                         </table> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="60%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    Click Button Below to Download
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    Addendum 3
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 10px 20px 10px 10px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 5px; border-radius: 5px; border-spacing: 0; background-color: #850D21; min-width: initial; padding: 0; border: none;" bgcolor="#850D21"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://daimlergroup.sharefile.com/d-s95e2358955e41508" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none;">Addendum 3</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

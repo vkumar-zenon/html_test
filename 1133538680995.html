@@ -1,0 +1,624 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 810px!important;
+max-width: 810px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 810px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 0px 0px 0px 0px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #869198 !important; border-bottom: 1px solid #869198 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>Dec. Show Guest: âAmerican Dreamâ icon, FSU alumna, internationally-renowned Russian-American pianist OksanaÂ® Kolesnikova, Pianist-to-the-Stars &amp; CEO</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #689491; margin: 0px; padding: 0px;" bgcolor="#689491"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader">Florida-Origins, Dec. Visit by Oksana, Pianist &amp; Business Innovator --Touring Florida in December, available for interviews</span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #689491;"> 
+       <!--[if gte mso 9]>
+<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+<v:fill type="tile" src="https://imgssl.constantcontact.com/letters/images/backgrounds/citygrid.png" color="#689491" ></v:fill>
+</v:background>
+<![endif]--> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background: url('https://imgssl.constantcontact.com/letters/images/backgrounds/citygrid.png') repeat top left;" background="https://imgssl.constantcontact.com/letters/images/backgrounds/citygrid.png"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="810" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 810px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #869198; padding: 0px;" bgcolor="#869198"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #869198;" bgcolor="#869198"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #ffffff; padding: 0;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="796" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3a0ab2ce701/f0615586-2e0c-414d-a1f4-4c020a38dcd8.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <a href="http://www.oksana-k.com/" target="_blank" style="font-size: 16px; font-weight: bold; color: #48a199; font-style: normal; text-decoration: underline;">OksanaÂ® Kolesnikova</a>
+                                    <span style="font-size: 16px; font-weight: bold;">, renowned pianist, composer, entrepreneur, and immigrant, is an inspirational example of âThe American Dream.â Her award-winning journey began in Florida</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px;">She is visiting Florida and available for interview from Dec. 25, 2019 â Jan. 1, 2020. A musical performance is possible.</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px;">OksanaÂ® is the elegant, internationally-acclaimed Russian-American pianist, composer and</span>
+                                    <span style="font-size: 14px; font-weight: bold;"> award-winning Florida State University alumna</span>
+                                    <span style="font-size: 14px;"> who just launched national franchise opportunities with her innovative arts and scholastic enrichment program for youth. This follows her program's unprecedented success serving dozens of public, private and charter schools in California with music, art, languages, tutoring, and test prep and teaching countless students. A proud U.S. citizen since 2006, she is often called Pianist-to-the-Stars and is CEO of three companies. Determined to create a path for others achieve their dreams with </span>
+                                    <a href="http://www.oksanaenrichment.com/" target="_blank" style="font-size: 14px; font-weight: bold; color: #48a199; font-style: normal; text-decoration: underline;">OksanaÂ® Enrichment Programs</a>, 
+                                    <span style="font-size: 14px;">she tailored her business model to elevate instructors and musicians from gig workers to business entrepreneurs.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="45%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 0px; padding-bottom: 0px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="360" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3a0ab2ce701/56ae9d30-e33b-40e2-a8c4-dd01e027a88c.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="55%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 14px;">Let OksanaÂ® captivate your audience with fascinating stories of performing daily for seven years to a glittering clientele at the legendary Polo Lounge in the Beverly Hills Hotel and her remarkable journey to business success.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px;">ï»¿</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px;">While enrolled in what is now </span>
+                                    <span style="font-size: 14px; font-weight: bold;">St. Petersburg College</span>
+                                    <span style="font-size: 14px;">, OksanaÂ® won the </span>
+                                    <span style="font-size: 14px; font-weight: bold;">Florida State Young Artists Symposium Competition</span>
+                                    <span style="font-size: 14px;"> as a junior. This honor secured her a scholarship to the </span>
+                                    <span style="font-size: 14px; font-weight: bold;">School of Music at Florida State University</span>
+                                    <span style="font-size: 14px;">, where she graduated with honors in 2001.</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0);">She h</span>
+                                    <span style="font-size: 14px;">as developed an enormous fan base. "Oksanabella," her YouTube channel featuring her performances, has nearly 2.5 million upload views from all over the world.</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div> 
+                                    <span style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif;">OksanaÂ® became the first Russian-American female pianist to travel overseas to entertain the U.S. Troops. She made two world tours on behalf of the Morale, Welfare and Recreation (MWR) Department of the </span>
+                                    <a href="http://en.wikipedia.org/wiki/U.S._Navy" target="_blank" style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif; color: windowtext; text-decoration: none; font-weight: normal; font-style: normal;">U.S. Navy throughout Asia an</a>
+                                    <span style="font-size: 14px;">d </span>
+                                    <span style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif;">a solo tour in </span>
+                                    <a href="http://en.wikipedia.org/wiki/Italy" target="_blank" style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif; color: windowtext; text-decoration: none; font-weight: normal; font-style: normal;">Italy</a>
+                                    <span style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif;">, </span>
+                                    <a href="http://en.wikipedia.org/wiki/Spain" target="_blank" style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif; color: windowtext; text-decoration: none; font-weight: normal; font-style: normal;">Spain</a>
+                                    <span style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif;"> and </span>
+                                    <a href="http://en.wikipedia.org/wiki/Greece" target="_blank" style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif; color: windowtext; text-decoration: none; font-weight: normal; font-style: normal;">Greece</a>
+                                    <span style="font-size: 14px; font-family: Arial, Verdana, Helvetica, sans-serif;">.She also was invited to perform for U.N. officials in New York.</span> 
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div>
+                                  <table class="editor-image OneColumnMobile" style="mso-table-rspace: 5.75pt;" align="right" cellpadding="0" cellspacing="0" border="0"> 
+                                   <tbody> 
+                                    <tr> 
+                                     <td class="mobile-hidden" width="15" height="1" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;"> <img alt="" width="15" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;"> </td> 
+                                     <td class="image-cell " align="center" valign="top" style="padding: 0px;"> 
+                                      <div class="publish-container"> 
+                                       <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="193" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3a0ab2ce701/62aa9c84-7436-4b3e-a3ac-28ecf57d60ec.jpg"> 
+                                      </div> </td> 
+                                    </tr> 
+                                    <tr> 
+                                     <td class="mobile-hidden" width="5" height="5" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;"> <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;"> </td> 
+                                     <td class="mobile-hidden" height="5" align="center" valign="top" style="height: 5px; line-height: 1px; padding: 0px;"> <img alt="" width="1" height="5" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;"> </td> 
+                                    </tr> 
+                                   </tbody> 
+                                  </table>
+                                 </div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 14px;">OksanaÂ® has recorded eight </span>
+                                    <a href="http://en.wikipedia.org/wiki/CD" target="_blank" style="font-size: 14px; color: windowtext; text-decoration: none; font-weight: normal; font-style: normal;">CDs</a>
+                                    <span style="font-size: 14px;"> of original, classical and </span>
+                                    <a href="http://en.wikipedia.org/wiki/Popular_music" target="_blank" style="font-size: 14px; color: windowtext; text-decoration: none; font-weight: normal; font-style: normal;">popular music</a>
+                                    <span style="font-size: 14px;"> and her own instructional </span>
+                                    <a href="http://en.wikipedia.org/wiki/Video" target="_blank" style="font-size: 14px; color: windowtext; text-decoration: none; font-weight: normal; font-style: normal;">video</a>
+                                    <span style="font-size: 14px;"> for students of piano. Her âFree Floatingâ CD won the </span>
+                                    <span style="font-size: 14px; font-style: italic;">2010 Best Classical Album of the Year </span>
+                                    <span style="font-size: 14px;">on SoloPiano.com.&nbsp;</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; font-weight: bold;">For Florida interviews and her press kit, please contact </span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(50, 49, 48); font-family: Arial, Verdana, Helvetica, sans-serif;">Alex at </span>
+                                    <a href="mailto:mgmt@oksana-k.com" target="_blank" style="font-size: 14px; color: rgb(94, 129, 202); font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">mgmt@oksana-k.com</a> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; font-weight: bold;">VIDEOS:</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: var(--ytd-video-primary-info-renderer-title-color, var(--yt-spec-text-primary)); font-family: Arial, Verdana, Helvetica, sans-serif;">Oksana</span>
+                                    <span style="font-size: 14px;">Â®</span>
+                                    <span style="font-size: 14px; color: var(--ytd-video-primary-info-renderer-title-color, var(--yt-spec-text-primary)); font-family: Arial, Verdana, Helvetica, sans-serif;"> Kolesnikova introduces her tutoring and enrichment services:</span> 
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.youtube.com/watch?v=R00BZgA6p6g" target="_blank" style="font-size: 14px; color: #48a199; font-weight: normal; font-style: normal; text-decoration: underline;">https://www.youtube.com/watch?v=R00BZgA6p6g</a>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px;">OksanaÂ® performs an original composition, Aurora Fantasy in E Minor:</span>
+                                   </div> 
+                                   <div>
+                                    <a href="https://www.youtube.com/watch?v=QwFxhV6m9ps" target="_blank" style="font-size: 14px; color: #48a199; font-weight: normal; font-style: normal; text-decoration: underline;">https://www.youtube.com/watch?v=QwFxhV6m9ps</a>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px;">For more about OksanaÂ®, go to </span>
+                                    <a href="http://www.oksanaenrichment.com/" target="_blank" style="font-size: 14px; color: #48a199; font-weight: normal; font-style: normal; text-decoration: underline;">www.Oksanaenrichment.com</a>
+                                    <span style="font-size: 14px; color: rgb(83, 129, 53);"> </span>
+                                    <span style="font-size: 14px;">and</span>
+                                    <span style="font-size: 14px; color: rgb(83, 129, 53);"> </span>
+                                    <a href="http://www.oksana-k.com/" target="_blank" style="font-size: 14px; color: #48a199; font-weight: normal; font-style: normal; text-decoration: underline;">www.Oksana-k.com</a>
+                                    <span style="font-size: 14px; color: rgb(83, 129, 53);"> </span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

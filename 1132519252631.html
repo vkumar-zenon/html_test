@@ -1,0 +1,821 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #869198 !important; border-bottom: 1px solid #869198 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>CBDè£½åã®ãã©ãã¯ãã©ã¤ãã¼ã»ã¼ã«ã¨æè¿ã®å¤§éº»é¢é£ãã¥ã¼ã¹</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #e6e6e6; margin: 0px; padding: 0px;" bgcolor="#e6e6e6"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader">ä»ãè²·ãæï¼</span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #e6e6e6;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #e6e6e6;" bgcolor="#e6e6e6"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="612" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 612px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #869198; padding: 1px;" bgcolor="#869198"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #869198;" bgcolor="#869198"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #ffffff; padding: 0px;" bgcolor="#ffffff"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="editor-logo editor-col OneColumnMobile" width="80%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image logo-container editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="right" valign="top" style="padding: 10px 10px 10px 20px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="https://potnavi.com"> <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="318" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/792686fa701/11389e12-0dc6-40aa-aadb-9e74b0f8ce24.png"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="editor-logo editor-col OneColumnMobile" width="20%" align="left" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 93%; min-width: 93%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #869198;" bgcolor="#869198"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: #717a80;" bgcolor="#717a80"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text section-headline-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    å¤§éº»é¢é£ãã¥ã¼ã¹
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="article editor-col OneColumnMobile" width="65%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-heading-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 16px; color: #717a80; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    <span style="color: rgb(45, 49, 51);">å¤§éº»é¢é£ãã¥ã¼ã¹</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ãããã2019å¹´ãçµãããè¿ãããã¨ãã¦ãã¾ãããã®ææã¯ç±³å½ã§ã¯ã¯ãªã¹ãã¹ã·ã¼ãºã³ã¨ãªããCBDè£½åãå¤§éº»ç¨®å­ã®ã»ã¼ã«ãå§ã¾ãã¾ãããã®ã¡ãã»ã¼ã¸ã®çµããã«ãã®è©³ç´°ã¨å²å¼ã³ã¼ããè¨è¼ãã¦ãã¾ãã</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ããæè¿ãèå³æ·±ãå¤§éº»é¢é£ã®ãã¥ã¼ã¹ãæ°å¤ãããã¾ãããè©³ç´°ã«ã¤ãã¦ã¯</span>
+                                    <a href="https://potnavi.com" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">PotNavi</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ãè¨ªãã¦è¨äºãèª­ãã§ãã ããã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">æ¥æ¬</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">è¬ç©ææã«ããæ²¢å°»ã¨ãªã«ã®é®æãããããã¹ããªã¼çåå¿ãå¤ãè¦ããã¾ãããã½ãã¼ã»ãã¥ã¼ã¸ãã¯ã¬ã¼ãã«ãºã¯å½¼å¥³ã®æ¥½æ²ã®éä¿¡ãåæ­¢ããä¸æ¹ã§ã</span>
+                                    <a href="https://potnavi.com/2019/11/%e3%82%bd%e3%83%8b%e3%83%bc%e3%83%bb%e3%83%9f%e3%83%a5%e3%83%bc%e3%82%b8%e3%83%83%e3%82%af%e3%83%ac%e3%83%bc%e3%83%99%e3%83%ab%e3%82%ba%e3%81%af%e6%b2%a2%e5%b0%bb%e3%82%a8%e3%83%aa%e3%82%ab%e3%81%ae/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">ãã©ãã°ã®ä½¿ç¨ãå¬è¨ãã¦ããã¡ã¸ã£ã¼ãªãã¥ã¼ã¸ã·ã£ã³ã®æ¥½æ²ã¯éä¿¡ãç¶ãã¦ãã¾ãã</a> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">æ±äº¬ã§ããªãã¡ããæ ½å¹ããã¦ããã®ãè¦ããããã¨ãç¥ã£ã¦ãã¾ãããï¼ã</span>
+                                    <a href="https://potnavi.com/2019/11/%e6%9d%b1%e4%ba%ac%e9%83%bd%e8%96%ac%e7%94%a8%e6%a4%8d%e7%89%a9%e5%9c%92%e3%81%b8%e3%81%ae%e8%a8%aa%e5%95%8f%e3%81%a8%e6%97%a5%e6%9c%ac%e4%ba%ba%e5%a4%a7%e9%ba%bb%e6%b4%bb%e5%8b%95%e5%ae%b6%e3%81%a8/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">æ±äº¬è¬ç¨æ¤ç©å</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã§è¦ããã¨ãã§ãã¾ãã</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="article editor-col OneColumnMobile" width="35%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="180" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/792686fa701/9f1a75bc-6add-4925-9e7e-8944d40c9206.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: #717a80;" bgcolor="#717a80"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text section-headline-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    ãã©ãã¯ãã©ã¤ãã¼ã®ã»ã¼ã«æå ±
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <span style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;">ãã¯ã¤ã®CBDè£½åã¡ã¼ã«ã¼</span>
+                                    <a href="https://manabotanics.com/aff/potnavi/" target="_blank" style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal; font-style: normal; text-decoration: underline;">Mana Botanics</a>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: normal;">å¨</span>
+                                    <span style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;">åå25%ãªãã</span>
+                                    <span style="color: rgb(34, 34, 34); font-size: 14px; font-weight: normal;">ã»ã¼ã«æéã¯11æ29æ¥éææ¥ï¼ãã¯ã¤æéï¼ãã12æ2æ¥æææ¥ã¾ã§ã</span>
+                                    <span style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;">å²å¼ã³ã¼ãï¼CYBER2519</span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <a href="https://cbd-medic.com/acne?rfsn=3026931.2a9e6d" target="_blank" style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal; font-style: normal; text-decoration: underline;">CBD Medic</a>
+                                    <span style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;">å¨åå15%ãªããå²å¼ã³ã¼ãï¼BFRIDAY15ãéææ¥ã®ã¿ï¼ç±³å½æéï¼</span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <a href="https://cbdessence.net/?a_aid=potnavi&amp;a_bid=c69ac1aa" target="_blank" style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal; font-style: normal; text-decoration: underline;">CBD Essence</a>
+                                    <span style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;">å¨åå25%ãªããã»ã¼ã«æéã¯11æ28æ¥ï½12æ1æ¥ã¾ã§ã</span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <a href="http://www.seedsman.com/en/?a_aid=PotNavi" target="_blank" style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal; font-style: normal; text-decoration: underline;">Seedsman</a>
+                                    <span style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;">ï¼å¤§éº»ç¨®å­ã®ã»ã¼ã«ã¯12æ3æ¥ã¾ã§ã</span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <a href="https://manabotanics.com/available-now/aff/potnavi/" target="_blank" style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal; font-style: normal; text-decoration: underline;">Seed City</a>
+                                    <span style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;">ï¼å¨åå20%ãªããå²å¼ã³ã¼ãï¼BFRIDAY20ãæ¥æ¬èªãµã¤ããããã¾ãã</span> 
+                                   </div> 
+                                   <div style="text-align: left;" align="left">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: left;" align="left"> 
+                                    <span style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;">æå¾ã«ãªãã¾ãããç±³å½ã«ä½ãã§ããäººã«ã¨ã£ã¦ãåæ³å¤§éº»ãè³¼å¥ããã«ã¯ä¸å¹´ã§çµ¶å¥½ã®ææã¨ãªãã¾ããå±å¤ã§ã®åç©«ãå®äºããã»ã¼ã«ãå§ã¾ãã¾ããå¤§éº»ã»ã¼ã«ã«é¢ããéç¥ãåãåãããã«ããæ°ã«å¥ãã®</span>
+                                    <a href="https://potnavi.com/hanbaiten/us/" target="_blank" style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal; font-style: normal; text-decoration: underline;">è²©å£²åº</a>
+                                    <span style="font-family: Calibri, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;">ã®ã¡ã¼ãªã³ã°ãªã¹ãã«ç»é²ããè¯ãæ©ä¼ã§ãã</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="article editor-col OneColumnMobile" width="65%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-heading-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 16px; color: #717a80; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="color: rgb(45, 49, 51);">å¤§éº»é¢é£ãã¥ã¼ã¹ç¶ã</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; color: rgb(45, 49, 51);">ç±³å½</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ä»å¾2ãæéã«ç±³å½ã§ã¯ããã«2ã¤ã®å·ã§å¤§éº»ãåæ³åããã¾ãã</span>
+                                    <a href="https://potnavi.com/2019/11/%e3%82%a2%e3%83%a1%e3%83%aa%e3%82%ab%e3%80%81%e3%83%9f%e3%82%b7%e3%82%ac%e3%83%b3%e5%b7%9e%e3%81%a7%e5%97%9c%e5%a5%bd%e7%94%a8%e5%a4%a7%e9%ba%bb%e3%81%ae%e5%b0%8f%e5%a3%b2%e8%b2%a9%e5%a3%b2%e3%81%8c12/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">ãã·ã¬ã³å·</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã¨</span>
+                                    <a href="https://potnavi.com/2019/10/%e3%82%b7%e3%82%ab%e3%82%b4%e3%81%a7%e3%81%ae%e5%97%9c%e5%a5%bd%e7%94%a8%e5%a4%a7%e9%ba%bb%e3%81%ae%e8%b2%a9%e5%a3%b2%e3%81%af2020%e5%b9%b41%e6%9c%88%e3%81%8b%e3%82%89%e9%96%8b%e5%a7%8b%e3%81%95/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">ã¤ãªãã¤å·</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã§ããããã«ãããæ°ãã«2,200ä¸äººã®ã¢ã¡ãªã«äººãåå¥½ç¨ããªãã¡ããåæ³åãããå·ã«ä½ããã¨ã«ãªãã¾ãã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ç±³å½ä¸é¢å§å¡ä¼ãããã¾ã§ã§æãåæ¬çãªé£é¦ã¬ãã«ã§ã®å¤§éº»åæ³åæ³æ¡ã</span>
+                                    <a href="https://potnavi.com/2019/11/%e7%b1%b3%e5%9b%bd%e4%b8%8b%e9%99%a2%e5%a7%94%e5%93%a1%e4%bc%9a%e3%81%a7%e3%81%ae%e6%ad%b4%e5%8f%b2%e7%9a%84%e3%81%aa%e6%8a%95%e7%a5%a8%e3%81%ab%e3%81%8a%e3%81%84%e3%81%a6%e5%a4%a7%e9%ba%bb%e5%90%88/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">æ¿èªãã¾ãã</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">2,000äººä»¥ä¸ãå¥é¢ãã40äººä»¥ä¸ãæ­»äº¡ããã´ã§ãã©ã¤ã¶ã¼é¢é£ã®èºç¾æ£ã®åå ã</span>
+                                    <a href="https://potnavi.com/2019/11/%e3%82%a2%e3%83%a1%e3%83%aa%e3%82%ab%e3%81%a7%e8%82%ba%e7%96%be%e6%82%a3%e6%80%a5%e5%a2%97%e3%80%81%e5%8e%9f%e5%9b%a0%e3%81%af%e9%81%95%e6%b3%95%e3%81%aa%e5%a4%a7%e9%ba%bb%e3%82%aa%e3%82%a4%e3%83%ab/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">èª¿æ»å¡ãã¼ã ãç¹å®ãã¾ãã</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <a href="https://potnavi.com/2019/11/%e3%83%ad%e3%82%b5%e3%83%b3%e3%82%bc%e3%83%ab%e3%82%b9%e3%81%a7%e9%ab%98%e7%b4%9a%e4%bd%8f%e5%ae%85%e3%82%92%e5%a3%b2%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ab%e5%a4%a7%e9%ba%bb%e3%82%92/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">ã­ãµã³ã¼ã«ã¹ã§é«ç´ä½å®ãªã¼ãã³ãã¦ã¹</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã»ãã¼ãã£ã¼ã«ä½å®è³¼å¥èãå¼ã³è¾¼ãããã«å¤§éº»ãä½¿ããã¦ãã¾ãã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã«ã¤ã¸ã¢ãå·ã§ã¯ãéªå¯©å¡å£ã28ã°ã©ã ã®å¤§éº»ãææããç·æ§ã«æç½ªå¤æ±ºãä¸ããã¨ã</span>
+                                    <a href="https://potnavi.com/2019/11/%e7%b1%b3%e5%9b%bd%e4%ba%ba%e9%99%aa%e5%af%a9%e5%93%a1%e3%81%8c%e5%a4%a7%e9%ba%bb%e6%89%80%e6%8c%81%e3%81%ab%e5%af%be%e3%81%99%e3%82%8b%e9%87%8d%e7%bd%aa%e3%81%ae%e6%a4%9c%e8%a8%8e%e3%82%92%e6%8b%92/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">æå¦ãã¾ãã</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã¢ã©ã¹ã«å·ã®é½å¸ã®ææ¨©èã</span>
+                                    <a href="https://potnavi.com/2019/10/%e3%82%a2%e3%83%a9%e3%82%b9%e3%82%ab%e5%b7%9e%e6%9c%89%e6%a8%a9%e8%80%85%e3%81%8c%e6%8a%95%e7%a5%a8%e3%81%ab%e3%81%a6%e3%82%a2%e3%83%ab%e3%82%b3%e3%83%bc%e3%83%ab%e8%b2%a9%e5%a3%b2%e3%82%92%e7%a6%81/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">ã¢ã«ã³ã¼ã«ã®è²©å£²ãç¦æ­¢ããä¸æ¹ã§ãå¤§éº»ã®è²©å£²ã¯èªãã¾ãã</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <a href="https://potnavi.com/2019/09/%e5%a4%a7%e9%ba%bb%e9%8a%80%e8%a1%8c%e5%8f%96%e5%bc%95%e6%b3%95%e6%a1%88%e3%81%8c%e7%b1%b3%e5%9b%bd%e3%81%ae%e5%a4%a7%e9%ba%bb%e7%94%a3%e6%a5%ad%e3%82%92%e5%a5%bd%e8%bb%a2%e3%81%99%e3%82%8b%e5%8f%af/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">ç±³å½ã®éèæ©é¢</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ãã¾ãã¾ãå¤§éº»äºæ¥­èã®é¡§å®¢ãè¿½ãæ±ããããã«ãªã£ã¦ãã¦ãã¾ãã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ç±³å½ã§</span>
+                                    <a href="https://potnavi.com/2019/10/%e7%b1%b3%e5%9b%bd%e3%81%a8%e3%83%a1%e3%82%ad%e3%82%b7%e3%82%b3%e3%81%a7%e5%a4%a7%e9%ba%bb%e5%90%88%e6%b3%95%e5%8c%96%e3%81%8c%e6%9c%89%e5%8a%9b%e8%80%85%e3%81%ae%e6%94%af%e6%8c%81%e3%82%92%e5%be%97/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">å¤§éº»åæ³åãåãå¥ããæ¿æ²»å®¶</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">åè£ãææ¨©èã®æ¯æãåã¡åã£ã¦ãã¾ãã</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="article editor-col OneColumnMobile" width="35%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="right" valign="top" style="padding: 10px 20px 10px 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="180" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/792686fa701/b7488986-16e4-445a-83ef-42f7bb4d5833.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="article editor-col OneColumnMobile" width="65%" align="left" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-heading-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 16px; color: #717a80; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">ããä»¥å¤ã®å°å</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text article-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div> 
+                                    <a href="https://potnavi.com/2019/11/%e5%8e%b3%e3%81%97%e3%81%84%e8%a6%8f%e5%88%b6%e3%81%ab%e3%82%88%e3%81%a3%e3%81%a6%e3%82%ab%e3%83%8a%e3%83%80%e3%81%ae%e5%a4%a7%e9%ba%bb%e3%83%93%e3%82%b8%e3%83%8d%e3%82%b9%e5%88%9d%e5%b9%b4%e5%ba%a6/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">ã«ããã§åå¥½ç¨å¤§éº»ãè³¼å¥å¯è½ã¨ãªã£ã¦ãã1å¹´ä»¥ä¸ãçµã¡ã¾ããã</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ä¾çµ¦éã®åé¡ã¯ãããã®ã®ãã¾ãã¯é èª¿ãªã¹ã¿ã¼ããåã£ãã¨è¨ãã¾ãã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ãªã©ã³ããç±³å½ã¹ã¿ã¤ã«ã®</span>
+                                    <a href="https://potnavi.com/2019/10/%e3%82%aa%e3%83%a9%e3%83%b3%e3%83%80%e3%81%8c%e5%97%9c%e5%a5%bd%e7%94%a8%e5%a4%a7%e9%ba%bb%e3%81%ae%e5%ae%9f%e9%a8%93%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e4%ba%8b%e6%a5%ad%e8%80%85%e3%81%ab%e5%8a%a9/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">å¤§éº»åæ³åã®æ¡ç¨ãæ¤è¨ãã¦ãã¾ãã</a> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ãªã¼ã¹ãã©ãªã¢ã®ã­ã£ã³ãã©ã¯ãå¤§éº»åæ³åãæ¤è¨ããã ãã§ãªããå®éã«</span>
+                                    <a href="https://potnavi.com/2019/10/%e3%82%aa%e3%83%bc%e3%82%b9%e3%83%88%e3%83%a9%e3%83%aa%e3%82%a2%e3%81%ae%e9%a6%96%e9%83%bd%e3%81%8c%e5%97%9c%e5%a5%bd%e7%94%a8%e5%a4%a7%e9%ba%bb%e3%82%92%e5%90%88%e6%b3%95%e5%8c%96/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">åæ³åãã¾ãã</a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">ãã®ä»</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">1,000å¹´è¿ãåã®ã¨ã¼ã­ããã®å®æè¸è¡ã«</span>
+                                    <a href="https://potnavi.com/2019/10/%e3%82%ad%e3%83%aa%e3%82%b9%e3%83%88%e6%95%99%e7%be%8e%e8%a1%93%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e6%84%8f%e8%ad%98%e5%a4%89%e5%ae%b9%e6%a4%8d%e7%89%a9%e3%81%a8%e3%82%b5%e3%82%a4%e3%82%b1%e3%83%87/" target="_blank" style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; text-decoration: underline;">ãã¸ãã¯ã»ããã·ã¥ã«ã¼ã </a>
+                                    <span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Calibri, Helvetica, Arial, sans-serif;">ã®ã¤ã¡ã¼ã¸ãå«ã¾ãã¦ãã¾ããã</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class="article editor-col OneColumnMobile" width="35%" align="left" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image content-image editor-image-hspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="right" valign="top" style="padding: 0px 20px 0px 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto; max-width: 100%;" width="146" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/792686fa701/ec2d9426-70dd-4332-9745-13a8bff64861.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

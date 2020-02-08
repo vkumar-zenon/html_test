@@ -1,0 +1,744 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #869198 !important; border-bottom: 1px solid #869198 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>RISP News: RI State Police</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #D9D9D9; margin: 0px; padding: 0px;" bgcolor="#D9D9D9"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #D9D9D9;"> 
+       <table width="100%" class="bgimage" border="0" cellspacing="0" cellpadding="0" style="background-color: #D9D9D9;" bgcolor="#D9D9D9"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table width="612" align="center" class="main-width" border="0" cellspacing="0" cellpadding="0" style="width: 612px;"> 
+            <tbody> 
+             <tr> 
+              <td align="center" class="layout" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"> 
+                <tbody> 
+                 <tr> 
+                  <td align="center" class="layout-container-border" valign="top" style="background-color: #869198; padding: 1px;" bgcolor="#869198"> 
+                   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #869198;" bgcolor="#869198"> 
+                    <tbody> 
+                     <tr> 
+                      <td align="center" class="layout-container" valign="top" style="background-color: #ffffff; padding: 0px;" bgcolor="#ffffff"> 
+                       <div> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="left" class="editor-logo editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table width="100%" class="editor-image logo-container editor-image-vspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img width="576" style="display: block; height: auto; max-width: 100%;" alt="" src="https://files.constantcontact.com/d58923da701/31616ba9-d4f5-433e-a627-87a6b1db7e3c.png" border="0" vspace="0" hspace="0"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="50%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" class="editor-text editor-text " valign="top" style="line-height: 1.5; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-weight: bold;">FOR IMMEDIATE RELEASE:</span>
+                                   </div> 
+                                   <div>
+                                    December 23, 2019
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td width="50%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" class="editor-text " valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: right;" align="right">
+                                    <span style="font-weight: bold;"> CONTACT: Major Timothy G. Sanzi</span>
+                                   </div> 
+                                   <div style="text-align: right;" align="right">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">Detective Commander</span>
+                                   </div> 
+                                   <div style="text-align: right;" align="right"> 
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">401-585-0901 /</span>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 15px; text-decoration: none;"> rispdetective@risp.gov</span> 
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="" class=" editor-col OneColumnMobile" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="left" class="editor-text editor-text " valign="top" style="line-height: 1.2; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">The Rhode Island State Police announce that members of the High Intensity Drug Trafficking Area Task Force (HIDTA) arrest a father and son for narcotics charges.</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">On December 18, 2019, as a result of a court authorized search warrant, members of the HIDTA Task Force arrested John Ferreira, age 61, of 27 Plantation Street, Warwick, Rhode Island. On December 23, 2019, Tyler Ferreira, age 24, was also arrested as a result of this search warrant. Both subjects were presented on the following charges:</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">1) Possession with the Intent to Deliver a Schedule II Controlled Substance â Fentanyl </span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">2) Possession with the Intent to Deliver a Schedule II Controlled Substance â Cocaine </span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">3) Possession with the Intent to Deliver a Schedule I Controlled Substance â Marijuana</span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">4) Possession with the Intent to Deliver a Schedule IV Controlled Substance â Xanax</span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">5) Possession of a Schedule III Controlled Substance â Anabolic Steroids</span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">6) Manufacturing / Possession / Distribution of an Imitation Controlled Substance</span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">7) Possession of&nbsp;a Pill Pressing Machine </span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">8) Controlled Substance Conspiracy</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">During this search warrant, members of the HIDTA Task Force seized a large scale electric powered pill pressing machine, numerous blue pills containing Fentanyl, narcotics cutting agents, packaging material, over 100 Marijuana plants, Xanax pills, Equipoise Anabolic Steroids, Powdered Cocaine, and $10,000 dollars in U.S. Currency.</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">Tyler Ferreira and John Ferreira were both processed at the Lincoln Woods Barracks, and arraigned at Third Division District Court. John Ferreira was given a future court date of March 18, 2020. Tyler Ferreira was given a future court date of March 23, 2020. </span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">Any person found guilty of Delivery/Possession with Intent to Deliver and Manufacture a Schedule (I) - (V) Controlled Substance may be imprisoned for not more than thirty (30) years or fined not more than one hundred thousand dollars ($100,000.00) nor less than three thousand dollars ($3,000.00).&nbsp;</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px; font-style: normal; text-decoration: none;">Any person found guilty of the Possession of a Pill Pressing Machine or similar device may be imprisoned for not more than five (5) years or fined not more than five thousand dollars ($5,000.00), or both.</span>
+                                   </div> 
+                                   <div style="text-align: justify;" align="justify">
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="color: rgb(64, 63, 66); font-family: Arial,Verdana,Helvetica,sans-serif; font-size: 12px;">The HIDTA Task Force is managed by the Rhode Island State Police. It is comprised of members from the Rhode Island State Police, Lincoln Police, Pawtucket Police, Providence Police, North Providence Police, Middletown Police, West Warwick Police, Adult Correctional Institution-Special Investigations Unit, Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF), Drug Enforcement Administration (DEA) and Homeland Security Investigations.</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" class="galileo-ap-layout-editor" border="0" cellspacing="0" cellpadding="0" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td width="100%" align="left" class="feature quick-links-multi multicolumn-layout-padding-multi multicolumn-layout-padding" valign="top" style="padding-left: 15px; padding-right: 15px; background-color: #d9d9d9;" bgcolor="#d9d9d9"> 
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+                             <tbody> 
+                              <tr> 
+                               <td width="20%" align="left" class="feature quick-links editor-col-multi OneColumnMobile" valign="top" style="background-color: #d9d9d9;" bgcolor="#d9d9d9"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="left" class="editor-text center-text quick-links-text feature-text" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      â
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-image"> 
+                                 <table width="100%" class="editor-image  editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="right" valign="top" style="padding: 10px 5px;"> 
+                                     <div class="publish-container"> 
+                                      <img width="78" style="display: block; height: auto !important; max-width: 100% !important;" alt="" src="https://files.constantcontact.com/d58923da701/77fc8a8d-e454-457f-80d6-0deead69a0d8.jpg" border="0" vspace="0" hspace="0"> 
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td width="20%" align="left" class="feature quick-links editor-col-multi OneColumnMobile" valign="top" style="background-color: #d9d9d9;" bgcolor="#d9d9d9"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="left" class="editor-text center-text quick-links-text feature-text" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      â
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-image"> 
+                                 <table width="100%" class="editor-image  editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="right" valign="top" style="padding: 10px 5px;"> 
+                                     <div class="publish-container"> 
+                                      <img width="92" style="display: block; height: auto !important; max-width: 100% !important;" alt="" src="https://files.constantcontact.com/d58923da701/8d11f305-eb1e-473b-8ca0-f6fef7dd7688.jpg" border="0" vspace="0" hspace="0"> 
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td width="20%" align="left" class="feature quick-links editor-col-multi OneColumnMobile" valign="top" style="background-color: #d9d9d9;" bgcolor="#d9d9d9"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="left" class="editor-text center-text quick-links-text feature-text" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      â
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-image"> 
+                                 <table width="100%" class="editor-image  editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="right" valign="top" style="padding: 10px 5px;"> 
+                                     <div class="publish-container"> 
+                                      <img width="104" style="display: block; height: auto !important; max-width: 100% !important;" alt="" src="https://files.constantcontact.com/d58923da701/06e12722-54d5-4860-9057-5838cae8bb16.jpg" border="0" vspace="0" hspace="0"> 
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td width="20%" align="left" class="feature quick-links editor-col-multi OneColumnMobile" valign="top" style="background-color: #d9d9d9;" bgcolor="#d9d9d9"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="left" class="editor-text center-text quick-links-text feature-text" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      â
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-image"> 
+                                 <table width="100%" class="editor-image  editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="right" valign="top" style="padding: 10px 5px;"> 
+                                     <div class="publish-container"> 
+                                      <img width="104" style="display: block; height: auto !important; max-width: 100% !important;" alt="" src="https://files.constantcontact.com/d58923da701/21658010-8a91-4227-9bd7-3eaf494865ca.jpg" border="0" vspace="0" hspace="0"> 
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                               <td width="20%" align="left" class="feature quick-links editor-col-multi OneColumnMobile" valign="top" style="background-color: #d9d9d9;" bgcolor="#d9d9d9"> 
+                                <div class="gl-contains-text"> 
+                                 <table width="100%" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="left" class="editor-text center-text quick-links-text feature-text" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 5px;"> 
+                                     <div></div> 
+                                     <div class="text-container galileo-ap-content-editor">
+                                      â
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> 
+                                <div class="gl-contains-image"> 
+                                 <table width="100%" class="editor-image  editor-image-vspace-on editor-image-hspace-on" style="min-width: 100%;" border="0" cellspacing="0" cellpadding="0"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="right" valign="top" style="padding: 10px 5px;"> 
+                                     <div class="publish-container"> 
+                                      <img width="104" style="display: block; height: auto !important; max-width: 100% !important;" alt="" src="https://files.constantcontact.com/d58923da701/ca247083-6e4b-496c-89aa-68544aae9071.jpg" border="0" vspace="0" hspace="0"> 
+                                     </div> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> 
+                                </div> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

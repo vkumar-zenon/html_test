@@ -1,0 +1,2461 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.preheader-text {
+font-size: 12px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #4C4C4C !important; border-bottom: 1px solid #4C4C4C !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+td.editor-col .block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.column .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.split.column-right {
+margin-top: 10px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.split {
+border-top: 5px solid #FFFFFF; border-bottom: 5px solid #FFFFFF; padding: 5px 0px !important;
+}
+.coupon {
+padding: 10px 20px 10px 20px !important;
+}
+.coupon td.coupon-heading-text {
+padding: 15px 10px 15px 10px !important; font-size: 28px !important;
+}
+.coupon td.coupon-text {
+padding: 10px 10px 10px 10px !important; font-size: 16px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+@media only screen and (max-width:3000px) {
+a[x-apple-data-detectors] {
+text-decoration: underline !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; color: inherit !important;
+}
+}
+</style> 
+  <title>STAR WARS EARLY BIRD OFFER</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #000000; margin: 0px; padding: 0px;" bgcolor="#000000"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader">UNCUT GEMS / LITTLE WOMEN</span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #000000;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #000000;" bgcolor="#000000"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="630" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 630px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #4C4C4C; padding: 10px;" bgcolor="#4C4C4C"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(76, 76, 76);" bgcolor="4C4C4C"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <a href="http://www.mysticluxurycinemas.com/" target="_blank" style="color: rgb(186, 20, 17); font-weight: bold; font-size: 14px; font-style: normal; text-decoration: underline;">www.MysticLuxuryCinemas.com</a>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(76, 76, 76);" bgcolor="4C4C4C"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="599" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3f64f4cb001/0deeef28-2910-47d5-8341-8d7dd226ec68.png"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 26px; color: rgb(0, 0, 0);">STARTING THIS WEEK: </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 26px; color: rgb(186, 20, 17); font-weight: bold;">EARLY BIRD</span>
+                                    <span style="font-size: 26px; color: rgb(0, 0, 0); font-weight: bold;"> PRICING IS BACK </span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 26px; color: rgb(0, 0, 0); font-weight: bold;">FOR </span>
+                                    <span style="font-size: 26px; color: rgb(186, 20, 17); font-weight: bold;">ALL FILMS!</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 26px; color: rgb(38, 68, 132); font-weight: bold;">STAR WARS: THE RISE OF SKYWALKER</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 26px; color: rgb(0, 0, 0); font-weight: bold;">WILL HAVE</span>
+                                    <span style="font-size: 26px; color: rgb(38, 68, 132); font-weight: bold;"> </span>
+                                    <span style="font-size: 26px; color: rgb(186, 20, 17); font-weight: bold;">ONLY ONE EARLY BIRD SHOWING BEFORE NOON</span>
+                                    <span style="font-size: 26px; color: rgb(38, 68, 132); font-weight: bold;">.</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">CHECK OUT OUR POLICY BELOW</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="596" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3f64f4cb001/932c65fd-f4db-40e5-a6c9-d37980b3f640.png"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 94%; min-width: 94%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Franklin Gothic Medium, Arial, Helvetica, sans-serif; font-weight: bold;">MLC QuickBits: </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">- SHORELINE'S #1 CINEMA </span>
+                                    <span style="font-size: 16px; font-weight: bold;">-</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(38, 68, 132); font-weight: bold;">NEW LONDON DAY WINNER</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(38, 68, 132); font-weight: bold;"> 2017-18-19 BEST CINEMA</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(45, 44, 46); font-weight: bold;">-----------------------------------------</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 24px; color: rgb(186, 20, 17); font-weight: bold;"> NEW FILMS THIS WEEK</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(38, 68, 132); font-weight: bold;">UNCUT GEMS</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    STARRING ADAM SANDLER IN HIS BEST ROLE YET
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold;">NOW PLAYING</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(45, 44, 46); font-weight: bold;">-----------------------------------------</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(186, 20, 17); font-weight: bold;">ALL FILMS THIS WEEK</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(38, 68, 132); font-weight: bold;">LITTLE WOMEN</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(38, 68, 132); font-weight: bold;">STAR WARS: THE RISE OF SKYWALKER</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(38, 68, 132); font-weight: bold;">BOMBSHELL</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(38, 68, 132); font-weight: bold;">RICHARD JEWELL</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(45, 44, 46); font-weight: bold;">-----------------------------------------</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px; color: rgb(186, 20, 17); font-weight: bold;"> </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 18px; color: rgb(186, 20, 17); font-weight: bold;">COMING SOON </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold;">1917</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(0, 0, 0);">Coming Soon</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold;">JUST MERCY</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(0, 0, 0);">Coming Soon</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold;">DOLITTLE</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(0, 0, 0);">Coming Soon</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="color: rgb(0, 0, 0);">_________________________________</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(186, 20, 17); font-weight: bold;">MLC SPECIAL EVENT CINEMA</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(186, 20, 17); font-weight: bold;"> GREAT MUSIC FILMS</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold;">THE DOORS: BREAK ON THRU - 2/12/20</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold;">Closed Caption and Hearing Impaired</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-weight: bold;">&nbsp;Serving Wine, Craft Beers and More</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 14px; color: rgb(186, 20, 17); font-weight: bold; font-style: italic;">SIMPLY The Best Cinema in the State of CT</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 36px; color: rgb(186, 20, 17); font-weight: bold;">NOW THROUGH JANUARY 1ST!</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="600" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3f64f4cb001/95bdef2f-018f-46c8-a23a-4534ad15e743.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="600" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3f64f4cb001/3521631f-a115-43ea-9470-7140f5d56a94.png"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(0, 0, 0); font-weight: bold;">Featuring: RKO Army LIVE</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(0, 0, 0); font-weight: bold;">NEXT SHOW: MARCH 2020</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 20px; color: rgb(0, 0, 0); font-weight: bold;"> ALL SHOWS at 10:00 PM - $10</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="300" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3f64f4cb001/390a3ea2-6d1e-44dc-b5c1-22e973589e58.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 10px 10px 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(186, 20, 17); width: initial; border-spacing: 0; min-width: initial; padding: 0; border: none;" bgcolor="BA1411"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://ticketing.us.veezi.com/sessions/?siteToken=mge4znwgfc85nzdrrr24h2pw0r" style="font-size: 28px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #FFFFFF; text-decoration: none;">PURCHASE TICKETS</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="line-height: 1.5; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(186, 20, 17); font-weight: bold;">Showtimes this Week:</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Friday 27, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37881?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">12:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37882?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">3:30 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37883?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:35 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37884?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:35 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Saturday 28, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37894?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">10:20 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37897?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">12:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37906?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:35 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37911?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:35 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Sunday 29, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37914?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">10:20 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37917?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">12:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37926?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:35 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37931?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:35 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Monday 30, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37934?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">10:20 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37937?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">12:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37946?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:35 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37951?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:35 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Tuesday 31, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37954?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">10:20 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37957?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">12:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37966?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:35 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37971?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:35 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Wednesday 1, January</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37974?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">10:20 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37977?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">12:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37982?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">3:30 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37986?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:35 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37991?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:35 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Thursday 2, January</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37994?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">10:20 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37997?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">12:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38002?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">3:30 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38006?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:35 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38011?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:35 PM</a> </li>
+                                   </ul> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="299" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3f64f4cb001/ddea24b5-7845-4c97-ad2a-a7f84ea78ea8.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 10px 10px 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(186, 20, 17); width: initial; border-spacing: 0; min-width: initial; padding: 0; border: none;" bgcolor="BA1411"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://ticketing.us.veezi.com/sessions/?siteToken=mge4znwgfc85nzdrrr24h2pw0r" style="font-size: 28px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #FFFFFF; text-decoration: none;">PURCHASE TICKETS</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(186, 20, 17); font-weight: bold;">A NOTE FROM MLC:</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(186, 20, 17); font-weight: bold;">ï»¿</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0);">Due to contractual obligations with</span>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;"> The Walt Disney Company, </span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0);">we are able to offer our </span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">Early Bird</span>
+                                    <span style="font-size: 16px; color: rgb(186, 20, 17);"> </span>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0);">or</span>
+                                    <span style="font-size: 16px; color: rgb(186, 20, 17); font-weight: bold;"> </span>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">Bargain Wednesday</span>
+                                    <span style="font-size: 16px; color: rgb(186, 20, 17); font-weight: bold;"> </span>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0);">policies for</span>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;"> </span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(38, 68, 132); font-weight: bold;">STAR WARS: THE RISE OF SKYWALKER</span>
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0);">but only on the</span>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;"> </span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center"> 
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">FIRST SHOW </span>
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0);">of the day.</span> 
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <br>
+                                   </div> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 16px; color: rgb(0, 0, 0); font-weight: bold;">All Weekend General Admission policies apply. </span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="line-height: 1.5; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 22px; color: rgb(186, 20, 17); font-weight: bold;">Showtimes this Week:</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Friday 27, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 22px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37744?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">1:55 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37749?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:30 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37754?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:00 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Saturday 28, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 22px;"> <a href="https://ticketing.useast.veezi.com/purchase/37892?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(139, 45, 113); text-decoration: none; font-weight: bold; font-style: normal;">9:05 AM</a><span style="font-size: 22px;">*</span><span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37895?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">10:30 AM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37900?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:55 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37904?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:30 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37909?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:00 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Sunday 29, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 22px;"> <a href="https://ticketing.useast.veezi.com/purchase/37912?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(139, 45, 113); text-decoration: none; font-weight: bold; font-style: normal;">9:05 AM</a><span style="font-size: 22px;">*</span><span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37915?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">10:30 AM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37920?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:55 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37924?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:30 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37929?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:00 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Monday 30, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 22px;"> <a href="https://ticketing.useast.veezi.com/purchase/37932?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(139, 45, 113); text-decoration: none; font-weight: bold; font-style: normal;">9:05 AM</a><span style="font-size: 22px;">*</span><span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37935?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">10:30 AM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37940?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:55 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37944?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:30 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37949?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:00 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Tuesday 31, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 22px;"> <a href="https://ticketing.useast.veezi.com/purchase/37952?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(139, 45, 113); text-decoration: none; font-weight: bold; font-style: normal;">9:05 AM</a><span style="font-size: 22px;">*</span><span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37955?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">10:30 AM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37960?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:55 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37964?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:30 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37969?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:00 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Wednesday 1, January</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 22px;"> <a href="https://ticketing.useast.veezi.com/purchase/37972?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(139, 45, 113); text-decoration: none; font-weight: bold; font-style: normal;">9:05 AM</a><span style="font-size: 22px;">*</span><span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37975?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">10:30 AM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37980?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:55 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37984?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:30 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37989?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:00 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Thursday 2, January</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 22px;"> <a href="https://ticketing.useast.veezi.com/purchase/37992?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(139, 45, 113); text-decoration: none; font-weight: bold; font-style: normal;">9:05 AM</a><span style="font-size: 22px;">*</span><span style="font-size: 22px; color: rgb(51, 51, 51); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37995?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">10:30 AM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38000?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:55 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38004?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:30 PM</a><span style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38009?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 22px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:00 PM</a> </li>
+                                   </ul> 
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 22px; color: rgb(139, 45, 113); text-decoration: none; font-weight: bold;">*DENOTES EARLY BIRD</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="300" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3f64f4cb001/65cc08ea-9b49-48f4-b8dd-5ee1179dbde7.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 10px 10px 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(186, 20, 17); width: initial; border-spacing: 0; min-width: initial; padding: 0; border: none;" bgcolor="BA1411"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://ticketing.us.veezi.com/sessions/?siteToken=mge4znwgfc85nzdrrr24h2pw0r" style="font-size: 26px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #FFFFFF; text-decoration: none;">PURCHASE TICKETS</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="line-height: 1.5; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(186, 20, 17); font-weight: bold;">Showtimes this Week:</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Friday 27, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37887?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">1:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37889?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">4:05 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37890?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:50 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37891?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:25 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Saturday 28, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37893?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">9:15 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37898?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37903?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">4:05 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37907?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:50 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37910?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:25 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Sunday 29, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37913?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">9:15 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37918?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37923?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">4:05 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37927?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:50 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37930?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:25 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Monday 30, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37933?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">9:15 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37938?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37943?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">4:05 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37947?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:50 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37950?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:25 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Tuesday 31, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37953?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">9:15 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37958?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37963?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">4:05 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37967?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:50 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37970?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:25 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Wednesday 1, January</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37973?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">9:15 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37978?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37983?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">4:05 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37987?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:50 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37990?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:25 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Thursday 2, January</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37993?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">9:15 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37998?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">1:25 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38003?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">4:05 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38007?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">6:50 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38010?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">9:25 PM</a> </li>
+                                   </ul> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="299" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3f64f4cb001/31946b0e-db87-407e-9ad5-85251461847f.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 10px 10px 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(186, 20, 17); width: initial; border-spacing: 0; min-width: initial; padding: 0; border: none;" bgcolor="BA1411"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://ticketing.us.veezi.com/sessions/?siteToken=mge4znwgfc85nzdrrr24h2pw0r" style="font-size: 26px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #FFFFFF; text-decoration: none;">PURCHASE TICKETS</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="line-height: 1.2; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(186, 20, 17); font-weight: bold;">Showtimes this Week:</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Friday 27, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37741?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">11:40 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37745?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">2:40 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37748?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:45 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37752?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">8:50 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Saturday 28, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37896?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">11:40 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37901?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">2:40 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37905?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:45 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37908?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">8:50 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Sunday 29, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37916?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">11:40 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37921?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">2:40 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37925?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:45 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37928?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">8:50 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Monday 30, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37936?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">11:40 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37941?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">2:40 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37945?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:45 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37948?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">8:50 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Tuesday 31, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37956?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">11:40 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37961?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">2:40 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37965?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:45 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37968?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">8:50 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Wednesday 1, January</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37976?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">11:40 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37981?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">2:40 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37985?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:45 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/37988?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">8:50 PM</a> </li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 20px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Thursday 2, January</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 20px; color: rgb(38, 68, 132);"> <a href="https://ticketing.useast.veezi.com/purchase/37996?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">11:40 AM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38001?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">2:40 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38005?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">5:45 PM</a><span style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold;">&nbsp;</span><a href="https://ticketing.useast.veezi.com/purchase/38008?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 20px; color: rgb(38, 68, 132); font-weight: bold; text-decoration: none; font-style: normal;">8:50 PM</a> </li>
+                                   </ul> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="300" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/3f64f4cb001/12817866-0021-458e-a616-24b69ed3915a.jpg"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 10px 10px 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(186, 20, 17); width: initial; border-spacing: 0; min-width: initial; padding: 0; border: none;" bgcolor="BA1411"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://ticketing.us.veezi.com/sessions/?siteToken=mge4znwgfc85nzdrrr24h2pw0r" style="font-size: 26px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #FFFFFF; text-decoration: none;">PURCHASE TICKETS</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text " align="left" valign="top" style="line-height: 1.5; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px 10px 10px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-size: 24px; color: rgb(186, 20, 17); font-weight: bold;">Showtimes this Week:</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 24px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Saturday 28, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 24px; color: rgb(38, 68, 132);"><a href="https://ticketing.useast.veezi.com/purchase/37902?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 24px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">3:30 PM</a></li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 24px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Sunday 29, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 24px; color: rgb(38, 68, 132);"><a href="https://ticketing.useast.veezi.com/purchase/37902?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 24px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">3:30 PM</a></li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 24px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Monday 30, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 24px; color: rgb(38, 68, 132);"><a href="https://ticketing.useast.veezi.com/purchase/37902?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 24px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">3:30 PM</a></li>
+                                   </ul> 
+                                   <div>
+                                    <span style="font-size: 24px; color: rgb(51, 51, 51); font-weight: bold; font-family: Calibri, Helvetica, Arial, sans-serif;">Tuesday 31, December</span>
+                                   </div> 
+                                   <ul>
+                                    <li style="font-size: 24px; color: rgb(38, 68, 132);"><a href="https://ticketing.useast.veezi.com/purchase/37902?siteToken=mge4znwgfc85nzdrrr24h2pw0r" target="_blank" style="font-size: 24px; color: rgb(38, 68, 132); text-decoration: none; font-weight: bold; font-style: normal;">3:30 PM</a></li>
+                                   </ul> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="" align="center" valign="top"> 
+                                 <table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0px;"> 
+                                     <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 94%; min-width: 94%; height: 1px;"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 0px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div>
+                                   <div style="text-align: center;" align="center">
+                                    <span style="font-size: 28px; font-weight: bold; color: rgb(186, 20, 17);">Now Serving Beer, Wine &amp; Hot Foods!</span>
+                                   </div>
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="300" border="0" hspace="0" vspace="0" src="https://mlsvc01-prod.s3.amazonaws.com/3f64f4cb001/4a83782f-4b15-4198-90eb-6be67fc68c03.png?ver=1448385979000"> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody>
+                          <tr>
+                           <td class="editor-divider" width="100%" valign="top" align="center" style="min-width: 100%; padding: 0px;">
+                            <table style="background-color: transparent; width: 100%; cursor: default;" class="galileo-ap-content-editor" bgcolor="transparent">
+                             <tbody>
+                              <tr>
+                               <td class="divider-base divider-solid" style="height: 1px; line-height: 1px; padding: 8px 0px;" align="center" valign="top" width="100%"> 
+                                <table style="height: 1px; width: 93%; min-width: 93%;" border="0" cellpadding="0" cellspacing="0" align="center"> 
+                                 <tbody> 
+                                  <tr> 
+                                   <td class="divider-height" style="height: 1px; line-height: 1px; padding-bottom: 0px; border-bottom-style: none; background-color: #4C4C4C;" height="1" align="center" bgcolor="#4C4C4C"> 
+                                    <div>
+                                     <img alt="" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;" height="1" hspace="0" border="0" vspace="0" width="5">
+                                    </div> </td> 
+                                  </tr> 
+                                 </tbody> 
+                                </table> </td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div>
+                             <div class="column-resize-bar"> 
+                              <span class="line"></span> 
+                              <span class="grabber"></span> 
+                             </div>
+                            </div> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="http://mysticluxurycinemas.com/gift-cards/"> <img alt="GIFT CARDS" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="260" border="0" hspace="0" vspace="0" src="https://mlsvc01-prod.s3.amazonaws.com/3f64f4cb001/a873b83d-f14d-42c9-97a0-96d65de8f2c6.jpg?ver=1448392159000"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                           <td class=" editor-col OneColumnMobile" width="50%" align="" valign="top"> 
+                            <div class="gl-contains-image"> 
+                             <table class="editor-image  editor-image-vspace-on" style="min-width: 100%;" width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;"> 
+                                 <div class="publish-container"> 
+                                  <a href="http://mysticluxurycinemas.com/programs-events/"> <img alt="SPECIAL EVENTS" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="260" border="0" hspace="0" vspace="0" src="https://mlsvc01-prod.s3.amazonaws.com/3f64f4cb001/3fd397ce-f04a-4253-9894-703aee94cf37.jpg?ver=1448392158000"> </a> 
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="about editor-col OneColumnMobile" width="100%" align="center" valign="top" style="background-color: #4C4C4C;" bgcolor="#4C4C4C"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text about-text" align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #FFFFFF; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <span style="font-weight: bold;">Located at Olde Mistick Village / 27 Coogan Blvd / Mystic, CT 06355</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-weight: bold;">860-536-4227</span>
+                                   </div> 
+                                   <div>
+                                    <a href="http://mysticluxurycinemas.com/" target="_blank" style="color: rgb(255, 255, 255); font-weight: bold; font-style: normal; text-decoration: underline;">www.MysticLuxuryCinemas.com</a>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="social" style="background-color: #4C4C4C; padding: 10px 0px;" width="100%" valign="top" align="center" bgcolor="#4C4C4C"> 
+                            <table class="editor-social" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 100%; min-width: 100%;"> 
+                             <tbody> 
+                              <tr> 
+                               <td class="social-text" valign="top" align="center" style="padding-top: 0px; padding-bottom: 10px; text-align: center; color: #ffffff; text-decoration: none;"> 
+                                <div class="text-container galileo-ap-content-editor">
+                                 <div>
+                                  <div>
+                                   Connect with us
+                                  </div>
+                                 </div>
+                                </div> </td> 
+                              </tr> 
+                              <tr> 
+                               <td valign="middle" align="center" style="padding-top: 0px; padding-bottom: 10px;"> 
+                                <div style="text-align: center;" class="galileo-ap-content-editor" align="center"> 
+                                 <a href="http://www.facebook.com/pages/Olde-Mistick-Village-Art-Cinemas/214306811932102?sk=wall" style="display: inline-block; text-decoration: none;"> <img alt="Facebook" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                 <a href="https://twitter.com/MysticLuxCinema" style="display: inline-block; text-decoration: none;"> <img alt="Twitter" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                 <a href="https://instagram.com/mysticluxurycinemas/" style="display: inline-block; text-decoration: none;"> <img alt="Instagram" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/instagram-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> â </a> 
+                                </div> </td> 
+                              </tr> 
+                             </tbody> 
+                            </table> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(76, 76, 76);" bgcolor="4C4C4C"> 
+                            <div class="gl-contains-button"> 
+                             <table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-button-container editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 10px 20px;"> 
+                                 <table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 0px;"> 
+                                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(186, 20, 17); width: initial; border-spacing: 0; min-width: initial; padding: 0; border: none;" bgcolor="BA1411"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;"> 
+                                         <div> 
+                                          <div class="MainTextFullWidth">
+                                           <a href="https://www.mysticluxurycinemas.com/" style="font-weight: bold; font-style: normal; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none;">Visit our website at www.MysticLuxuryCinemas.com</a>
+                                          </div> 
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""

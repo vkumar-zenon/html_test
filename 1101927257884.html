@@ -1,0 +1,578 @@
+"""<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]--> 
+  <style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style> 
+  <style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 0px 0px 0px 0px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+.mobile-header-image {
+background-image: url(https://imgssl.constantcontact.com/letters/images/PT12876/MobileHeaderImage_v3.png) !important; background-position: top center !important; max-width: 440px !important; height: 177px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #F0C08F !important; border-bottom: 1px solid #F0C08F !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), local(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style> 
+  <title>CEOåæ¡ä¸»æéè¯· - 2020è¯æåº·å¾·å¥åº·äº§ä¸è®ºå</title>
+ </head> 
+ <body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #FFFFFF; margin: 0px; padding: 0px;" bgcolor="#FFFFFF"> 
+  <table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%"> 
+   <tbody>
+    <tr> 
+     <td class="preheader-container"> 
+      <div> 
+       <div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> 
+        <span data-entity-ref="preheader"></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td class="template-shell-container" align="center"> 
+      <div class="bgcolor" style="background-color: #FFFFFF;"> 
+       <table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;" bgcolor="#FFFFFF"> 
+        <tbody> 
+         <tr> 
+          <td align="center"> 
+           <table class="main-width" width="630" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 630px;"> 
+            <tbody> 
+             <tr> 
+              <td class="layout" align="center" valign="top" style="padding: 15px 5px;"> 
+               <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"> 
+                <tbody> 
+                 <tr> 
+                  <td class="layout-container-border" align="center" valign="top" style="background-color: #F0C08F; padding: 0px;" bgcolor="#F0C08F"> 
+                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #F0C08F;" bgcolor="#F0C08F"> 
+                    <tbody> 
+                     <tr> 
+                      <td class="layout-container" align="center" valign="top" style="background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF"> 
+                       <div class=""> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class="divider-container editor-col OneColumnMobile" width="100%" align="left" valign="top"> 
+                            <div class="gl-contains-divider"> 
+                             <table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="divider-container" align="center" valign="top"> 
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;"> 
+                                  <tbody> 
+                                   <tr> 
+                                    <td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 0px;"> 
+                                     <table style="width: 100%; max-width: 100%; min-width: 100%; height: 1px;" cellpadding="0" cellspacing="0" border="0" align="center"> 
+                                      <tbody> 
+                                       <tr> 
+                                        <td height="1" align="center" style="padding-bottom: 9px; background-color: rgb(255, 255, 255); border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="FFFFFF"> 
+                                         <div>
+                                          <img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;">
+                                         </div> </td> 
+                                       </tr> 
+                                      </tbody> 
+                                     </table> </td> 
+                                   </tr> 
+                                  </tbody> 
+                                 </table> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;"> 
+                         <tbody> 
+                          <tr> 
+                           <td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF"> 
+                            <div class="gl-contains-text"> 
+                             <table width="100%" style="min-width: 100%;" cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody> 
+                               <tr> 
+                                <td class="editor-text editor-text " align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: #fefaec; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;"> 
+                                 <div></div> 
+                                 <div class="text-container galileo-ap-content-editor">
+                                  <div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(76, 76, 76); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;"><span class="greeting-tag">Greetings!</span></span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">æ¨å¥½ï¼</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">é¦åç¥æ¨èæ¥å¿«ä¹ï¼</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">å¨æ­¤æéå¸¸è£å¹¸å°ä¸æ¨åäº«å³å°äº2020å¹´2æ25-27æ¥å¨ä¸æµ·éå®çåéåºä¸¾è¡çç¬¬äºå±âè¯æåº·å¾·å¥åº·äº§ä¸è®ºåâï¼</span>
+                                    <a href="http://www.wuxiforum.cn/" target="_blank" style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">www.wuxiforum.cn</a>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">ï¼ã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">è¿åºå¨çå»çå¥åº·é¢åé¢å¯¼èçå³°ä¼ï¼å°ä»¥âè§è¯äº§ä¸çåéåéï¼</span>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif; font-weight: bold;">Solving Tomorrowâs Health Challenges</span>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">ï¼âä¸ºä¸»é¢ï¼åæ¶èç¦3å¤§æ¿åï¼1ï¼åæ°çç°ç¶ââå¨çä¸åºåæ´å¯ï¼2ï¼åæ²»æç¾çå²åºââåé©ç¾ççæ²»çæ¹å¼ï¼3ï¼åæ°2030ââç§æå¦ä½éå¡å»çå¥åº·çæªæ¥ãè¿åºçä¼å°æ±èæ¥èªå¨ççåæ°èãä¼ä¸å®¶ãä¸´åºå»çãå»çæå¡æä¾æ¹ä»¥ååæ²¿ææ¯ä¸å®¶ï¼å±åæ¢è®¨å¡é è¡ä¸æªæ¥çæ°æè·¯ãä»é¢ è¦æ§ææ¯å°ç²¾åè¯æ­ï¼ä»çªç ´æ§æ°è¯å°é¢é²æ§è¯æ­ï¼ä»è¡ä¸æ°éå°åä¸æ°æ¨¡å¼ï¼æ¬æ¬¡è®ºåå°éè¿3å¤©åææ´è§çä¸»é¢æ¼è®²ã300å®¶åæ°ä¼ä¸çCEOåæ¡ãä¸å¯¹ä¸åä½ä¼è°ä»¥åå¨çæ§çäººèç½ç»æå±æºéï¼æä¾æ ä¸ä¼¦æ¯çäº¤æµä¸åä½æºéã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">å¨çæ§çææéè¦å¨çæ§çè§£å³æ¹æ¡ãäºæ´²ï¼è¿ççæ´»ç60%çå¨çäººå£ï¼ä»¥åå­å¨çå·¨å¤§çæªç«å»çéæ±çåå°ï¼æ çæ¯æ¬å±è®ºåæä¸ºçæ³çä¸¾åå°ç¹ã</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">é¦å±è¯æåº·å¾·å¥åº·äº§ä¸è®ºåå¸å¼äºæ¥èªå¨ç25ä¸ªå½å®¶åå°åºç6,500ä½ä½å¥åº·äº§ä¸çäººå£«è¸è·ç³è¯·åä¼ï¼å¶ä¸­ä¸­å¤ä¼ä¸é«å±ç®¡çäººåè¾¾2,500å¤ä½ã90ä½ä½æ¼è®²åå®¾æ´ä»å¤ä¸ªè§åº¦åå¥è®ºåä¸»é¢ï¼å±åå±æä¸ä¸ä¸ªå»è¯å¥åº·äº§ä¸çé¢ è¦æ§åæ°ãæ´æ200ä½åºCEOåæ¡äºå¨ï¼éä¸­å±ç¤ºäºç²¾åè¯æ­ãå»çå¨æ¢°ãæ°å­å¥åº·ä»¥å10å¤ä¸ªç¾çé¢åçåæ°ææåé£éãè¯·ç¹å»</span>
+                                    <a href="https://www.wuxiforum.cn/pastReview?page=pastReview" target="_blank" style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">æ­¤å¤</a>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">æ¬£èµé¦å±è®ºå2åéç²¾å½©è§é¢éé¦ã</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">ä½ä¸ºå»çå¥åº·è¡ä¸æå·äººæ°çè®ºåä¹ä¸ï¼æ¬å±è¯æåº·å¾·å¥åº·äº§ä¸è®ºåçåä½ä¼ä¼´åæ¬å½éé¡¶å°çæèµæºæä»¥åå»çå¥åº·ä¼ä¸ï¼è¯æåº·å¾·ä¼ åªå°å¯¹è®ºåè¿è¡å¨ç¨æ¥éãå¨CEOåæ¡ä¸ï¼æ¨å°ææºä¼ä¸ä¸è¿°æºæä¼ä¸ï¼ä»¥åå¹¿å¤§äº§å­¦çä¸ä¼äººå£«å¯åä¼æ¤ãæ·±å¥äº¤æµãååå±ç¤ºä¼ä¸çæå°±ä¸æ½åï¼å¼æååç°æ½å¨çåä½æºä¼ä»¥ååä½ä¼ä¼´ã</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">&nbsp;</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">å¨æ¬å±è®ºåä¸­ï¼âCEOåæ¡âç¯èå°å®æäº2æ25æ¥è³27æ¥ä¸åï¼å3æ¥å±9ä¸ªæ¶é´æ®µä¸¾è¡ãæ¯ä½CEOå°æä¸ä¸ªå°æ¶æ¶é´ä¸»æå±äºèªå·±ä¼ä¸ç10äººåæ¡ä¼è®®ãå¦å¤ï¼æ¨è¿å¯ä»¥åæ¶åä¸è¿ä¸å¤©åä¸»è®ºåçæ´»å¨ãä¸é¦å±ä¸æ ·ï¼2020å¹´è¯æåº·å¾·å¥åº·äº§ä¸è®ºåCEOåæ¡å°ç»§ç»­å¯¹ä¸»æä¼ä¸åè´¹å¼æ¾ï¼ä¸æ¶åä»»ä½è´¹ç¨ãæä»¬åä¿¡ï¼å¯æå¨çåä»æºæå¹¶è¿ï¼æè½é¸å°±å»çå¥åº·è¡ä¸çåææªæ¥ã</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div> 
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">å¦æ¨å¸æä¸»æCEOåæ¡ï¼è¯·è®¿é®</span>
+                                    <a href="https://www.wuxiforum.cn/reg_first" target="_blank" style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">ç³è¯·ä¸»æ</a>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">å®åä¼ä¸ä¿¡æ¯ãå¦æ¨å¸æäºè§£æ´å¤æå³CEOåæ¡çç»èï¼è¯·è®¿é®</span>
+                                    <a href="https://www.wuxiforum.cn/FAQ?page=FAQ_en" target="_blank" style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">å¸¸è§é®é¢è§£ç­</a>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">ï¼å¦ææ´å¤å¨è¯¢ï¼å¯éè¿</span>
+                                    <a href="https://www.wuxiforum.cn/aboutUs?page=aboutUs_en" target="_blank" style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif; font-weight: bold; font-style: normal; text-decoration: none;">èç³»æä»¬</a>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">ç´æ¥ä¸æä»¬è¿è¡æ²éãæä»¬æå¾æ¨çåä¸ï¼å±åè§è¯äº§ä¸åéçåéï¼</span> 
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 14px; color: rgb(0, 0, 0); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">é¡ºé¢åç¥º</span>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <br>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(53, 53, 53); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">Steve Yang, Ph.D.</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(53, 53, 53); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">Executive Vice President, Chief Business Officer</span>
+                                   </div> 
+                                   <div>
+                                    <span style="font-size: 16px; color: rgb(53, 53, 53); font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;">Head of Research Service Division</span>
+                                   </div> 
+                                  </div>
+                                 </div> </td> 
+                               </tr> 
+                              </tbody> 
+                             </table> 
+                            </div> </td> 
+                          </tr> 
+                         </tbody> 
+                        </table> 
+                       </div> </td> 
+                     </tr> 
+                    </tbody> 
+                   </table> </td> 
+                 </tr> 
+                </tbody> 
+               </table> </td> 
+             </tr> 
+            </tbody> 
+           </table> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> </td> 
+    </tr> 
+    <tr> 
+     <td></td> 
+    </tr> 
+   </tbody>
+  </table>   
+ </body>
+</html>"""
